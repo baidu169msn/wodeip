@@ -4,7 +4,21 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇪 SE 01 - xiaohe
+- name: 🇸🇪 SE 01
+  type: vless
+  server: 104.18.21.69
+  port: 443
+  uuid: 7b1897ec-afb5-425c-afbf-d79634b6b317
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se-sto.xhs152.shop
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: se-sto.xhs152.shop
+- name: 🇸🇪 SE 02
   type: vless
   server: 202.155.11.249
   port: 443
@@ -23,12 +37,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇸🇪 SE 01 - xiaohe
+  - 🇸🇪 SE 01
+  - 🇸🇪 SE 02
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇪 SE 01 - xiaohe
+  - 🇸🇪 SE 01
+  - 🇸🇪 SE 02
 rules:
 - MATCH,PROXIES
