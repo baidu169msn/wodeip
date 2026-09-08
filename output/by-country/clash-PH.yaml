@@ -4,32 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇳 印度 (India) 01
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
+- name: 🇵🇭 PH 01
+  type: vless
+  server: 149.104.109.17
+  port: 2087
+  uuid: 9ed3dcb3-b71a-4ae1-8210-95e33615d7e6
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /04461917b179
     headers:
-      Host: ''
+      Host: 149.104.109.17
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇳 印度 (India) 01
+  - 🇵🇭 PH 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇳 印度 (India) 01
+  - 🇵🇭 PH 01
 rules:
 - MATCH,PROXIES

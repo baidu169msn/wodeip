@@ -7,18 +7,11 @@ proxies:
 - name: 🇰🇷 韩国 (South Korea) 01
   type: ss
   server: 141.164.45.187
-  port: 8119
+  port: 9101
   cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
+  password: e4FCWrgpkji3QY
   udp: true
 - name: 🇰🇷 韩国 (South Korea) 02
-  type: ss
-  server: 141.164.45.187
-  port: 6679
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 03
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -30,31 +23,20 @@ proxies:
     public-key: k9narlSK7fUqy94_p0rrqKl52W35QLNsp3W8xaGq_Go
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 04
-  type: ss
-  server: 141.164.45.187
-  port: 5498
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 05
-  type: ss
-  server: 141.164.45.187
-  port: 7002
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 06
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
+- name: 🇰🇷 韩国 (South Korea) 03
+  type: vless
+  server: 130.94.29.111
+  port: 2087
+  uuid: 84da6391-1539-4583-a3d9-d6efd796b4d6
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 07
+  network: ws
+  ws-opts:
+    path: /e17586a75123
+    headers:
+      Host: 130.94.29.111
+- name: 🇰🇷 韩国 (South Korea) 04
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -66,59 +48,44 @@ proxies:
     public-key: k9narlSK7fUqy94_p0rrqKl52W35QLNsp3W8xaGq_Go
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 08
+- name: 🇰🇷 韩国 (South Korea) 05
   type: ss
   server: 141.164.45.187
-  port: 6697
+  port: 9090
   cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
+  password: Y6R9pAtvxxzmGC
   udp: true
-- name: 🇰🇷 韩国 (South Korea) 09
+- name: 🇰🇷 韩国 (South Korea) 06
+  type: ss
+  server: 141.164.45.187
+  port: 5498
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 07
   type: ss
   server: 141.164.45.187
   port: 7001
   cipher: aes-256-gcm
   password: RexnBgU7EV5ADxG
   udp: true
-- name: 🇰🇷 韩国 (South Korea) 10
-  type: vless
-  server: 130.94.29.111
-  port: 2087
-  uuid: 84da6391-1539-4583-a3d9-d6efd796b4d6
+- name: 🇰🇷 韩国 (South Korea) 08
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /e17586a75123
-    headers:
-      Host: 130.94.29.111
-- name: 🇰🇷 韩国 (South Korea) 11
-  type: vless
-  server: 130.94.29.111
-  port: 2087
-  uuid: 84da6391-1539-4583-a3d9-d6efd796b4d6
+- name: 🇰🇷 韩国 (South Korea) 09
+  type: ss
+  server: 141.164.45.187
+  port: 5498
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /e17586a75123
-    headers:
-      Host: 130.94.29.111
-- name: 🇰🇷 韩国 (South Korea) 12
-  type: vless
-  server: 130.94.29.111
-  port: 2087
-  uuid: 84da6391-1539-4583-a3d9-d6efd796b4d6
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /e17586a75123
-    headers:
-      Host: 130.94.29.111
 proxy-groups:
 - name: PROXIES
   type: select
@@ -133,9 +100,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 07
   - 🇰🇷 韩国 (South Korea) 08
   - 🇰🇷 韩国 (South Korea) 09
-  - 🇰🇷 韩国 (South Korea) 10
-  - 🇰🇷 韩国 (South Korea) 11
-  - 🇰🇷 韩国 (South Korea) 12
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -150,8 +114,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 07
   - 🇰🇷 韩国 (South Korea) 08
   - 🇰🇷 韩国 (South Korea) 09
-  - 🇰🇷 韩国 (South Korea) 10
-  - 🇰🇷 韩国 (South Korea) 11
-  - 🇰🇷 韩国 (South Korea) 12
 rules:
 - MATCH,PROXIES
