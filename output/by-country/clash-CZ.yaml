@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 CZ 01
+- name: CZ 01
   type: vless
   server: 104.21.22.180
   port: 443
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 CZ 01
+  - CZ 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 CZ 01
+  - CZ 01
 rules:
 - MATCH,PROXIES

@@ -6,22 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇻 LV 01",
-        "🇱🇻 LV 02",
-        "🇱🇻 LV 03",
-        "🇱🇻 LV 04",
-        "🇱🇻 LV 05"
+        "LV 01",
+        "LV 02",
+        "LV 03",
+        "LV 04",
+        "LV 05",
+        "LV 06"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇻 LV 01",
-        "🇱🇻 LV 02",
-        "🇱🇻 LV 03",
-        "🇱🇻 LV 04",
-        "🇱🇻 LV 05"
+        "LV 01",
+        "LV 02",
+        "LV 03",
+        "LV 04",
+        "LV 05",
+        "LV 06"
       ],
       "url": "https://www.google.com/generate_204"
     },

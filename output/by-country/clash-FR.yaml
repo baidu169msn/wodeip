@@ -4,7 +4,18 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇷 法国 (France) 01
+- name: 法国 (France) 01
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 法国 (France) 02
   type: vless
   server: 152.228.162.19
   port: 80
@@ -17,47 +28,7 @@ proxies:
     path: /vless/
     headers:
       Host: akamaized.net
-- name: 🇫🇷 法国 (France) 02
-  type: vless
-  server: 81.95.4.189
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇫🇷 法国 (France) 03
-  type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇫🇷 法国 (France) 04
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: c543f005-59f7-40c1-9ae6-37505691d5be
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: UKvonm_uE7TSwksQIVQuNYgYwmcidr_g4lDIE2JW_Ag
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 05
+- name: 法国 (France) 03
   type: vless
   server: 149.202.58.99
   port: 443
@@ -71,18 +42,7 @@ proxies:
     path: /vws/
     headers:
       Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 06
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 07
+- name: 法国 (France) 04
   type: vless
   server: 149.202.58.99
   port: 443
@@ -95,8 +55,8 @@ proxies:
   ws-opts:
     path: /vws/
     headers:
-      Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 08
+      Host: bab-6.site
+- name: 法国 (France) 05
   type: vless
   server: 45.144.28.39
   port: 2096
@@ -109,14 +69,28 @@ proxies:
     path: /
     headers:
       Host: usejh2.neobo-tooth.ru
-- name: 🇫🇷 法国 (France) 09
-  type: ss
-  server: 51.255.13.232
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
+- name: 法国 (France) 06
+  type: vless
+  server: 45.144.28.39
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
   udp: true
-- name: 🇫🇷 法国 (France) 10
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: usejh2.neobo-tooth.ru
+- name: 法国 (France) 07
+  type: vless
+  server: 13.36.253.48
+  port: 22222
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 法国 (France) 08
   type: vless
   server: usejh2.neobo-tooth.ru
   port: 2096
@@ -129,14 +103,78 @@ proxies:
     path: /
     headers:
       Host: usejh2.neobo-tooth.ru
-- name: 🇫🇷 法国 (France) 11
-  type: ss
-  server: 83.171.225.55
-  port: 1443
-  cipher: chacha20-ietf-poly1305
-  password: ZjAxZ
+- name: 法国 (France) 09
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
-- name: 🇫🇷 法国 (France) 12
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 法国 (France) 10
+  type: ss
+  server: 51.83.192.80
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 法国 (France) 11
+  type: vless
+  server: 152.228.162.19
+  port: 80
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 152.228.162.19
+- name: 法国 (France) 12
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: c543f005-59f7-40c1-9ae6-37505691d5be
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: UKvonm_uE7TSwksQIVQuNYgYwmcidr_g4lDIE2JW_Ag
+  servername: www.google.com
+  client-fingerprint: firefox
+- name: 法国 (France) 13
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 法国 (France) 14
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: d9abc6e3-83bf-4c28-ae68-72465e2abe39
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ikt-kkc25f27k-3tehr8mc.ade-1007.workers.dev
+  network: ws
+  ws-opts:
+    path: /vl/xQhNe7rLrdM0emZlaW5LMsNwcoIgnT?ed=2560
+    headers:
+      Host: ikt-kkc25f27k-3tehr8mc.ade-1007.workers.dev
+- name: 法国 (France) 15
   type: vless
   server: 45.144.28.39
   port: 2096
@@ -148,20 +186,8 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: usejh2.neobo-tooth.ru
-- name: 🇫🇷 法国 (France) 13
-  type: vless
-  server: gr068.techinyab.ir
-  port: 443
-  uuid: 9343f183-7a16-4bdd-9c65-b0c21feca40b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
-  servername: play.google.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 14
+      Host: 45.144.28.39
+- name: 法国 (France) 16
   type: vless
   server: 149.202.58.99
   port: 443
@@ -175,7 +201,41 @@ proxies:
     path: /vws/
     headers:
       Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 15
+- name: 法国 (France) 17
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 149.202.58.99
+- name: 法国 (France) 18
+  type: vless
+  server: 13.36.253.48
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 法国 (France) 19
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: c543f005-59f7-40c1-9ae6-37505691d5be
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: UKvonm_uE7TSwksQIVQuNYgYwmcidr_g4lDIE2JW_Ag
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 法国 (France) 20
   type: vless
   server: 54.37.136.194
   port: 2053
@@ -187,9 +247,28 @@ proxies:
     public-key: 3nFTPdoFnfcwN1xnLwegJmBycLqRH6TRsrbD2XnQbjM
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 16
+- name: 法国 (France) 21
   type: vless
-  server: 152.228.162.19
+  server: 51.77.217.70
+  port: 2053
+  uuid: c543f005-59f7-40c1-9ae6-37505691d5be
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: UKvonm_uE7TSwksQIVQuNYgYwmcidr_g4lDIE2JW_Ag
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 法国 (France) 22
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+  udp: true
+- name: 法国 (France) 23
+  type: vless
+  server: OV-France1.09vpn.com
   port: 80
   uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
   udp: true
@@ -199,15 +278,8 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: 152.228.162.19
-- name: 🇫🇷 法国 (France) 17
-  type: ss
-  server: 51.83.192.80
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇫🇷 法国 (France) 18
+      Host: OV-France1.09vpn.com
+- name: 法国 (France) 24
   type: vless
   server: 45.144.28.39
   port: 2096
@@ -220,78 +292,14 @@ proxies:
     path: /
     headers:
       Host: 45.144.28.39
-- name: 🇫🇷 法国 (France) 19
-  type: vless
-  server: usejh2.neobo-tooth.ru
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: usejh2.neobo-tooth.ru
-- name: 🇫🇷 法国 (France) 20
-  type: vless
-  server: 35.157.240.237
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇫🇷 法国 (France) 21
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 22
-  type: vless
-  server: 152.228.162.19
-  port: 80
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 152.228.162.19
-- name: 🇫🇷 法国 (France) 23
+- name: 法国 (France) 25
   type: ss
-  server: 51.83.192.80
+  server: 51.255.13.232
   port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
   udp: true
-- name: 🇫🇷 法国 (France) 24
-  type: vless
-  server: 45.144.28.39
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 45.144.28.39
-- name: 🇫🇷 法国 (France) 25
+- name: 法国 (France) 26
   type: vless
   server: 149.202.58.99
   port: 443
@@ -305,21 +313,20 @@ proxies:
     path: /vws/
     headers:
       Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 26
+- name: 法国 (France) 27
   type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  server: 152.228.162.19
+  port: 80
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: bab-6.site
   network: ws
   ws-opts:
-    path: /vws/
+    path: /vless/
     headers:
-      Host: bab-6.site
-- name: 🇫🇷 法国 (France) 27
+      Host: 152.228.162.19
+- name: 法国 (France) 28
   type: vmess
   server: 141.95.65.9
   port: 1234
@@ -330,92 +337,80 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 28
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: c543f005-59f7-40c1-9ae6-37505691d5be
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: UKvonm_uE7TSwksQIVQuNYgYwmcidr_g4lDIE2JW_Ag
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 29
+- name: 法国 (France) 29
   type: ss
-  server: 51.255.13.232
+  server: 51.83.192.80
   port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
+  cipher: aes-256-gcm
+  password: itzvpn@321
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇫🇷 法国 (France) 01
-  - 🇫🇷 法国 (France) 02
-  - 🇫🇷 法国 (France) 03
-  - 🇫🇷 法国 (France) 04
-  - 🇫🇷 法国 (France) 05
-  - 🇫🇷 法国 (France) 06
-  - 🇫🇷 法国 (France) 07
-  - 🇫🇷 法国 (France) 08
-  - 🇫🇷 法国 (France) 09
-  - 🇫🇷 法国 (France) 10
-  - 🇫🇷 法国 (France) 11
-  - 🇫🇷 法国 (France) 12
-  - 🇫🇷 法国 (France) 13
-  - 🇫🇷 法国 (France) 14
-  - 🇫🇷 法国 (France) 15
-  - 🇫🇷 法国 (France) 16
-  - 🇫🇷 法国 (France) 17
-  - 🇫🇷 法国 (France) 18
-  - 🇫🇷 法国 (France) 19
-  - 🇫🇷 法国 (France) 20
-  - 🇫🇷 法国 (France) 21
-  - 🇫🇷 法国 (France) 22
-  - 🇫🇷 法国 (France) 23
-  - 🇫🇷 法国 (France) 24
-  - 🇫🇷 法国 (France) 25
-  - 🇫🇷 法国 (France) 26
-  - 🇫🇷 法国 (France) 27
-  - 🇫🇷 法国 (France) 28
-  - 🇫🇷 法国 (France) 29
+  - 法国 (France) 01
+  - 法国 (France) 02
+  - 法国 (France) 03
+  - 法国 (France) 04
+  - 法国 (France) 05
+  - 法国 (France) 06
+  - 法国 (France) 07
+  - 法国 (France) 08
+  - 法国 (France) 09
+  - 法国 (France) 10
+  - 法国 (France) 11
+  - 法国 (France) 12
+  - 法国 (France) 13
+  - 法国 (France) 14
+  - 法国 (France) 15
+  - 法国 (France) 16
+  - 法国 (France) 17
+  - 法国 (France) 18
+  - 法国 (France) 19
+  - 法国 (France) 20
+  - 法国 (France) 21
+  - 法国 (France) 22
+  - 法国 (France) 23
+  - 法国 (France) 24
+  - 法国 (France) 25
+  - 法国 (France) 26
+  - 法国 (France) 27
+  - 法国 (France) 28
+  - 法国 (France) 29
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 (France) 01
-  - 🇫🇷 法国 (France) 02
-  - 🇫🇷 法国 (France) 03
-  - 🇫🇷 法国 (France) 04
-  - 🇫🇷 法国 (France) 05
-  - 🇫🇷 法国 (France) 06
-  - 🇫🇷 法国 (France) 07
-  - 🇫🇷 法国 (France) 08
-  - 🇫🇷 法国 (France) 09
-  - 🇫🇷 法国 (France) 10
-  - 🇫🇷 法国 (France) 11
-  - 🇫🇷 法国 (France) 12
-  - 🇫🇷 法国 (France) 13
-  - 🇫🇷 法国 (France) 14
-  - 🇫🇷 法国 (France) 15
-  - 🇫🇷 法国 (France) 16
-  - 🇫🇷 法国 (France) 17
-  - 🇫🇷 法国 (France) 18
-  - 🇫🇷 法国 (France) 19
-  - 🇫🇷 法国 (France) 20
-  - 🇫🇷 法国 (France) 21
-  - 🇫🇷 法国 (France) 22
-  - 🇫🇷 法国 (France) 23
-  - 🇫🇷 法国 (France) 24
-  - 🇫🇷 法国 (France) 25
-  - 🇫🇷 法国 (France) 26
-  - 🇫🇷 法国 (France) 27
-  - 🇫🇷 法国 (France) 28
-  - 🇫🇷 法国 (France) 29
+  - 法国 (France) 01
+  - 法国 (France) 02
+  - 法国 (France) 03
+  - 法国 (France) 04
+  - 法国 (France) 05
+  - 法国 (France) 06
+  - 法国 (France) 07
+  - 法国 (France) 08
+  - 法国 (France) 09
+  - 法国 (France) 10
+  - 法国 (France) 11
+  - 法国 (France) 12
+  - 法国 (France) 13
+  - 法国 (France) 14
+  - 法国 (France) 15
+  - 法国 (France) 16
+  - 法国 (France) 17
+  - 法国 (France) 18
+  - 法国 (France) 19
+  - 法国 (France) 20
+  - 法国 (France) 21
+  - 法国 (France) 22
+  - 法国 (France) 23
+  - 法国 (France) 24
+  - 法国 (France) 25
+  - 法国 (France) 26
+  - 法国 (France) 27
+  - 法国 (France) 28
+  - 法国 (France) 29
 rules:
 - MATCH,PROXIES

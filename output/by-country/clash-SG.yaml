@@ -4,55 +4,16 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇬 新加坡 (Singapore) 01
+- name: 新加坡 (Singapore) 01
   type: vless
-  server: 142.91.102.35
+  server: 8.sahanwickramasinghe.me
   port: 443
   uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 8.sahanwickramasinghe.me
-- name: 🇸🇬 新加坡 (Singapore) 02
-  type: vless
-  server: 134.122.154.210
-  port: 443
-  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 03
-  type: vless
-  server: 134.122.154.210
-  port: 443
-  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 04
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 05
-  type: vless
-  server: 162.159.156.214
-  port: 8880
-  uuid: 8991a496-1baa-486f-9948-ffe44e68c072
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: soft-band-8da6.426.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 06
+  servername: zoom.us
+- name: 新加坡 (Singapore) 02
   type: vmess
   server: 149.88.23.202
   port: 18000
@@ -62,7 +23,55 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 07
+- name: 新加坡 (Singapore) 03
+  type: vless
+  server: 134.122.154.210
+  port: 443
+  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 新加坡 (Singapore) 04
+  type: ss
+  server: 51.79.159.206
+  port: 2083
+  cipher: 2022-blake3-aes-256-gcm
+  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:GwnAdcDzLc/VJxfSrsz2icwLQvyHJn1fRZA/4ZY2HTw=
+  udp: true
+- name: 新加坡 (Singapore) 05
+  type: vless
+  server: 142.91.102.35
+  port: 443
+  uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 8.sahanwickramasinghe.me
+- name: 新加坡 (Singapore) 06
+  type: vless
+  server: 134.122.154.210
+  port: 443
+  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 新加坡 (Singapore) 07
+  type: vless
+  server: 142.91.102.35
+  port: 443
+  uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 8.sahanwickramasinghe.me
+- name: 新加坡 (Singapore) 08
+  type: ss
+  server: 176.97.64.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: TFElG2FVqyqG
+  udp: true
+- name: 新加坡 (Singapore) 09
   type: vless
   server: 172.66.214.247
   port: 8880
@@ -75,7 +84,21 @@ proxies:
     path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
       Host: sweet-sun-c70f.317-ba5.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 08
+- name: 新加坡 (Singapore) 10
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nautica-cff.kloningstrife002.workers.dev
+  network: ws
+  ws-opts:
+    path: /138.2.74.219-28616
+    headers:
+      Host: nautica-cff.kloningstrife002.workers.dev
+- name: 新加坡 (Singapore) 11
   type: vless
   server: 134.122.154.210
   port: 443
@@ -83,16 +106,66 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 09
+- name: 新加坡 (Singapore) 12
   type: vless
-  server: 8.sahanwickramasinghe.me
+  server: 162.159.156.214
+  port: 8880
+  uuid: 8991a496-1baa-486f-9948-ffe44e68c072
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: soft-band-8da6.426.workers.dev
+- name: 新加坡 (Singapore) 13
+  type: vless
+  server: 134.122.154.210
   port: 443
-  uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
+  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 新加坡 (Singapore) 14
+  type: ss
+  server: 192.124.176.28
+  port: 8388
+  cipher: aes-256-gcm
+  password: jNy2XswI3dD0Upal
+  udp: true
+- name: 新加坡 (Singapore) 15
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 新加坡 (Singapore) 16
+  type: ss
+  server: 176.97.64.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: TFElG2FVqyqG
+  udp: true
+- name: 新加坡 (Singapore) 17
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 8.sahanwickramasinghe.me
-- name: 🇸🇬 新加坡 (Singapore) 10
+  servername: nautica-cff.kloningstrife002.workers.dev
+  network: ws
+  ws-opts:
+    path: /138.2.74.219-28616
+    headers:
+      Host: nautica-cff.kloningstrife002.workers.dev
+- name: 新加坡 (Singapore) 18
   type: vmess
   server: 149.88.23.202
   port: 18000
@@ -102,7 +175,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 11
+- name: 新加坡 (Singapore) 19
   type: vless
   server: 104.17.3.81
   port: 443
@@ -116,32 +189,7 @@ proxies:
     path: /138.2.74.219-28616
     headers:
       Host: nautica-cff.kloningstrife002.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 12
-  type: ss
-  server: 176.97.64.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: TFElG2FVqyqG
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 13
-  type: vless
-  server: 134.122.154.210
-  port: 443
-  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 14
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 15
+- name: 新加坡 (Singapore) 20
   type: vless
   server: 172.64.150.28
   port: 2082
@@ -154,36 +202,16 @@ proxies:
     path: /fp
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 16
-  type: ss
-  server: 146.235.20.146
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: dslI58qn4pSS0YD4peSYgUTbYtJypzIr+Wvt4uLXLNI=
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 17
-  type: ss
-  server: 176.97.64.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: TFElG2FVqyqG
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 18
+- name: 新加坡 (Singapore) 21
   type: vless
-  server: 134.122.154.210
+  server: 142.91.102.35
   port: 443
-  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
+  uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 19
-  type: ss
-  server: 51.79.159.206
-  port: 2083
-  cipher: 2022-blake3-aes-256-gcm
-  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:GwnAdcDzLc/VJxfSrsz2icwLQvyHJn1fRZA/4ZY2HTw=
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 20
+  servername: 8.sahanwickramasinghe.me
+- name: 新加坡 (Singapore) 22
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -198,50 +226,54 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇸🇬 新加坡 (Singapore) 01
-  - 🇸🇬 新加坡 (Singapore) 02
-  - 🇸🇬 新加坡 (Singapore) 03
-  - 🇸🇬 新加坡 (Singapore) 04
-  - 🇸🇬 新加坡 (Singapore) 05
-  - 🇸🇬 新加坡 (Singapore) 06
-  - 🇸🇬 新加坡 (Singapore) 07
-  - 🇸🇬 新加坡 (Singapore) 08
-  - 🇸🇬 新加坡 (Singapore) 09
-  - 🇸🇬 新加坡 (Singapore) 10
-  - 🇸🇬 新加坡 (Singapore) 11
-  - 🇸🇬 新加坡 (Singapore) 12
-  - 🇸🇬 新加坡 (Singapore) 13
-  - 🇸🇬 新加坡 (Singapore) 14
-  - 🇸🇬 新加坡 (Singapore) 15
-  - 🇸🇬 新加坡 (Singapore) 16
-  - 🇸🇬 新加坡 (Singapore) 17
-  - 🇸🇬 新加坡 (Singapore) 18
-  - 🇸🇬 新加坡 (Singapore) 19
-  - 🇸🇬 新加坡 (Singapore) 20
+  - 新加坡 (Singapore) 01
+  - 新加坡 (Singapore) 02
+  - 新加坡 (Singapore) 03
+  - 新加坡 (Singapore) 04
+  - 新加坡 (Singapore) 05
+  - 新加坡 (Singapore) 06
+  - 新加坡 (Singapore) 07
+  - 新加坡 (Singapore) 08
+  - 新加坡 (Singapore) 09
+  - 新加坡 (Singapore) 10
+  - 新加坡 (Singapore) 11
+  - 新加坡 (Singapore) 12
+  - 新加坡 (Singapore) 13
+  - 新加坡 (Singapore) 14
+  - 新加坡 (Singapore) 15
+  - 新加坡 (Singapore) 16
+  - 新加坡 (Singapore) 17
+  - 新加坡 (Singapore) 18
+  - 新加坡 (Singapore) 19
+  - 新加坡 (Singapore) 20
+  - 新加坡 (Singapore) 21
+  - 新加坡 (Singapore) 22
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 (Singapore) 01
-  - 🇸🇬 新加坡 (Singapore) 02
-  - 🇸🇬 新加坡 (Singapore) 03
-  - 🇸🇬 新加坡 (Singapore) 04
-  - 🇸🇬 新加坡 (Singapore) 05
-  - 🇸🇬 新加坡 (Singapore) 06
-  - 🇸🇬 新加坡 (Singapore) 07
-  - 🇸🇬 新加坡 (Singapore) 08
-  - 🇸🇬 新加坡 (Singapore) 09
-  - 🇸🇬 新加坡 (Singapore) 10
-  - 🇸🇬 新加坡 (Singapore) 11
-  - 🇸🇬 新加坡 (Singapore) 12
-  - 🇸🇬 新加坡 (Singapore) 13
-  - 🇸🇬 新加坡 (Singapore) 14
-  - 🇸🇬 新加坡 (Singapore) 15
-  - 🇸🇬 新加坡 (Singapore) 16
-  - 🇸🇬 新加坡 (Singapore) 17
-  - 🇸🇬 新加坡 (Singapore) 18
-  - 🇸🇬 新加坡 (Singapore) 19
-  - 🇸🇬 新加坡 (Singapore) 20
+  - 新加坡 (Singapore) 01
+  - 新加坡 (Singapore) 02
+  - 新加坡 (Singapore) 03
+  - 新加坡 (Singapore) 04
+  - 新加坡 (Singapore) 05
+  - 新加坡 (Singapore) 06
+  - 新加坡 (Singapore) 07
+  - 新加坡 (Singapore) 08
+  - 新加坡 (Singapore) 09
+  - 新加坡 (Singapore) 10
+  - 新加坡 (Singapore) 11
+  - 新加坡 (Singapore) 12
+  - 新加坡 (Singapore) 13
+  - 新加坡 (Singapore) 14
+  - 新加坡 (Singapore) 15
+  - 新加坡 (Singapore) 16
+  - 新加坡 (Singapore) 17
+  - 新加坡 (Singapore) 18
+  - 新加坡 (Singapore) 19
+  - 新加坡 (Singapore) 20
+  - 新加坡 (Singapore) 21
+  - 新加坡 (Singapore) 22
 rules:
 - MATCH,PROXIES
