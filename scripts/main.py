@@ -20,7 +20,6 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 SOURCE_URLS = [
     "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/v2ray-base64.txt",
-    "https://open.heleimail.workers.dev/",
 ]
 
 OUTPUT_DIR = "output"
