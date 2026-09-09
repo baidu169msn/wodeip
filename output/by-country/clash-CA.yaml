@@ -5,14 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 加拿大 (Canada) 01
-  type: vless
-  server: lizca2.footballfantasyforum.com
+  type: ss
+  server: ca225.vpnbook.com
   port: 443
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+  cipher: chacha20-ietf-poly1305
+  password: 3ssumf2
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lizca2.footballfantasyforum.com
 - name: 加拿大 (Canada) 02
   type: vless
   server: 66.70.179.198
@@ -24,7 +22,7 @@ proxies:
   reality-opts:
     public-key: wA5Vklw2gN0kMwC7JEmudiPbsKyTeSfbZNvpLiDUBEU
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 加拿大 (Canada) 03
   type: vless
   server: 66.70.179.198
@@ -47,15 +45,14 @@ proxies:
   skip-cert-verify: true
   servername: lizca2.footballfantasyforum.com
 - name: 加拿大 (Canada) 05
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: lizca2.footballfantasyforum.com
+  port: 443
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: lizca2.footballfantasyforum.com
 - name: 加拿大 (Canada) 06
   type: vmess
   server: 134.195.196.211
@@ -68,7 +65,7 @@ proxies:
   skip-cert-verify: true
 - name: 加拿大 (Canada) 07
   type: vmess
-  server: 23.162.200.198
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -107,8 +104,18 @@ proxies:
   reality-opts:
     public-key: wA5Vklw2gN0kMwC7JEmudiPbsKyTeSfbZNvpLiDUBEU
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 加拿大 (Canada) 11
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 加拿大 (Canada) 12
   type: vless
   server: 66.70.179.198
   port: 2053
@@ -120,9 +127,9 @@ proxies:
     public-key: wA5Vklw2gN0kMwC7JEmudiPbsKyTeSfbZNvpLiDUBEU
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 加拿大 (Canada) 12
+- name: 加拿大 (Canada) 13
   type: vmess
-  server: 134.195.196.211
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -130,7 +137,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 加拿大 (Canada) 13
+- name: 加拿大 (Canada) 14
   type: vless
   server: 130.94.115.231
   port: 2087
@@ -161,6 +168,7 @@ proxy-groups:
   - 加拿大 (Canada) 11
   - 加拿大 (Canada) 12
   - 加拿大 (Canada) 13
+  - 加拿大 (Canada) 14
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -179,5 +187,6 @@ proxy-groups:
   - 加拿大 (Canada) 11
   - 加拿大 (Canada) 12
   - 加拿大 (Canada) 13
+  - 加拿大 (Canada) 14
 rules:
 - MATCH,PROXIES

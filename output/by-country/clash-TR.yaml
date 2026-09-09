@@ -16,29 +16,17 @@ proxies:
     public-key: k5COjpopVNGzEuMb457zCrrZegSdBX-d8bg0G6HDsE4
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 土耳其 (Turkey) 02
-  type: vmess
-  server: pori.cjlife.ir
-  port: 110
-  uuid: 0accd97e-a16c-4d4f-b19a-883f7ea0f484
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 土耳其 (Turkey) 01
-  - 土耳其 (Turkey) 02
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 土耳其 (Turkey) 01
-  - 土耳其 (Turkey) 02
 rules:
 - MATCH,PROXIES

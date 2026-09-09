@@ -6,17 +6,29 @@ log-level: info
 proxies:
 - name: 中国香港 (Hong Kong) 01
   type: vless
-  server: 619c9ae2-tla000-tls5or-6gn6.hk3.hyhuawei.com
+  server: 58.153.148.126
   port: 443
-  uuid: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
+  uuid: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
     public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
   servername: updates.cdn-apple.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 中国台湾 (Taiwan) 02
+  type: vless
+  server: 118.167.200.67
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: firefox
+- name: 中国台湾 (Taiwan) 03
   type: vless
   server: 60.248.219.52
   port: 443
@@ -30,18 +42,6 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 60.248.219.52
-- name: 中国台湾 (Taiwan) 03
-  type: vless
-  server: 118.167.200.67
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
