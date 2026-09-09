@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 其他地区 (Other) 01
   type: vless
-  server: 104.21.33.59
+  server: 188.114.97.6
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 其他地区 (Other) 02
   type: vless
-  server: 104.21.70.21
+  server: 188.114.97.6
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -34,7 +34,35 @@ proxies:
       Host: jp3.yohototo.top
 - name: 其他地区 (Other) 03
   type: vless
-  server: 104.21.70.21
+  server: 172.67.156.147
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 其他地区 (Other) 04
+  type: vless
+  server: 162.159.254.3
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 其他地区 (Other) 05
+  type: vless
+  server: 172.67.217.240
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -54,6 +82,8 @@ proxy-groups:
   - 其他地区 (Other) 01
   - 其他地区 (Other) 02
   - 其他地区 (Other) 03
+  - 其他地区 (Other) 04
+  - 其他地区 (Other) 05
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +92,7 @@ proxy-groups:
   - 其他地区 (Other) 01
   - 其他地区 (Other) 02
   - 其他地区 (Other) 03
+  - 其他地区 (Other) 04
+  - 其他地区 (Other) 05
 rules:
 - MATCH,PROXIES
