@@ -17,40 +17,36 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 法国 (France) 02
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: gr068.techinyab.ir
+  port: 443
+  uuid: 9343f183-7a16-4bdd-9c65-b0c21feca40b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  reality-opts:
+    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
+  servername: play.google.com
+  client-fingerprint: random
 - name: 法国 (France) 03
   type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: c543f005-59f7-40c1-9ae6-37505691d5be
+  server: 51.38.82.1
+  port: 443
+  uuid: 9343f183-7a16-4bdd-9c65-b0c21feca40b
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: UKvonm_uE7TSwksQIVQuNYgYwmcidr_g4lDIE2JW_Ag
-  servername: www.google.com
+    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
+  servername: play.google.com
   client-fingerprint: chrome
 - name: 法国 (France) 04
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: c543f005-59f7-40c1-9ae6-37505691d5be
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: UKvonm_uE7TSwksQIVQuNYgYwmcidr_g4lDIE2JW_Ag
-  servername: www.google.com
-  client-fingerprint: chrome
 - name: 法国 (France) 05
   type: vless
   server: 54.37.136.194
@@ -62,20 +58,46 @@ proxies:
   reality-opts:
     public-key: 3nFTPdoFnfcwN1xnLwegJmBycLqRH6TRsrbD2XnQbjM
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 法国 (France) 06
   type: vless
-  server: 51.77.217.70
+  server: 54.37.136.194
   port: 2053
-  uuid: c543f005-59f7-40c1-9ae6-37505691d5be
+  uuid: 2211972b-a45a-4951-a640-6173d573e637
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: UKvonm_uE7TSwksQIVQuNYgYwmcidr_g4lDIE2JW_Ag
-  servername: www.google.com
-  client-fingerprint: chrome
+    public-key: 3nFTPdoFnfcwN1xnLwegJmBycLqRH6TRsrbD2XnQbjM
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 法国 (France) 07
+  type: vless
+  server: usejh2.neobo-tooth.ru
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: usejh2.neobo-tooth.ru
+- name: 法国 (France) 08
+  type: vless
+  server: usejh2.neobo-tooth.ru
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: usejh2.neobo-tooth.ru
+- name: 法国 (France) 09
   type: vless
   server: 45.144.28.39
   port: 2096
@@ -88,7 +110,7 @@ proxies:
     path: /
     headers:
       Host: 45.144.28.39
-- name: 法国 (France) 08
+- name: 法国 (France) 10
   type: vless
   server: usejh2.neobo-tooth.ru
   port: 2096
@@ -114,6 +136,8 @@ proxy-groups:
   - 法国 (France) 06
   - 法国 (France) 07
   - 法国 (France) 08
+  - 法国 (France) 09
+  - 法国 (France) 10
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -127,5 +151,7 @@ proxy-groups:
   - 法国 (France) 06
   - 法国 (France) 07
   - 法国 (France) 08
+  - 法国 (France) 09
+  - 法国 (France) 10
 rules:
 - MATCH,PROXIES

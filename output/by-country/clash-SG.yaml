@@ -15,18 +15,15 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 新加坡 (Singapore) 02
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 167.150.100.115
+  port: 27755
+  cipher: 2022-blake3-aes-256-gcm
+  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 新加坡 (Singapore) 03
   type: vmess
-  server: 149.88.23.202
+  server: 149.88.23.207
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -35,26 +32,13 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 新加坡 (Singapore) 04
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 168.107.91.1
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Ep1fuyrFAxEF87qg9q17V4YEGtS92m0xdJbwu6lwTF4=
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 新加坡 (Singapore) 05
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 新加坡 (Singapore) 06
   type: vmess
   server: ww11.levikogjgfdd.ir
   port: 18000
@@ -64,13 +48,61 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 新加坡 (Singapore) 06
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 新加坡 (Singapore) 07
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 新加坡 (Singapore) 08
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 新加坡 (Singapore) 09
   type: vmess
   server: 149.88.23.207
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 新加坡 (Singapore) 10
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 新加坡 (Singapore) 11
+  type: vless
+  server: 134.122.154.210
+  port: 443
+  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
   udp: true
   tls: false
   skip-cert-verify: true
@@ -86,6 +118,10 @@ proxy-groups:
   - 新加坡 (Singapore) 05
   - 新加坡 (Singapore) 06
   - 新加坡 (Singapore) 07
+  - 新加坡 (Singapore) 08
+  - 新加坡 (Singapore) 09
+  - 新加坡 (Singapore) 10
+  - 新加坡 (Singapore) 11
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -98,5 +134,9 @@ proxy-groups:
   - 新加坡 (Singapore) 05
   - 新加坡 (Singapore) 06
   - 新加坡 (Singapore) 07
+  - 新加坡 (Singapore) 08
+  - 新加坡 (Singapore) 09
+  - 新加坡 (Singapore) 10
+  - 新加坡 (Singapore) 11
 rules:
 - MATCH,PROXIES
