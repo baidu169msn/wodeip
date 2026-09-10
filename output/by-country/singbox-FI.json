@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "意大利 (Italy) 01",
-        "意大利 (Italy) 02"
+        "FI 01",
+        "FI 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "意大利 (Italy) 01",
-        "意大利 (Italy) 02"
+        "FI 01",
+        "FI 02"
       ],
       "url": "https://www.google.com/generate_204"
     },
