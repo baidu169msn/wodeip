@@ -4,24 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 西班牙 (Spain) 01
+- name: ZA 01
   type: ss
-  server: 108.181.121.226
-  port: 8388
+  server: 102.133.165.160
+  port: 16233
   cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  udp: true
+- name: ZA 02
+  type: ss
+  server: 102.37.156.224
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: aduB9HGxQHjA2SBMRjkHX6
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 西班牙 (Spain) 01
+  - ZA 01
+  - ZA 02
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 西班牙 (Spain) 01
+  - ZA 01
+  - ZA 02
 rules:
 - MATCH,PROXIES

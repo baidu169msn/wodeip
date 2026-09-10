@@ -6,35 +6,49 @@ log-level: info
 proxies:
 - name: 其他地区 (Other) 01
   type: vless
-  server: 104.18.38.47
+  server: fq.jp188.dpdns.org
   port: 443
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
+  uuid: 42c62a5a-cd31-4551-80ef-908732370287
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: mia1.pages.dev
+  servername: fq.jp188.dpdns.org
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: mia1.pages.dev
+      Host: fq.jp188.dpdns.org
 - name: 其他地区 (Other) 02
   type: vless
-  server: cf4.466688.xyz
+  server: fq.jp188.dpdns.org
   port: 443
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
+  uuid: 42c62a5a-cd31-4551-80ef-908732370287
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: mia0.pages.dev
+  servername: fq.jp188.dpdns.org
   network: ws
   ws-opts:
-    path: /web?ed=2560
+    path: /
     headers:
-      Host: mia0.pages.dev
+      Host: fq.jp188.dpdns.org
 - name: 其他地区 (Other) 03
   type: vless
-  server: 162.159.254.3
+  server: fq.jp188.dpdns.org
+  port: 443
+  uuid: 42c62a5a-cd31-4551-80ef-908732370287
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fq.jp188.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fq.jp188.dpdns.org
+- name: 其他地区 (Other) 04
+  type: vless
+  server: 172.67.217.240
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -46,90 +60,6 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 其他地区 (Other) 04
-  type: vless
-  server: fq.jp188.dpdns.org
-  port: 443
-  uuid: 42c62a5a-cd31-4551-80ef-908732370287
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fq.jp188.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fq.jp188.dpdns.org
-- name: 其他地区 (Other) 05
-  type: vless
-  server: 104.18.33.69
-  port: 2083
-  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mianfei-73q.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: mianfei-73q.pages.dev
-- name: 其他地区 (Other) 06
-  type: vless
-  server: fq.jp188.dpdns.org
-  port: 443
-  uuid: 42c62a5a-cd31-4551-80ef-908732370287
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fq.jp188.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fq.jp188.dpdns.org
-- name: 其他地区 (Other) 07
-  type: vless
-  server: fq.jp188.dpdns.org
-  port: 443
-  uuid: 42c62a5a-cd31-4551-80ef-908732370287
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fq.jp188.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fq.jp188.dpdns.org
-- name: 其他地区 (Other) 08
-  type: vless
-  server: 104.17.148.65
-  port: 2087
-  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mianfei-73q.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: mianfei-73q.pages.dev
-- name: 其他地区 (Other) 09
-  type: vless
-  server: 104.17.159.237
-  port: 2083
-  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mianfei-73q.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: mianfei-73q.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -139,11 +69,6 @@ proxy-groups:
   - 其他地区 (Other) 02
   - 其他地区 (Other) 03
   - 其他地区 (Other) 04
-  - 其他地区 (Other) 05
-  - 其他地区 (Other) 06
-  - 其他地区 (Other) 07
-  - 其他地区 (Other) 08
-  - 其他地区 (Other) 09
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -153,10 +78,5 @@ proxy-groups:
   - 其他地区 (Other) 02
   - 其他地区 (Other) 03
   - 其他地区 (Other) 04
-  - 其他地区 (Other) 05
-  - 其他地区 (Other) 06
-  - 其他地区 (Other) 07
-  - 其他地区 (Other) 08
-  - 其他地区 (Other) 09
 rules:
 - MATCH,PROXIES
