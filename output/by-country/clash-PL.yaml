@@ -4,32 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 中国香港 (Hong Kong) 01
-  type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
+- name: PL 01
+  type: vless
+  server: 178.95.170.83
+  port: 2087
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ''
+    path: /4bc027a44532
     headers:
-      Host: ''
+      Host: telegram-leviko_v2ray
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 中国香港 (Hong Kong) 01
+  - PL 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 中国香港 (Hong Kong) 01
+  - PL 01
 rules:
 - MATCH,PROXIES
