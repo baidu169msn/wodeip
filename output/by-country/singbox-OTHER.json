@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "其他地区 (Other) 01",
+        "其他地区 (Other) 02",
+        "其他地区 (Other) 03",
+        "其他地区 (Other) 04",
+        "其他地区 (Other) 05",
+        "其他地区 (Other) 06"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "其他地区 (Other) 01",
+        "其他地区 (Other) 02",
+        "其他地区 (Other) 03",
+        "其他地区 (Other) 04",
+        "其他地区 (Other) 05",
+        "其他地区 (Other) 06"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

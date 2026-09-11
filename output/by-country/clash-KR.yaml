@@ -5,111 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 韩国 (South Korea) 01
-  type: vless
-  server: 172.64.94.251
-  port: 8880
-  uuid: 9f4b666c-ecf1-49e9-8ab8-9ae2c4f4c613
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: withered-morning-aa51.64-c79.workers.dev
 - name: 韩国 (South Korea) 02
-  type: vless
-  server: 172.64.94.251
-  port: 8880
-  uuid: 9f4b666c-ecf1-49e9-8ab8-9ae2c4f4c613
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: withered-morning-aa51.64-c79.workers.dev
-- name: 韩国 (South Korea) 03
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 韩国 (South Korea) 04
-  type: vless
-  server: 172.64.80.1
-  port: 8880
-  uuid: 5bbf0601-8431-45f6-a4e9-a1e8b44c0055
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: misty-mouse-141d.177-f18.workers.dev
-- name: 韩国 (South Korea) 05
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 韩国 (South Korea) 06
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 韩国 (South Korea) 07
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 韩国 (South Korea) 08
-  type: vless
-  server: www.visa.com.sg
-  port: 8880
-  uuid: 81d55675-8570-4b40-9a77-3125339a0f86
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: spring-sound-8d8e.36-9ff.workers.dev
-- name: 韩国 (South Korea) 09
-  type: vless
-  server: www.visa.com.sg
-  port: 8880
-  uuid: 81d55675-8570-4b40-9a77-3125339a0f86
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: spring-sound-8d8e.36-9ff.workers.dev
-- name: 韩国 (South Korea) 10
   type: vmess
   server: 140.238.2.250
   port: 443
@@ -126,14 +31,6 @@ proxy-groups:
   - AUTO
   - 韩国 (South Korea) 01
   - 韩国 (South Korea) 02
-  - 韩国 (South Korea) 03
-  - 韩国 (South Korea) 04
-  - 韩国 (South Korea) 05
-  - 韩国 (South Korea) 06
-  - 韩国 (South Korea) 07
-  - 韩国 (South Korea) 08
-  - 韩国 (South Korea) 09
-  - 韩国 (South Korea) 10
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -141,13 +38,5 @@ proxy-groups:
   proxies:
   - 韩国 (South Korea) 01
   - 韩国 (South Korea) 02
-  - 韩国 (South Korea) 03
-  - 韩国 (South Korea) 04
-  - 韩国 (South Korea) 05
-  - 韩国 (South Korea) 06
-  - 韩国 (South Korea) 07
-  - 韩国 (South Korea) 08
-  - 韩国 (South Korea) 09
-  - 韩国 (South Korea) 10
 rules:
 - MATCH,PROXIES
