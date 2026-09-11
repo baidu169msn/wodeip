@@ -4,11 +4,11 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: FI 01
+- name: 阿联酋 (UAE) 01
   type: vless
-  server: italic.dearhossein-taktaz.ir
-  port: 8080
-  uuid: 83fd52e3-c8d4-4ba6-abf4-445b99fec0f0
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,12 +16,12 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: italic.dearhossein-taktaz.ir
-- name: FI 02
+      Host: uae.unixzone.us
+- name: 阿联酋 (UAE) 02
   type: vless
-  server: italic.dearhossein-taktaz.ir
-  port: 8080
-  uuid: 83fd52e3-c8d4-4ba6-abf4-445b99fec0f0
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
   tls: false
   skip-cert-verify: true
@@ -29,20 +29,20 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: italic.dearhossein-taktaz.ir
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - FI 01
-  - FI 02
+  - 阿联酋 (UAE) 01
+  - 阿联酋 (UAE) 02
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - FI 01
-  - FI 02
+  - 阿联酋 (UAE) 01
+  - 阿联酋 (UAE) 02
 rules:
 - MATCH,PROXIES
