@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: PL 01
   type: vless
-  server: 94.183.209.59
+  server: 94.183.209.43
   port: 443
-  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
+  uuid: 5e7ecc47-e424-4653-876e-c7515a2c82b4
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,7 +16,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 94.183.209.59
+      Host: 94.183.209.43
 proxy-groups:
 - name: PROXIES
   type: select

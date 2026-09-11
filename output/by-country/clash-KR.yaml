@@ -6,22 +6,22 @@ log-level: info
 proxies:
 - name: 韩国 (South Korea) 01
   type: vless
-  server: www.baipiao.eu.org
+  server: 172.64.94.251
   port: 8880
-  uuid: 8546bcef-8456-41a2-82bc-d2231b42b769
+  uuid: 9f4b666c-ecf1-49e9-8ab8-9ae2c4f4c613
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+    path: /
     headers:
-      Host: small-tree-9ec0.84-971.workers.dev
+      Host: withered-morning-aa51.64-c79.workers.dev
 - name: 韩国 (South Korea) 02
   type: vless
-  server: 162.159.140.78
+  server: 172.64.94.251
   port: 8880
-  uuid: c18fd69e-92ba-446e-981b-213dbb551593
+  uuid: 9f4b666c-ecf1-49e9-8ab8-9ae2c4f4c613
   udp: true
   tls: false
   skip-cert-verify: true
@@ -29,20 +29,17 @@ proxies:
   ws-opts:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: billowing-wind-5b29.133-323.workers.dev
+      Host: withered-morning-aa51.64-c79.workers.dev
 - name: 韩国 (South Korea) 03
-  type: vless
-  server: 172.64.88.251
-  port: 8880
-  uuid: 87a5d3eb-afd4-4193-9787-c54ef7c26c8c
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /+
-    headers:
-      Host: patient-cake-39c7.44-e7a.workers.dev
 - name: 韩国 (South Korea) 04
   type: vless
   server: 172.64.80.1
@@ -57,23 +54,40 @@ proxies:
     headers:
       Host: misty-mouse-141d.177-f18.workers.dev
 - name: 韩国 (South Korea) 05
-  type: vless
-  server: 104.16.100.66
-  port: 8880
-  uuid: 92a4cb10-228f-4239-8c63-c566b20a9167
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: square-waterfall-c1de.199-82d.workers.dev
 - name: 韩国 (South Korea) 06
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 韩国 (South Korea) 07
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 韩国 (South Korea) 08
   type: vless
-  server: 172.64.94.251
+  server: www.visa.com.sg
   port: 8880
-  uuid: 9f4b666c-ecf1-49e9-8ab8-9ae2c4f4c613
+  uuid: 81d55675-8570-4b40-9a77-3125339a0f86
   udp: true
   tls: false
   skip-cert-verify: true
@@ -81,12 +95,12 @@ proxies:
   ws-opts:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: withered-morning-aa51.64-c79.workers.dev
-- name: 韩国 (South Korea) 07
+      Host: spring-sound-8d8e.36-9ff.workers.dev
+- name: 韩国 (South Korea) 09
   type: vless
-  server: 172.64.94.251
+  server: www.visa.com.sg
   port: 8880
-  uuid: 9f4b666c-ecf1-49e9-8ab8-9ae2c4f4c613
+  uuid: 81d55675-8570-4b40-9a77-3125339a0f86
   udp: true
   tls: false
   skip-cert-verify: true
@@ -94,33 +108,17 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: withered-morning-aa51.64-c79.workers.dev
-- name: 韩国 (South Korea) 08
-  type: vless
-  server: 104.16.106.213
-  port: 8880
-  uuid: 6b89f475-913c-4381-a102-f5e06a129685
+      Host: spring-sound-8d8e.36-9ff.workers.dev
+- name: 韩国 (South Korea) 10
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: proud-dawn-56f1.125-85b.workers.dev
-- name: 韩国 (South Korea) 09
-  type: vless
-  server: 130.94.29.111
-  port: 2087
-  uuid: 84da6391-1539-4583-a3d9-d6efd796b4d6
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /e17586a75123
-    headers:
-      Host: 130.94.29.111
 proxy-groups:
 - name: PROXIES
   type: select
@@ -135,6 +133,7 @@ proxy-groups:
   - 韩国 (South Korea) 07
   - 韩国 (South Korea) 08
   - 韩国 (South Korea) 09
+  - 韩国 (South Korea) 10
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -149,5 +148,6 @@ proxy-groups:
   - 韩国 (South Korea) 07
   - 韩国 (South Korea) 08
   - 韩国 (South Korea) 09
+  - 韩国 (South Korea) 10
 rules:
 - MATCH,PROXIES

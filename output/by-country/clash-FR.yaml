@@ -6,143 +6,42 @@ log-level: info
 proxies:
 - name: 法国 (France) 01
   type: vless
-  server: shop.theawesomenpl.ru
-  port: 50715
-  uuid: b761689d-592e-46b2-b704-af7a9110b0ac
+  server: 45.144.28.39
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: YyF_0swCrKvtCDKmnGhz9UshtvQxUbpemVO8d_Bj6Ro
-  servername: www.nvidia.com
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 45.144.28.39
 - name: 法国 (France) 02
   type: vless
-  server: shop.theawesomenpl.ru
-  port: 50715
-  uuid: b761689d-592e-46b2-b704-af7a9110b0ac
+  server: 45.144.28.39
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: YyF_0swCrKvtCDKmnGhz9UshtvQxUbpemVO8d_Bj6Ro
-  servername: www.nvidia.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 45.144.28.39
 - name: 法国 (France) 03
   type: vless
-  server: shop.theawesomenpl.ru
-  port: 50715
-  uuid: b761689d-592e-46b2-b704-af7a9110b0ac
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: YyF_0swCrKvtCDKmnGhz9UshtvQxUbpemVO8d_Bj6Ro
-  servername: www.nvidia.com
-  client-fingerprint: qq
-- name: 法国 (France) 04
-  type: vless
-  server: shop.theawesomenpl.ru
-  port: 50715
-  uuid: b761689d-592e-46b2-b704-af7a9110b0ac
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: YyF_0swCrKvtCDKmnGhz9UshtvQxUbpemVO8d_Bj6Ro
-  servername: www.nvidia.com
-  client-fingerprint: ios
-- name: 法国 (France) 05
-  type: vless
-  server: shop.theawesomenpl.ru
-  port: 50715
-  uuid: b761689d-592e-46b2-b704-af7a9110b0ac
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: YyF_0swCrKvtCDKmnGhz9UshtvQxUbpemVO8d_Bj6Ro
-  servername: www.nvidia.com
-  client-fingerprint: chrome
-- name: 法国 (France) 06
-  type: vless
-  server: 54.37.136.194
+  server: 51.77.217.70
   port: 2053
-  uuid: 2211972b-a45a-4951-a640-6173d573e637
+  uuid: c543f005-59f7-40c1-9ae6-37505691d5be
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 3nFTPdoFnfcwN1xnLwegJmBycLqRH6TRsrbD2XnQbjM
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 法国 (France) 07
-  type: vless
-  server: 35.181.15.183
-  port: 22223
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 法国 (France) 08
-  type: vless
-  server: 45.144.28.39
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 45.144.28.39
-- name: 法国 (France) 09
-  type: vless
-  server: 45.144.28.39
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 45.144.28.39
-- name: 法国 (France) 10
-  type: vless
-  server: usejh2.neobo-tooth.ru
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: usejh2.neobo-tooth.ru
-- name: 法国 (France) 11
-  type: vless
-  server: 35.181.15.183
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 法国 (France) 12
-  type: vless
-  server: shop.theawesomenpl.ru
-  port: 50715
-  uuid: b761689d-592e-46b2-b704-af7a9110b0ac
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: YyF_0swCrKvtCDKmnGhz9UshtvQxUbpemVO8d_Bj6Ro
-  servername: www.nvidia.com
-  client-fingerprint: firefox
+    public-key: UKvonm_uE7TSwksQIVQuNYgYwmcidr_g4lDIE2JW_Ag
+  servername: www.google.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -151,15 +50,6 @@ proxy-groups:
   - 法国 (France) 01
   - 法国 (France) 02
   - 法国 (France) 03
-  - 法国 (France) 04
-  - 法国 (France) 05
-  - 法国 (France) 06
-  - 法国 (France) 07
-  - 法国 (France) 08
-  - 法国 (France) 09
-  - 法国 (France) 10
-  - 法国 (France) 11
-  - 法国 (France) 12
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -168,14 +58,5 @@ proxy-groups:
   - 法国 (France) 01
   - 法国 (France) 02
   - 法国 (France) 03
-  - 法国 (France) 04
-  - 法国 (France) 05
-  - 法国 (France) 06
-  - 法国 (France) 07
-  - 法国 (France) 08
-  - 法国 (France) 09
-  - 法国 (France) 10
-  - 法国 (France) 11
-  - 法国 (France) 12
 rules:
 - MATCH,PROXIES
