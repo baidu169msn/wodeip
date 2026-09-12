@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 其他地区 (Other) 01
   type: vless
-  server: 104.21.33.59
+  server: 104.21.70.21
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
