@@ -6,16 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "韩国 (South Korea) 01",
-        "韩国 (South Korea) 02"
+        "EE 01",
+        "EE 02",
+        "EE 03",
+        "EE 04"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "韩国 (South Korea) 01",
-        "韩国 (South Korea) 02"
+        "EE 01",
+        "EE 02",
+        "EE 03",
+        "EE 04"
       ],
       "url": "https://www.google.com/generate_204"
     },
