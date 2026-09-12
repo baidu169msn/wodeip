@@ -5,36 +5,43 @@ mode: rule
 log-level: info
 proxies:
 - name: 法国 (France) 01
-  type: vless
-  server: 15.237.145.224
-  port: 22223
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 法国 (France) 02
-  type: vless
-  server: 51.38.82.1
-  port: 443
-  uuid: 9343f183-7a16-4bdd-9c65-b0c21feca40b
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
-  servername: play.google.com
-  client-fingerprint: chrome
+  servername: ''
+- name: 法国 (France) 02
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 - name: 法国 (France) 03
   type: vless
-  server: 15.237.145.224
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  server: 45.144.28.39
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 45.144.28.39
 - name: 法国 (France) 04
   type: vless
-  server: 45.144.28.39
+  server: usejh2.neobo-tooth.ru
   port: 2096
   uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
   udp: true
@@ -44,20 +51,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 45.144.28.39
-- name: 法国 (France) 05
-  type: vless
-  server: 45.144.28.39
-  port: 2096
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 45.144.28.39
+      Host: usejh2.neobo-tooth.ru
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,7 +61,6 @@ proxy-groups:
   - 法国 (France) 02
   - 法国 (France) 03
   - 法国 (France) 04
-  - 法国 (France) 05
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,6 +70,5 @@ proxy-groups:
   - 法国 (France) 02
   - 法国 (France) 03
   - 法国 (France) 04
-  - 法国 (France) 05
 rules:
 - MATCH,PROXIES
