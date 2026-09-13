@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 美国 (United States) 01
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -15,6 +15,58 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 02
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 03
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 04
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 05
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 06
+  type: vless
+  server: 198.251.78.29
+  port: 2053
+  uuid: c423cc1b-f88e-421c-9a16-c480d84da20f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 美国 (United States) 07
   type: vless
   server: fq.jp188.dpdns.org
   port: 443
@@ -28,122 +80,9 @@ proxies:
     path: /fp=chrome
     headers:
       Host: fq.jp188.dpdns.org
-- name: 美国 (United States) 03
-  type: vless
-  server: 162.159.45.19
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls+
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 美国 (United States) 04
-  type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: c50a60fe-07eb-4950-85ea-ee9c15b32c7d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 美国 (United States) 05
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 06
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 07
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 美国 (United States) 08
   type: vless
-  server: fq.jp188.dpdns.org
-  port: 443
-  uuid: 42c62a5a-cd31-4551-80ef-908732370287
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fq.jp188.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fq.jp188.dpdns.org
-- name: 美国 (United States) 09
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 10
-  type: vless
-  server: 194.55.189.249
-  port: 40443
-  uuid: 8212a50b-25bf-4739-bba1-aaffb5ffc84c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: KCbW84C8h2Ja01LS0Ro8EpLLfzMTjs11t1ldDWLd5zo
-  servername: deepl.com
-  client-fingerprint: random
-- name: 美国 (United States) 11
-  type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 4b2fbd30-1a64-4b27-aea9-713d62c9e69b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
-  servername: tradingview.com
-  client-fingerprint: chrome
-- name: 美国 (United States) 12
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 13
-  type: vless
-  server: 104.18.33.69
+  server: 104.17.210.74
   port: 2083
   uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
   udp: true
@@ -155,9 +94,9 @@ proxies:
     path: /
     headers:
       Host: mianfei-73q.pages.dev
-- name: 美国 (United States) 14
+- name: 美国 (United States) 09
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -165,43 +104,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 美国 (United States) 15
-  type: vless
-  server: 188.114.97.6
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 美国 (United States) 16
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 17
-  type: vless
-  server: 172.64.42.85
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 美国 (United States) 18
+- name: 美国 (United States) 10
   type: vmess
   server: 82.198.246.97
   port: 180
@@ -211,9 +114,91 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 美国 (United States) 19
+- name: 美国 (United States) 11
   type: vmess
   server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 12
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 13
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 14
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 15
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 16
+  type: vless
+  server: 194.55.189.249
+  port: 40443
+  uuid: 8212a50b-25bf-4739-bba1-aaffb5ffc84c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: KCbW84C8h2Ja01LS0Ro8EpLLfzMTjs11t1ldDWLd5zo
+  servername: deepl.com
+  client-fingerprint: random
+- name: 美国 (United States) 17
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 18
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 19
+  type: vmess
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -232,39 +217,42 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 21
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 22
   type: vless
-  server: fq.jp188.dpdns.org
-  port: 443
-  uuid: 42c62a5a-cd31-4551-80ef-908732370287
+  server: 104.26.0.113
+  port: 2053
+  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fq.jp188.dpdns.org
+  servername: mianfei-73q.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: fq.jp188.dpdns.org
-- name: 美国 (United States) 22
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+      Host: mianfei-73q.pages.dev
 - name: 美国 (United States) 23
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 108.162.198.178
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 美国 (United States) 24
   type: vmess
   server: 82.198.246.97
@@ -277,9 +265,9 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 25
   type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   udp: true
@@ -287,7 +275,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 26
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -296,15 +284,22 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 27
-  type: ss
-  server: 38.180.135.156
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: YHtesZ0qvgtg
+  type: vless
+  server: 104.19.52.183
+  port: 2087
+  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mianfei-73q.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: mianfei-73q.pages.dev
 - name: 美国 (United States) 28
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -313,6 +308,20 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 29
+  type: vless
+  server: 104.17.159.237
+  port: 2083
+  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mianfei-73q.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: mianfei-73q.pages.dev
+- name: 美国 (United States) 30
   type: vmess
   server: 82.198.246.37
   port: 180
@@ -322,19 +331,9 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 美国 (United States) 30
-  type: vmess
-  server: 165.140.216.142
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 美国 (United States) 31
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -344,9 +343,9 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 32
   type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   udp: true
@@ -373,18 +372,15 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 35
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 15.204.247.244
+  port: 4444
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 美国 (United States) 36
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -393,18 +389,22 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 37
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: fq.jp188.dpdns.org
+  port: 443
+  uuid: 42c62a5a-cd31-4551-80ef-908732370287
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: fq.jp188.dpdns.org
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fq.jp188.dpdns.org
 - name: 美国 (United States) 38
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -413,18 +413,22 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 39
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 104.19.149.119
+  port: 2087
+  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: mianfei-73q.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: mianfei-73q.pages.dev
 - name: 美国 (United States) 40
   type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -434,7 +438,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 41
   type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -443,46 +447,18 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 42
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 194.55.189.249
+  port: 40443
+  uuid: 8212a50b-25bf-4739-bba1-aaffb5ffc84c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: KCbW84C8h2Ja01LS0Ro8EpLLfzMTjs11t1ldDWLd5zo
+  servername: deepl.com
+  client-fingerprint: chrome
 - name: 美国 (United States) 43
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 44
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 45
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 46
   type: vmess
   server: 82.198.246.233
   port: 180
@@ -492,6 +468,41 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 美国 (United States) 44
+  type: vless
+  server: 192.3.247.109
+  port: 32132
+  uuid: 23504a34-5216-4e10-86a0-b6a70976f996
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Hv-DNm962AntB7xyaLnaHvui6rOJ092OFOY2E7TqyR0
+  servername: apple.com
+  client-fingerprint: chrome
+- name: 美国 (United States) 45
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 46
+  type: vless
+  server: 188.114.97.6
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
 - name: 美国 (United States) 47
   type: vmess
   server: 82.198.246.97
@@ -514,7 +525,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 49
   type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -523,18 +534,15 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 50
-  type: vless
-  server: 172.64.154.8
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 美国 (United States) 51
   type: vmess
   server: 82.198.246.97
@@ -557,7 +565,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 53
   type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -576,59 +584,32 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 55
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 56
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 57
   type: vless
-  server: 162.159.0.53
-  port: 80
+  server: 108.162.198.178
+  port: 2086
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 美国 (United States) 58
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+- name: 美国 (United States) 56
+  type: vless
+  server: neth8.lunariai.ru
+  port: 443
+  uuid: c21631d5-36c9-4664-b575-97eca17456be
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 美国 (United States) 59
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 60
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: neth8.lunariai.ru
+- name: 美国 (United States) 57
   type: vless
   server: fq.jp188.dpdns.org
   port: 443
@@ -642,9 +623,9 @@ proxies:
     path: /
     headers:
       Host: fq.jp188.dpdns.org
-- name: 美国 (United States) 61
+- name: 美国 (United States) 58
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -652,6 +633,40 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 美国 (United States) 59
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 60
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 61
+  type: vless
+  server: 172.67.77.77
+  port: 443
+  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mianfei-73q.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: mianfei-73q.pages.dev
 - name: 美国 (United States) 62
   type: vmess
   server: 82.198.246.250
@@ -663,22 +678,8 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 63
-  type: vless
-  server: fq.jp188.dpdns.org
-  port: 443
-  uuid: 42c62a5a-cd31-4551-80ef-908732370287
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fq.jp188.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fq.jp188.dpdns.org
-- name: 美国 (United States) 64
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -686,23 +687,31 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 美国 (United States) 65
+- name: 美国 (United States) 64
   type: vless
-  server: fq.jp188.dpdns.org
-  port: 443
-  uuid: 42c62a5a-cd31-4551-80ef-908732370287
+  server: 198.251.78.29
+  port: 2053
+  uuid: c423cc1b-f88e-421c-9a16-c480d84da20f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fq.jp188.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fq.jp188.dpdns.org
+  reality-opts:
+    public-key: Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 美国 (United States) 65
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 美国 (United States) 66
   type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -722,7 +731,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 68
   type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -732,7 +741,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 69
   type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -742,7 +751,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 70
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -752,7 +761,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 71
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -761,18 +770,34 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 72
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 172.64.229.170
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls+
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 美国 (United States) 73
+  type: vless
+  server: 162.159.45.19
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 美国 (United States) 74
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -780,23 +805,9 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 美国 (United States) 74
-  type: vless
-  server: 104.17.159.237
-  port: 2083
-  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mianfei-73q.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: mianfei-73q.pages.dev
 - name: 美国 (United States) 75
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -806,7 +817,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 76
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -816,7 +827,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 77
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -826,15 +837,25 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 78
   type: vmess
-  server: 165.140.216.142
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 79
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 80
   type: vmess
   server: 82.198.246.233
   port: 180
@@ -844,21 +865,11 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 美国 (United States) 80
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 美国 (United States) 81
   type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 216.106.185.141
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
   udp: true
@@ -866,7 +877,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 82
   type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -876,9 +887,9 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 83
   type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 216.106.185.141
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
   udp: true
@@ -896,57 +907,50 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 85
   type: vless
-  server: 38.246.229.58
-  port: 47642
-  uuid: c538c9dd-2e3f-488f-a8ca-ac5b7c0773f3
+  server: 162.159.39.218
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 9mg1QdPctekP9woKygHzBCxb8Hw2QTICXROQiiJB6Ag
-  servername: sega.com
-  client-fingerprint: ios
-- name: 美国 (United States) 86
-  type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 4b2fbd30-1a64-4b27-aea9-713d62c9e69b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
-  servername: tradingview.com
-  client-fingerprint: chrome
-- name: 美国 (United States) 87
-  type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: ab4f3d6c-674d-4e4d-b3fb-1f40d8ee2c18
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 美国 (United States) 88
-  type: vless
-  server: 104.21.91.57
-  port: 443
-  uuid: 42c62a5a-cd31-4551-80ef-908732370287
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fq.jp188.dpdns.org
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
     headers:
-      Host: fq.jp188.dpdns.org
-- name: 美国 (United States) 89
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 美国 (United States) 86
+  type: vmess
+  server: 165.140.216.142
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 87
   type: vmess
   server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 88
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 89
+  type: vmess
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -956,7 +960,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 90
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -966,7 +970,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 91
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -976,7 +980,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 92
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -986,7 +990,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 93
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -996,7 +1000,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 94
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -1005,28 +1009,34 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 95
-  type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 104.18.47.113
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 美国 (United States) 96
-  type: vmess
-  server: 216.106.185.141
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 162.159.39.218
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 美国 (United States) 97
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -1045,36 +1055,18 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 99
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 31.58.50.200
+  port: 8443
+  uuid: 137c30a7-d172-4b6c-a97b-c3a6a4fda042
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
+  servername: tradingview.com
+  client-fingerprint: firefox
 - name: 美国 (United States) 100
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 101
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 102
   type: vless
   server: fq.jp188.dpdns.org
   port: 443
@@ -1088,9 +1080,29 @@ proxies:
     path: /
     headers:
       Host: fq.jp188.dpdns.org
+- name: 美国 (United States) 101
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 102
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 美国 (United States) 103
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -1109,15 +1121,18 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 105
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 178.95.170.115
+  port: 2087
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /4bc027a44532
+    headers:
+      Host: telegram-leviko_v2ray
 - name: 美国 (United States) 106
   type: vmess
   server: 82.198.246.97
@@ -1130,7 +1145,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 107
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -1139,15 +1154,18 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 108
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 178.95.170.83
+  port: 2087
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /4bc027a44532
+    headers:
+      Host: 178.95.170.83
 - name: 美国 (United States) 109
   type: vmess
   server: 82.198.246.97
@@ -1160,27 +1178,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 110
   type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 111
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 112
-  type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -1188,19 +1186,40 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 美国 (United States) 113
+- name: 美国 (United States) 111
   type: vless
-  server: 104.18.46.46
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 104.17.148.65
+  port: 2087
+  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mianfei-73q.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: mianfei-73q.pages.dev
+- name: 美国 (United States) 112
+  type: vmess
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 美国 (United States) 113
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 美国 (United States) 114
   type: vmess
   server: 82.198.246.97
@@ -1223,7 +1242,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 116
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -1233,7 +1252,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 117
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -1243,32 +1262,34 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 118
   type: vless
-  server: 104.18.34.14
-  port: 80
+  server: 104.21.91.57
+  port: 443
+  uuid: 42c62a5a-cd31-4551-80ef-908732370287
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fq.jp188.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fq.jp188.dpdns.org
+- name: 美国 (United States) 119
+  type: vless
+  server: 188.114.97.6
+  port: 2095
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls+
+    path: /?ed=2560
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 美国 (United States) 119
-  type: vless
-  server: 194.55.189.249
-  port: 40443
-  uuid: 8212a50b-25bf-4739-bba1-aaffb5ffc84c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: KCbW84C8h2Ja01LS0Ro8EpLLfzMTjs11t1ldDWLd5zo
-  servername: deepl.com
-  client-fingerprint: chrome
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
 - name: 美国 (United States) 120
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -1278,7 +1299,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 121
   type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -1288,7 +1309,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 122
   type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -1298,7 +1319,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 123
   type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -1308,7 +1329,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 124
   type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -1317,30 +1338,25 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 125
-  type: vless
-  server: 198.251.78.29
-  port: 2053
-  uuid: c423cc1b-f88e-421c-9a16-c480d84da20f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 美国 (United States) 126
-  type: vless
-  server: 172.64.229.2
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 美国 (United States) 126
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 美国 (United States) 127
   type: vmess
   server: 82.198.246.250
@@ -1353,7 +1369,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 128
   type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -1363,7 +1379,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 129
   type: vless
-  server: 188.114.97.6
+  server: 162.159.38.127
   port: 2082
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
@@ -1371,9 +1387,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /?ed=2560security=tls+
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 美国 (United States) 130
   type: vmess
   server: 82.198.246.97
@@ -1385,29 +1401,9 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 131
-  type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 132
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 133
   type: vless
-  server: 172.64.32.108
-  port: 8080
+  server: 162.159.24.131
+  port: 8880
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -1417,7 +1413,17 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 美国 (United States) 134
+- name: 美国 (United States) 132
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 133
   type: vmess
   server: 82.198.246.233
   port: 180
@@ -1427,56 +1433,62 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 美国 (United States) 134
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 美国 (United States) 135
   type: vmess
-  server: 216.106.183.35
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 1
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 136
   type: vless
-  server: unitedstates-sgood.wopd.butnorwa.butter.silicore.ir
-  port: 9000
-  uuid: b33e4571-de3f-4249-b246-b2acf3db2f36
+  server: 162.159.48.32
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM
-  servername: sheets.google.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 美国 (United States) 137
   type: vless
-  server: 104.17.148.65
-  port: 2087
-  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
+  server: 172.64.229.2
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: mianfei-73q.pages.dev
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls+
     headers:
-      Host: mianfei-73q.pages.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 美国 (United States) 138
-  type: vless
-  server: fq.jp188.dpdns.org
-  port: 443
-  uuid: 42c62a5a-cd31-4551-80ef-908732370287
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: fq.jp188.dpdns.org
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fq.jp188.dpdns.org
 - name: 美国 (United States) 139
   type: vmess
   server: 82.198.246.37
@@ -1499,7 +1511,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 141
   type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -1508,20 +1520,18 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 142
-  type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 2733bd9c-4f35-45f2-a59f-e67b618664f2
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
-  servername: tradingview.com
-  client-fingerprint: firefox
 - name: 美国 (United States) 143
   type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -1540,18 +1550,21 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 145
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 172.64.158.146
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 美国 (United States) 146
   type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -1561,7 +1574,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 147
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -1581,7 +1594,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 149
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -1590,32 +1603,28 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 150
-  type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 315adcfd-5eab-4041-b876-f9cc8e2aa6c2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 美国 (United States) 151
-  type: vless
-  server: 198.251.78.29
-  port: 2053
-  uuid: c423cc1b-f88e-421c-9a16-c480d84da20f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 美国 (United States) 152
   type: vmess
   server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 151
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 152
+  type: vmess
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -1625,9 +1634,9 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 153
   type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   udp: true
@@ -1635,7 +1644,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 154
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -1645,9 +1654,9 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 155
   type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   udp: true
@@ -1655,7 +1664,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 156
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -1665,7 +1674,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 157
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -1675,7 +1684,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 158
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -1685,29 +1694,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 159
   type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 160
-  type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 77d4bb66-82c8-4511-98e0-44edb2da8978
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 美国 (United States) 161
-  type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -1715,22 +1702,16 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 美国 (United States) 162
-  type: vless
-  server: 162.159.45.19
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+- name: 美国 (United States) 160
+  type: ss
+  server: 38.180.135.156
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: YHtesZ0qvgtg
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 美国 (United States) 163
+- name: 美国 (United States) 161
   type: vmess
-  server: 67.220.85.46
+  server: 84.17.41.2
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -1738,9 +1719,29 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 美国 (United States) 162
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 163
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 美国 (United States) 164
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -1749,245 +1750,13 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 165
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 166
-  type: vless
-  server: 198.251.78.29
-  port: 2053
-  uuid: c423cc1b-f88e-421c-9a16-c480d84da20f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 美国 (United States) 167
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 168
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 169
-  type: vless
-  server: 188.114.97.6
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 美国 (United States) 170
-  type: vless
-  server: fq.jp188.dpdns.org
-  port: 443
-  uuid: 42c62a5a-cd31-4551-80ef-908732370287
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fq.jp188.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fq.jp188.dpdns.org
-- name: 美国 (United States) 171
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 172
-  type: vmess
-  server: 165.140.216.142
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 173
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 174
-  type: vless
-  server: 172.64.42.85
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 美国 (United States) 175
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 176
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 177
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 178
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 179
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 180
-  type: vless
-  server: 162.159.39.218
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 美国 (United States) 181
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 182
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 183
-  type: vless
-  server: 104.18.46.46
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls+
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 美国 (United States) 184
-  type: vless
-  server: 104.17.148.65
-  port: 2087
-  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mianfei-73q.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: mianfei-73q.pages.dev
-- name: 美国 (United States) 185
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 186
   type: ss
-  server: 15.204.247.206
-  port: 4444
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
+  server: 31.76.82.131
+  port: 34260
+  cipher: chacha20-ietf-poly1305
+  password: cTAObwg4OWWXkZJQs0ZdgC
   udp: true
-- name: 美国 (United States) 187
+- name: 美国 (United States) 166
   type: vmess
   server: 82.198.246.250
   port: 180
@@ -1997,95 +1766,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 美国 (United States) 188
-  type: vless
-  server: 198.251.78.29
-  port: 2053
-  uuid: c423cc1b-f88e-421c-9a16-c480d84da20f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 美国 (United States) 189
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 190
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 191
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 192
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 193
-  type: vless
-  server: 172.64.229.170
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 美国 (United States) 194
-  type: vless
-  server: 188.114.97.6
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 美国 (United States) 195
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 196
+- name: 美国 (United States) 167
   type: vless
   server: 104.17.177.165
   port: 2087
@@ -2099,145 +1780,21 @@ proxies:
     path: /
     headers:
       Host: mianfei-73q.pages.dev
-- name: 美国 (United States) 197
+- name: 美国 (United States) 168
   type: vless
-  server: 104.21.70.21
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 美国 (United States) 198
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 199
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 200
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 201
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 202
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 203
-  type: vless
-  server: 162.159.24.131
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 美国 (United States) 204
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 205
-  type: vless
-  server: 194.55.189.249
-  port: 40443
-  uuid: 8212a50b-25bf-4739-bba1-aaffb5ffc84c
+  server: 104.16.157.175
+  port: 8443
+  uuid: 42c62a5a-cd31-4551-80ef-908732370287
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: KCbW84C8h2Ja01LS0Ro8EpLLfzMTjs11t1ldDWLd5zo
-  servername: deepl.com
-  client-fingerprint: chrome
-- name: 美国 (United States) 206
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 207
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 208
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 209
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 210
+  servername: fq.jp188.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fq.jp188.dpdns.org
+- name: 美国 (United States) 169
   type: vmess
   server: 82.198.246.250
   port: 180
@@ -2247,9 +1804,21 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 美国 (United States) 211
+- name: 美国 (United States) 170
   type: vless
-  server: 108.162.198.178
+  server: 198.251.78.29
+  port: 2053
+  uuid: c423cc1b-f88e-421c-9a16-c480d84da20f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 美国 (United States) 171
+  type: vless
+  server: 104.18.46.46
   port: 2052
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
@@ -2260,31 +1829,9 @@ proxies:
     path: /?ed=2560security=tls+
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 美国 (United States) 212
+- name: 美国 (United States) 172
   type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 213
-  type: vless
-  server: 194.55.189.249
-  port: 40443
-  uuid: 8212a50b-25bf-4739-bba1-aaffb5ffc84c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: KCbW84C8h2Ja01LS0Ro8EpLLfzMTjs11t1ldDWLd5zo
-  servername: deepl.com
-  client-fingerprint: chrome
-- name: 美国 (United States) 214
-  type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -2292,27 +1839,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 美国 (United States) 215
-  type: vmess
-  server: 165.140.216.142
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 216
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 217
+- name: 美国 (United States) 173
   type: vmess
   server: 82.198.246.233
   port: 180
@@ -2322,9 +1849,9 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 美国 (United States) 218
+- name: 美国 (United States) 174
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -2332,9 +1859,62 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 美国 (United States) 219
+- name: 美国 (United States) 175
+  type: vless
+  server: 104.17.177.165
+  port: 2087
+  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mianfei-73q.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: mianfei-73q.pages.dev
+- name: 美国 (United States) 176
+  type: vless
+  server: fq.jp188.dpdns.org
+  port: 443
+  uuid: 42c62a5a-cd31-4551-80ef-908732370287
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fq.jp188.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fq.jp188.dpdns.org
+- name: 美国 (United States) 177
+  type: vless
+  server: 192.3.247.109
+  port: 32132
+  uuid: 23504a34-5216-4e10-86a0-b6a70976f996
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Hv-DNm962AntB7xyaLnaHvui6rOJ092OFOY2E7TqyR0
+  servername: apple.com
+  client-fingerprint: firefox
+- name: 美国 (United States) 178
   type: vless
   server: 108.162.198.178
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 美国 (United States) 179
+  type: vless
+  server: 162.159.39.218
   port: 2086
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
@@ -2345,27 +1925,7 @@ proxies:
     path: /
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 美国 (United States) 220
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 221
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 222
+- name: 美国 (United States) 180
   type: vmess
   server: 82.198.246.97
   port: 180
@@ -2375,9 +1935,127 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 美国 (United States) 223
+- name: 美国 (United States) 181
   type: vmess
-  server: 84.17.41.2
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 182
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 183
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 184
+  type: vless
+  server: fq.jp188.dpdns.org
+  port: 443
+  uuid: 42c62a5a-cd31-4551-80ef-908732370287
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fq.jp188.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fq.jp188.dpdns.org
+- name: 美国 (United States) 185
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 186
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 187
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 188
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 189
+  type: vless
+  server: 104.19.146.98
+  port: 2083
+  uuid: 42c62a5a-cd31-4551-80ef-908732370287
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fq.jp188.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fq.jp188.dpdns.org
+- name: 美国 (United States) 190
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 191
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 192
+  type: vmess
+  server: 169.197.142.22
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -2385,9 +2063,315 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 美国 (United States) 224
+- name: 美国 (United States) 193
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 194
   type: vless
-  server: 172.64.42.85
+  server: fq.jp188.dpdns.org
+  port: 443
+  uuid: 42c62a5a-cd31-4551-80ef-908732370287
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fq.jp188.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fq.jp188.dpdns.org
+- name: 美国 (United States) 195
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 196
+  type: vmess
+  server: 165.140.216.142
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 197
+  type: ss
+  server: 15.204.246.132
+  port: 7307
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+  udp: true
+- name: 美国 (United States) 198
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 199
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 200
+  type: vless
+  server: 188.114.97.6
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 美国 (United States) 201
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 202
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 203
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 204
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 205
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 206
+  type: vless
+  server: 8.35.211.145
+  port: 8443
+  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mianfei-73q.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: mianfei-73q.pages.dev
+- name: 美国 (United States) 207
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 208
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 209
+  type: vless
+  server: 188.114.97.6
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 美国 (United States) 210
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 211
+  type: vless
+  server: 104.18.46.234
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 美国 (United States) 212
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 213
+  type: vless
+  server: 104.17.181.195
+  port: 443
+  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mianfei-73q.pages.dev
+  network: ws
+  ws-opts:
+    path: /proxyip
+    headers:
+      Host: mianfei-73q.pages.dev
+- name: 美国 (United States) 214
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 215
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 216
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 217
+  type: vless
+  server: 104.16.157.58
+  port: 2083
+  uuid: 42c62a5a-cd31-4551-80ef-908732370287
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fq.jp188.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fq.jp188.dpdns.org
+- name: 美国 (United States) 218
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 219
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 220
+  type: vless
+  server: 104.18.33.69
+  port: 2083
+  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mianfei-73q.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: mianfei-73q.pages.dev
+- name: 美国 (United States) 221
+  type: vless
+  server: 104.18.46.46
   port: 8080
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
@@ -2398,20 +2382,10 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 美国 (United States) 225
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 226
+- name: 美国 (United States) 222
   type: vless
-  server: 172.64.158.146
-  port: 2095
+  server: 104.18.47.113
+  port: 8080
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -2421,7 +2395,17 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 美国 (United States) 227
+- name: 美国 (United States) 223
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 224
   type: vmess
   server: 82.198.246.97
   port: 180
@@ -2431,11 +2415,41 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 美国 (United States) 225
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 226
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 227
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 美国 (United States) 228
   type: vmess
-  server: 216.106.185.141
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   udp: true
@@ -2443,9 +2457,9 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 229
   type: vmess
-  server: 216.106.185.141
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   udp: true
@@ -2463,47 +2477,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 231
   type: vless
-  server: 162.159.24.131
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 美国 (United States) 232
-  type: vless
-  server: 162.159.48.32
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 美国 (United States) 233
-  type: vless
-  server: 104.19.52.183
-  port: 2087
-  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mianfei-73q.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: mianfei-73q.pages.dev
-- name: 美国 (United States) 234
-  type: vless
-  server: 104.18.47.113
+  server: 162.159.0.53
   port: 80
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
@@ -2514,6 +2488,36 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 美国 (United States) 232
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 233
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 234
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 美国 (United States) 235
   type: vmess
   server: 82.198.246.37
@@ -2526,7 +2530,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 236
   type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -2535,50 +2539,16 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 237
-  type: vless
-  server: unitedstates-sgood.wopd.butnorwa.butter.silicore.ir
-  port: 9000
-  uuid: b33e4571-de3f-4249-b246-b2acf3db2f36
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM
-  servername: sheets.google.com
-  client-fingerprint: chrome
 - name: 美国 (United States) 238
-  type: vless
-  server: 23.172.120.194
-  port: 9000
-  uuid: b33e4571-de3f-4249-b246-b2acf3db2f36
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM
-  servername: sheets.google.com
-  client-fingerprint: firefox
-- name: 美国 (United States) 239
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 240
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 241
   type: vmess
   server: 82.198.246.97
   port: 180
@@ -2588,7 +2558,17 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 美国 (United States) 242
+- name: 美国 (United States) 239
+  type: vmess
+  server: 165.140.216.142
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 240
   type: vmess
   server: 82.198.246.233
   port: 180
@@ -2598,9 +2578,29 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 美国 (United States) 241
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 242
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 美国 (United States) 243
   type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -2609,6 +2609,18 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 244
+  type: vless
+  server: 38.246.229.58
+  port: 47642
+  uuid: c538c9dd-2e3f-488f-a8ca-ac5b7c0773f3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 9mg1QdPctekP9woKygHzBCxb8Hw2QTICXROQiiJB6Ag
+  servername: sega.com
+  client-fingerprint: random
+- name: 美国 (United States) 245
   type: vmess
   server: 82.198.246.97
   port: 180
@@ -2618,44 +2630,17 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 美国 (United States) 245
-  type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 美国 (United States) 246
   type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 247
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 248
-  type: ss
-  server: 108.181.0.177
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: G5p6ww4o67HB
-  udp: true
-- name: 美国 (United States) 249
   type: vless
   server: fq.jp188.dpdns.org
   port: 443
@@ -2669,9 +2654,33 @@ proxies:
     path: /
     headers:
       Host: fq.jp188.dpdns.org
+- name: 美国 (United States) 248
+  type: vless
+  server: 104.17.50.174
+  port: 2083
+  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mianfei-73q.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: mianfei-73q.pages.dev
+- name: 美国 (United States) 249
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 美国 (United States) 250
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -2690,8 +2699,21 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 252
+  type: vless
+  server: 172.64.154.8
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 美国 (United States) 253
   type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -2699,22 +2721,9 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 美国 (United States) 253
-  type: vless
-  server: 104.18.34.14
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls+
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 美国 (United States) 254
   type: vmess
-  server: 38.91.107.49
+  server: 84.17.41.2
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -2744,9 +2753,9 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 257
   type: vmess
-  server: 67.220.72.237
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   udp: true
@@ -2754,9 +2763,9 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 258
   type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   udp: true
@@ -2773,128 +2782,8 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 260
-  type: vmess
-  server: 67.220.72.237
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 261
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 262
   type: vless
-  server: 104.18.46.46
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 美国 (United States) 263
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 264
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 265
-  type: vless
-  server: 162.159.38.127
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls+
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 美国 (United States) 266
-  type: vmess
-  server: 165.140.216.142
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 267
-  type: vless
-  server: fq.jp188.dpdns.org
-  port: 443
-  uuid: 42c62a5a-cd31-4551-80ef-908732370287
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fq.jp188.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fq.jp188.dpdns.org
-- name: 美国 (United States) 268
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 269
-  type: vmess
-  server: 165.140.216.142
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 270
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 美国 (United States) 271
-  type: vless
-  server: 104.17.159.237
+  server: 104.17.118.35
   port: 2083
   uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
   udp: true
@@ -2906,7 +2795,7 @@ proxies:
     path: /
     headers:
       Host: mianfei-73q.pages.dev
-- name: 美国 (United States) 272
+- name: 美国 (United States) 261
   type: vmess
   server: 82.198.246.97
   port: 180
@@ -2916,9 +2805,9 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 美国 (United States) 273
+- name: 美国 (United States) 262
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -2926,9 +2815,9 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 美国 (United States) 274
+- name: 美国 (United States) 263
   type: vless
-  server: 162.159.43.187
+  server: 104.18.46.46
   port: 2095
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
@@ -2939,20 +2828,20 @@ proxies:
     path: /?ed=2560security=tls+
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 美国 (United States) 275
+- name: 美国 (United States) 264
   type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 美国 (United States) 276
+- name: 美国 (United States) 265
   type: vless
-  server: 172.64.229.170
-  port: 2086
+  server: 162.159.48.32
+  port: 2082
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -2962,7 +2851,7 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 美国 (United States) 277
+- name: 美国 (United States) 266
   type: vmess
   server: 82.198.246.233
   port: 180
@@ -2972,7 +2861,14 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 美国 (United States) 278
+- name: 美国 (United States) 267
+  type: ss
+  server: 156.146.38.169
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 美国 (United States) 268
   type: vmess
   server: 82.198.246.97
   port: 180
@@ -2982,9 +2878,103 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 美国 (United States) 279
+- name: 美国 (United States) 269
   type: vmess
   server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 270
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 271
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 272
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 273
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 274
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 275
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 276
+  type: ss
+  server: 15.204.247.175
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 美国 (United States) 277
+  type: ss
+  server: 108.181.0.177
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: G5p6ww4o67HB
+  udp: true
+- name: 美国 (United States) 278
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 279
+  type: vmess
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -3004,7 +2994,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 281
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -3014,7 +3004,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 282
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -3033,20 +3023,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 284
-  type: vless
-  server: 104.18.33.69
-  port: 2083
-  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mianfei-73q.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: mianfei-73q.pages.dev
-- name: 美国 (United States) 285
   type: vmess
   server: 82.198.246.233
   port: 180
@@ -3056,19 +3032,26 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 美国 (United States) 286
-  type: vless
-  server: 108.162.198.178
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+- name: 美国 (United States) 285
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls+
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 美国 (United States) 286
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 美国 (United States) 287
   type: vmess
   server: 82.198.246.233
@@ -3081,7 +3064,7 @@ proxies:
   skip-cert-verify: true
 - name: 美国 (United States) 288
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -3090,40 +3073,9 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 美国 (United States) 289
-  type: ss
-  server: 31.76.82.131
-  port: 34260
-  cipher: chacha20-ietf-poly1305
-  password: cTAObwg4OWWXkZJQs0ZdgC
-  udp: true
-- name: 美国 (United States) 290
   type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 94f1b60a-7786-4ab4-a1f6-eb5591c3d645
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 美国 (United States) 291
-  type: vless
-  server: 31.58.50.200
-  port: 8443
-  uuid: 4b2fbd30-1a64-4b27-aea9-713d62c9e69b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 美国 (United States) 292
-  type: vless
-  server: 162.159.0.53
-  port: 8880
+  server: 172.64.229.2
+  port: 2052
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -3133,10 +3085,272 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 美国 (United States) 290
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 291
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 292
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 美国 (United States) 293
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 294
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 295
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 296
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 297
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 298
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 299
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 300
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 301
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 302
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 303
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 304
   type: vless
-  server: 104.18.46.46
-  port: 8080
+  server: 198.251.78.29
+  port: 2053
+  uuid: c423cc1b-f88e-421c-9a16-c480d84da20f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 美国 (United States) 305
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 306
+  type: vmess
+  server: 165.140.216.142
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 307
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 308
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 309
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 310
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 311
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 312
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 313
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 314
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 315
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 316
+  type: vless
+  server: 172.64.32.103
+  port: 2095
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -3144,6 +3358,312 @@ proxies:
   network: ws
   ws-opts:
     path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 美国 (United States) 317
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 318
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 319
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 320
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 321
+  type: vless
+  server: 104.18.34.14
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls+
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 美国 (United States) 322
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 323
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 324
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 325
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 326
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 327
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 328
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 329
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 330
+  type: vless
+  server: 172.64.52.6
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 美国 (United States) 331
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 332
+  type: vless
+  server: 162.159.43.187
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls+
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 美国 (United States) 333
+  type: vless
+  server: 198.251.78.29
+  port: 2053
+  uuid: c423cc1b-f88e-421c-9a16-c480d84da20f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 美国 (United States) 334
+  type: vless
+  server: 172.64.154.8
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 美国 (United States) 335
+  type: vless
+  server: 194.55.189.249
+  port: 40443
+  uuid: 8212a50b-25bf-4739-bba1-aaffb5ffc84c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: KCbW84C8h2Ja01LS0Ro8EpLLfzMTjs11t1ldDWLd5zo
+  servername: deepl.com
+  client-fingerprint: qq
+- name: 美国 (United States) 336
+  type: vless
+  server: 194.55.189.249
+  port: 40443
+  uuid: 8212a50b-25bf-4739-bba1-aaffb5ffc84c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: KCbW84C8h2Ja01LS0Ro8EpLLfzMTjs11t1ldDWLd5zo
+  servername: deepl.com
+  client-fingerprint: qq
+- name: 美国 (United States) 337
+  type: vless
+  server: 162.159.45.19
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls+
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 美国 (United States) 338
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 339
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 340
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 美国 (United States) 341
+  type: ss
+  server: 198.98.53.130
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: eDfN7SODQceIOmIAbtJJtK
+  udp: true
+- name: 美国 (United States) 342
+  type: vless
+  server: 31.58.50.200
+  port: 8443
+  uuid: 137c30a7-d172-4b6c-a97b-c3a6a4fda042
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 美国 (United States) 343
+  type: vless
+  server: 108.162.198.178
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls+
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 美国 (United States) 344
+  type: vless
+  server: 108.162.198.178
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
@@ -3444,6 +3964,57 @@ proxy-groups:
   - 美国 (United States) 291
   - 美国 (United States) 292
   - 美国 (United States) 293
+  - 美国 (United States) 294
+  - 美国 (United States) 295
+  - 美国 (United States) 296
+  - 美国 (United States) 297
+  - 美国 (United States) 298
+  - 美国 (United States) 299
+  - 美国 (United States) 300
+  - 美国 (United States) 301
+  - 美国 (United States) 302
+  - 美国 (United States) 303
+  - 美国 (United States) 304
+  - 美国 (United States) 305
+  - 美国 (United States) 306
+  - 美国 (United States) 307
+  - 美国 (United States) 308
+  - 美国 (United States) 309
+  - 美国 (United States) 310
+  - 美国 (United States) 311
+  - 美国 (United States) 312
+  - 美国 (United States) 313
+  - 美国 (United States) 314
+  - 美国 (United States) 315
+  - 美国 (United States) 316
+  - 美国 (United States) 317
+  - 美国 (United States) 318
+  - 美国 (United States) 319
+  - 美国 (United States) 320
+  - 美国 (United States) 321
+  - 美国 (United States) 322
+  - 美国 (United States) 323
+  - 美国 (United States) 324
+  - 美国 (United States) 325
+  - 美国 (United States) 326
+  - 美国 (United States) 327
+  - 美国 (United States) 328
+  - 美国 (United States) 329
+  - 美国 (United States) 330
+  - 美国 (United States) 331
+  - 美国 (United States) 332
+  - 美国 (United States) 333
+  - 美国 (United States) 334
+  - 美国 (United States) 335
+  - 美国 (United States) 336
+  - 美国 (United States) 337
+  - 美国 (United States) 338
+  - 美国 (United States) 339
+  - 美国 (United States) 340
+  - 美国 (United States) 341
+  - 美国 (United States) 342
+  - 美国 (United States) 343
+  - 美国 (United States) 344
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -3742,5 +4313,56 @@ proxy-groups:
   - 美国 (United States) 291
   - 美国 (United States) 292
   - 美国 (United States) 293
+  - 美国 (United States) 294
+  - 美国 (United States) 295
+  - 美国 (United States) 296
+  - 美国 (United States) 297
+  - 美国 (United States) 298
+  - 美国 (United States) 299
+  - 美国 (United States) 300
+  - 美国 (United States) 301
+  - 美国 (United States) 302
+  - 美国 (United States) 303
+  - 美国 (United States) 304
+  - 美国 (United States) 305
+  - 美国 (United States) 306
+  - 美国 (United States) 307
+  - 美国 (United States) 308
+  - 美国 (United States) 309
+  - 美国 (United States) 310
+  - 美国 (United States) 311
+  - 美国 (United States) 312
+  - 美国 (United States) 313
+  - 美国 (United States) 314
+  - 美国 (United States) 315
+  - 美国 (United States) 316
+  - 美国 (United States) 317
+  - 美国 (United States) 318
+  - 美国 (United States) 319
+  - 美国 (United States) 320
+  - 美国 (United States) 321
+  - 美国 (United States) 322
+  - 美国 (United States) 323
+  - 美国 (United States) 324
+  - 美国 (United States) 325
+  - 美国 (United States) 326
+  - 美国 (United States) 327
+  - 美国 (United States) 328
+  - 美国 (United States) 329
+  - 美国 (United States) 330
+  - 美国 (United States) 331
+  - 美国 (United States) 332
+  - 美国 (United States) 333
+  - 美国 (United States) 334
+  - 美国 (United States) 335
+  - 美国 (United States) 336
+  - 美国 (United States) 337
+  - 美国 (United States) 338
+  - 美国 (United States) 339
+  - 美国 (United States) 340
+  - 美国 (United States) 341
+  - 美国 (United States) 342
+  - 美国 (United States) 343
+  - 美国 (United States) 344
 rules:
 - MATCH,PROXIES

@@ -4,30 +4,35 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: CZ 01
+- name: CO 01
   type: vless
-  server: 188.114.97.6
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 157.137.209.135
+  port: 62145
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: CO 02
+  type: vless
+  server: 157.137.209.135
+  port: 62145
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - CZ 01
+  - CO 01
+  - CO 02
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - CZ 01
+  - CO 01
+  - CO 02
 rules:
 - MATCH,PROXIES
