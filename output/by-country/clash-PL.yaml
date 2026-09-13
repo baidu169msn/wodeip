@@ -16,19 +16,6 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 94.183.209.58
-- name: PL 02
-  type: vless
-  server: 94.183.209.58
-  port: 443
-  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
       Host: pl2.lckdwn.ru
 proxy-groups:
 - name: PROXIES
@@ -36,13 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - PL 01
-  - PL 02
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - PL 01
-  - PL 02
 rules:
 - MATCH,PROXIES
