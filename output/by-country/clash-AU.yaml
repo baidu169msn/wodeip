@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: CZ 01
+- name: 澳大利亚 (Australia) 01
   type: vless
-  server: 188.114.97.6
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 103.75.119.126
+  port: 2087
+  uuid: 731f177e-00aa-480c-b935-661456139a32
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /7586c69d3dc9
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+      Host: 103.75.119.126
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - CZ 01
+  - 澳大利亚 (Australia) 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - CZ 01
+  - 澳大利亚 (Australia) 01
 rules:
 - MATCH,PROXIES

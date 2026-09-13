@@ -4,35 +4,45 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: CO 01
+- name: PL 01
   type: vless
-  server: 157.137.209.135
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  server: 94.183.209.58
+  port: 443
+  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
   udp: true
   tls: false
   skip-cert-verify: true
-- name: CO 02
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.209.58
+- name: PL 02
   type: vless
-  server: 157.137.209.135
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  server: 94.183.209.58
+  port: 443
+  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pl2.lckdwn.ru
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - CO 01
-  - CO 02
+  - PL 01
+  - PL 02
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - CO 01
-  - CO 02
+  - PL 01
+  - PL 02
 rules:
 - MATCH,PROXIES
