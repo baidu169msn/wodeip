@@ -5,42 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 新加坡 (Singapore) 01
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 新加坡 (Singapore) 02
-  type: vless
-  server: 141.193.213.20
-  port: 8443
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 新加坡 (Singapore) 03
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 新加坡 (Singapore) 04
   type: vless
   server: news.zoom.us
   port: 8443
@@ -54,14 +18,17 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 新加坡 (Singapore) 05
-  type: ss
-  server: 161.118.253.54
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: CQu50onst3DD0kzINqiexO/rU2T+2SWJy0ga7zqcIrA=
+- name: 新加坡 (Singapore) 02
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-- name: 新加坡 (Singapore) 06
+  tls: false
+  skip-cert-verify: true
+- name: 新加坡 (Singapore) 03
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -71,18 +38,53 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 新加坡 (Singapore) 04
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 新加坡 (Singapore) 05
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 新加坡 (Singapore) 06
+  type: vless
+  server: support.zoom.us
+  port: 80
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
 - name: 新加坡 (Singapore) 07
   type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  server: 141.193.213.21
+  port: 8443
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
 - name: 新加坡 (Singapore) 08
   type: vmess
   server: ww11.levikogjgfdd.ir
@@ -94,16 +96,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 新加坡 (Singapore) 09
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 新加坡 (Singapore) 10
   type: vless
   server: 170.114.46.6
   port: 80
@@ -116,30 +108,28 @@ proxies:
     path: /shalana
     headers:
       Host: shalana.xyz
-- name: 新加坡 (Singapore) 11
+- name: 新加坡 (Singapore) 10
   type: vless
-  server: support.zoom.us
-  port: 80
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  server: 141.193.213.21
+  port: 8443
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: u.srilankangrill.online
   network: ws
   ws-opts:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 新加坡 (Singapore) 12
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+- name: 新加坡 (Singapore) 11
+  type: ss
+  server: 176.97.64.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: TFElG2FVqyqG
   udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 新加坡 (Singapore) 13
+- name: 新加坡 (Singapore) 12
   type: vmess
   server: ww11.levikogjgfdd.ir
   port: 18000
@@ -149,26 +139,36 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 新加坡 (Singapore) 14
-  type: vless
-  server: support.zoom.us
-  port: 80
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+- name: 新加坡 (Singapore) 13
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 新加坡 (Singapore) 15
-  type: ss
-  server: 167.150.100.115
-  port: 27755
-  cipher: 2022-blake3-aes-256-gcm
-  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
+- name: 新加坡 (Singapore) 14
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 新加坡 (Singapore) 15
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 新加坡 (Singapore) 16
   type: vless
   server: support.zoom.us
@@ -183,15 +183,8 @@ proxies:
     headers:
       Host: u.srilankangrill.online
 - name: 新加坡 (Singapore) 17
-  type: ss
-  server: 176.97.64.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: TFElG2FVqyqG
-  udp: true
-- name: 新加坡 (Singapore) 18
   type: vless
-  server: news.zoom.us
+  server: 141.193.213.20
   port: 8443
   uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
   udp: true
@@ -203,9 +196,19 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
+- name: 新加坡 (Singapore) 18
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 新加坡 (Singapore) 19
   type: vmess
-  server: 149.88.23.207
+  server: ww11.levikogjgfdd.ir
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -215,7 +218,7 @@ proxies:
   skip-cert-verify: true
 - name: 新加坡 (Singapore) 20
   type: vmess
-  server: 149.88.23.202
+  server: 149.88.23.207
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -234,18 +237,15 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 新加坡 (Singapore) 22
-  type: vless
-  server: support.zoom.us
-  port: 80
-  uuid: 6aa028bc-08a9-41d1-a397-d60ce65df081
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /shalana
-    headers:
-      Host: shalana.xyz
 - name: 新加坡 (Singapore) 23
   type: vmess
   server: 149.88.23.207
@@ -258,31 +258,32 @@ proxies:
   skip-cert-verify: true
 - name: 新加坡 (Singapore) 24
   type: vless
-  server: 141.193.213.21
-  port: 8443
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
+  server: support.zoom.us
+  port: 80
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: u.srilankangrill.online
   network: ws
   ws-opts:
     path: /
     headers:
       Host: u.srilankangrill.online
 - name: 新加坡 (Singapore) 25
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 新加坡 (Singapore) 26
   type: vless
-  server: 141.193.213.21
+  server: news.zoom.us
   port: 8443
   uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
   udp: true
@@ -295,22 +296,31 @@ proxies:
     headers:
       Host: u.srilankangrill.online
 - name: 新加坡 (Singapore) 27
-  type: vless
-  server: news.zoom.us
-  port: 8443
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
 - name: 新加坡 (Singapore) 28
   type: vless
-  server: news.zoom.us
+  server: support.zoom.us
+  port: 80
+  uuid: 6aa028bc-08a9-41d1-a397-d60ce65df081
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /shalana
+    headers:
+      Host: shalana.xyz
+- name: 新加坡 (Singapore) 29
+  type: vless
+  server: 141.193.213.20
   port: 8443
   uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
   udp: true
@@ -322,7 +332,7 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 新加坡 (Singapore) 29
+- name: 新加坡 (Singapore) 30
   type: vless
   server: news.zoom.us
   port: 8443
@@ -336,6 +346,40 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
+- name: 新加坡 (Singapore) 31
+  type: vless
+  server: news.zoom.us
+  port: 8443
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 新加坡 (Singapore) 32
+  type: vless
+  server: 170.114.46.6
+  port: 80
+  uuid: 6aa028bc-08a9-41d1-a397-d60ce65df081
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /shalana
+    headers:
+      Host: shalana.xyz
+- name: 新加坡 (Singapore) 33
+  type: ss
+  server: 161.118.253.54
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: CQu50onst3DD0kzINqiexO/rU2T+2SWJy0ga7zqcIrA=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -370,6 +414,10 @@ proxy-groups:
   - 新加坡 (Singapore) 27
   - 新加坡 (Singapore) 28
   - 新加坡 (Singapore) 29
+  - 新加坡 (Singapore) 30
+  - 新加坡 (Singapore) 31
+  - 新加坡 (Singapore) 32
+  - 新加坡 (Singapore) 33
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -404,5 +452,9 @@ proxy-groups:
   - 新加坡 (Singapore) 27
   - 新加坡 (Singapore) 28
   - 新加坡 (Singapore) 29
+  - 新加坡 (Singapore) 30
+  - 新加坡 (Singapore) 31
+  - 新加坡 (Singapore) 32
+  - 新加坡 (Singapore) 33
 rules:
 - MATCH,PROXIES

@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: MY 01
+- name: 韩国 (South Korea) 01
   type: vless
-  server: 38.60.168.98
-  port: 2087
-  uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
+  server: polished-field-4448.186-705.workers.dev
+  port: 8880
+  uuid: df26029b-bffe-4ce2-9246-25b52ed2b1c7
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /db55c40bbc75
+    path: /
     headers:
-      Host: 38.60.168.98
+      Host: polished-field-4448.186-705.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - MY 01
+  - 韩国 (South Korea) 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - MY 01
+  - 韩国 (South Korea) 01
 rules:
 - MATCH,PROXIES

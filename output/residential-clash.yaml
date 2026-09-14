@@ -18,17 +18,32 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 60.248.219.78
+- name: 韩国 (South Korea) 02
+  type: vless
+  server: polished-field-4448.186-705.workers.dev
+  port: 8880
+  uuid: df26029b-bffe-4ce2-9246-25b52ed2b1c7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: polished-field-4448.186-705.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 中国台湾 (Taiwan) 01
+  - 韩国 (South Korea) 02
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 中国台湾 (Taiwan) 01
+  - 韩国 (South Korea) 02
 rules:
 - MATCH,PROXIES

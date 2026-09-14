@@ -4,30 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: MY 01
+- name: 土耳其 (Turkey) 01
   type: vless
-  server: 38.60.168.98
-  port: 2087
-  uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
+  server: add.life-pro.ir
+  port: 8082
+  uuid: 79f98593-6a21-4783-a425-3d5609a79df1
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /db55c40bbc75
-    headers:
-      Host: 38.60.168.98
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - MY 01
+  - 土耳其 (Turkey) 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - MY 01
+  - 土耳其 (Turkey) 01
 rules:
 - MATCH,PROXIES

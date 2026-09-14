@@ -6,22 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "其他地区 (Other) 01",
-        "其他地区 (Other) 02",
-        "其他地区 (Other) 03",
-        "其他地区 (Other) 04",
-        "其他地区 (Other) 05"
+        "中国香港 (Hong Kong) 01",
+        "中国香港 (Hong Kong) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "其他地区 (Other) 01",
-        "其他地区 (Other) 02",
-        "其他地区 (Other) 03",
-        "其他地区 (Other) 04",
-        "其他地区 (Other) 05"
+        "中国香港 (Hong Kong) 01",
+        "中国香港 (Hong Kong) 02"
       ],
       "url": "https://www.google.com/generate_204"
     },
