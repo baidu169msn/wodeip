@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "其他地区 (Other) 01",
-        "其他地区 (Other) 02"
+        "其他地区 (Other) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "其他地区 (Other) 01",
-        "其他地区 (Other) 02"
+        "其他地区 (Other) 01"
       ],
       "url": "https://www.google.com/generate_204"
     },
