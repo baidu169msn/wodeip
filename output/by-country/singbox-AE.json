@@ -6,16 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "印度 (India) 01",
-        "印度 (India) 02"
+        "阿联酋 (UAE) 01",
+        "阿联酋 (UAE) 02",
+        "阿联酋 (UAE) 03",
+        "阿联酋 (UAE) 04"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "印度 (India) 01",
-        "印度 (India) 02"
+        "阿联酋 (UAE) 01",
+        "阿联酋 (UAE) 02",
+        "阿联酋 (UAE) 03",
+        "阿联酋 (UAE) 04"
       ],
       "url": "https://www.google.com/generate_204"
     },
