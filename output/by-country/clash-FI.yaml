@@ -4,9 +4,21 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: KZ 01
+- name: FI 01
   type: vless
-  server: kz3.zuoai.cf
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: firefox
+- name: FI 02
+  type: vless
+  server: fi1.zuoai.cf
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -23,12 +35,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - KZ 01
+  - FI 01
+  - FI 02
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - KZ 01
+  - FI 01
+  - FI 02
 rules:
 - MATCH,PROXIES

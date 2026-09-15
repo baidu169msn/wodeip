@@ -4,29 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: AT 01
+- name: 中国台湾 (Taiwan) 01
   type: vless
-  server: 152.53.1.40
+  server: 60.248.219.53
   port: 443
-  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
+  uuid: f1d247db-d7ce-4eb8-9c0d-7b10603cd0b4
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-  servername: at.quattro-tech.ru
-  client-fingerprint: qq
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: 60.248.219.53
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - AT 01
+  - 中国台湾 (Taiwan) 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - AT 01
+  - 中国台湾 (Taiwan) 01
 rules:
 - MATCH,PROXIES
