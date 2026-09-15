@@ -6,21 +6,20 @@ log-level: info
 proxies:
 - name: 其他地区 (Other) 01
   type: vless
-  server: cf3.danfeng.eu.org
-  port: 8443
-  uuid: 8102891d-7b37-4dc5-8261-9474b59b5c63
+  server: 108.162.198.178
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: vip.868068.xyz
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
     headers:
-      Host: vip.868068.xyz
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 其他地区 (Other) 02
   type: vless
-  server: 162.159.254.3
+  server: 104.21.33.59
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -34,59 +33,18 @@ proxies:
       Host: jp3.yohototo.top
 - name: 其他地区 (Other) 03
   type: vless
-  server: 104.16.10.235
+  server: 188.114.97.6
   port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: u.srilankangrill.online
+  servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
-      Host: u.srilankangrill.online
-- name: 其他地区 (Other) 04
-  type: vless
-  server: 104.21.89.41
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 其他地区 (Other) 05
-  type: vless
-  server: 162.159.24.131
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 其他地区 (Other) 06
-  type: vless
-  server: 104.16.10.233
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
+      Host: nb.lovecf.ggff.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -95,9 +53,6 @@ proxy-groups:
   - 其他地区 (Other) 01
   - 其他地区 (Other) 02
   - 其他地区 (Other) 03
-  - 其他地区 (Other) 04
-  - 其他地区 (Other) 05
-  - 其他地区 (Other) 06
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -106,8 +61,5 @@ proxy-groups:
   - 其他地区 (Other) 01
   - 其他地区 (Other) 02
   - 其他地区 (Other) 03
-  - 其他地区 (Other) 04
-  - 其他地区 (Other) 05
-  - 其他地区 (Other) 06
 rules:
 - MATCH,PROXIES
