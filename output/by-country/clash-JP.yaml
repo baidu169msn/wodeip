@@ -6,6 +6,152 @@ log-level: info
 proxies:
 - name: 日本 (Japan) 01
   type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: bd0b6458-917b-4b84-9c21-66b8699f4795
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: safari
+- name: 日本 (Japan) 02
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: e9e24ed8-b007-4e29-b54f-1ece641e60fb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: qq
+- name: 日本 (Japan) 03
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 日本 (Japan) 04
+  type: vless
+  server: 207.148.112.220
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /discuss?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 日本 (Japan) 05
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: safari
+- name: 日本 (Japan) 06
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: e9e24ed8-b007-4e29-b54f-1ece641e60fb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 日本 (Japan) 07
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 日本 (Japan) 08
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: 7647b321-4bfe-43f3-b21f-926c5de8f9b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 日本 (Japan) 09
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: fee2c73a-d527-4b3f-9d48-0631168d83e8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: qq
+- name: 日本 (Japan) 10
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: fee2c73a-d527-4b3f-9d48-0631168d83e8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: qq
+- name: 日本 (Japan) 11
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: 257b0378-01c9-4ded-836d-f94df60bd19c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: edge
+- name: 日本 (Japan) 12
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: e9e24ed8-b007-4e29-b54f-1ece641e60fb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 日本 (Japan) 13
+  type: vless
   server: 188.114.97.6
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
@@ -18,9 +164,19 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 日本 (Japan) 02
+- name: 日本 (Japan) 14
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 日本 (Japan) 15
   type: vless
-  server: 172.67.156.147
+  server: 104.21.33.59
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -32,7 +188,19 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 日本 (Japan) 03
+- name: 日本 (Japan) 16
+  type: vless
+  server: 18.182.44.185
+  port: 20270
+  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: random
+- name: 日本 (Japan) 17
   type: vless
   server: jp-1.gsafevpnapi.com
   port: 20270
@@ -44,56 +212,11 @@ proxies:
     public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
   servername: www.yahoo.com
   client-fingerprint: safari
-- name: 日本 (Japan) 04
-  type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 日本 (Japan) 05
-  type: vless
-  server: 104.21.70.21
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 日本 (Japan) 06
+- name: 日本 (Japan) 18
   type: vless
   server: jp-1.gsafevpnapi.com
   port: 20270
-  uuid: e9e24ed8-b007-4e29-b54f-1ece641e60fb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: qq
-- name: 日本 (Japan) 07
-  type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: qq
-- name: 日本 (Japan) 08
-  type: vless
-  server: 18.182.44.185
-  port: 20270
-  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
+  uuid: fee2c73a-d527-4b3f-9d48-0631168d83e8
   udp: true
   tls: true
   skip-cert-verify: true
@@ -101,23 +224,23 @@ proxies:
     public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
   servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 日本 (Japan) 09
+- name: 日本 (Japan) 19
   type: vless
   server: jp-1.gsafevpnapi.com
   port: 20270
-  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
+  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
     public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
   servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 日本 (Japan) 10
+  client-fingerprint: qq
+- name: 日本 (Japan) 20
   type: vless
   server: jp-1.gsafevpnapi.com
   port: 20270
-  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
+  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
   udp: true
   tls: true
   skip-cert-verify: true
@@ -125,14 +248,162 @@ proxies:
     public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
   servername: www.yahoo.com
   client-fingerprint: firefox
-- name: 日本 (Japan) 11
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+- name: 日本 (Japan) 21
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: e0755aab-3f9c-4d27-a643-645a4d2753d3
   udp: true
-- name: 日本 (Japan) 12
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: firefox
+- name: 日本 (Japan) 22
+  type: vless
+  server: 210.152.85.154
+  port: 19364
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /collect/user/products?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 日本 (Japan) 23
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 日本 (Japan) 24
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: qq
+- name: 日本 (Japan) 25
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 日本 (Japan) 26
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 日本 (Japan) 27
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 日本 (Japan) 28
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 日本 (Japan) 29
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 日本 (Japan) 30
+  type: vmess
+  server: 168.110.60.104
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 日本 (Japan) 31
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: random
+- name: 日本 (Japan) 32
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 日本 (Japan) 33
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: c80d9d87-0aa6-4b45-9673-7a9d1e5e4d6b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 日本 (Japan) 34
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: ios
+- name: 日本 (Japan) 35
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 日本 (Japan) 36
   type: vless
   server: 162.159.254.3
   port: 443
@@ -146,11 +417,23 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 日本 (Japan) 13
+- name: 日本 (Japan) 37
   type: vless
   server: jp-1.gsafevpnapi.com
   port: 20270
-  uuid: 5f82dcfd-cab5-4b71-91c6-8b6fb4f76c55
+  uuid: 7647b321-4bfe-43f3-b21f-926c5de8f9b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: qq
+- name: 日本 (Japan) 38
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: 8da6f662-e36b-4eff-99f9-43a842911707
   udp: true
   tls: true
   skip-cert-verify: true
@@ -158,35 +441,7 @@ proxies:
     public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
   servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 日本 (Japan) 14
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 日本 (Japan) 15
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 日本 (Japan) 16
-  type: ss
-  server: jp-2.gsafevpnapi.com
-  port: 31870
-  cipher: aes-256-gcm
-  password: 5f82dcfd-cab5-4b71-91c6-8b6fb4f76c55
-  udp: true
-- name: 日本 (Japan) 17
+- name: 日本 (Japan) 39
   type: vless
   server: jp-1.gsafevpnapi.com
   port: 20270
@@ -197,68 +452,8 @@ proxies:
   reality-opts:
     public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
   servername: www.yahoo.com
-  client-fingerprint: ios
-- name: 日本 (Japan) 18
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 日本 (Japan) 19
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 日本 (Japan) 20
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 日本 (Japan) 21
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 日本 (Japan) 22
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 日本 (Japan) 23
-  type: vmess
-  server: oc.imfun.fun
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 日本 (Japan) 24
-  type: vmess
-  server: 168.110.60.104
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 日本 (Japan) 25
+  client-fingerprint: qq
+- name: 日本 (Japan) 40
   type: vless
   server: 104.21.70.21
   port: 443
@@ -272,18 +467,307 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 日本 (Japan) 26
+- name: 日本 (Japan) 41
   type: vless
-  server: 202.144.192.76
-  port: 13779
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-  servername: tesla.com
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
   client-fingerprint: chrome
+- name: 日本 (Japan) 42
+  type: vless
+  server: 18.182.44.185
+  port: 20270
+  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: firefox
+- name: 日本 (Japan) 43
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 日本 (Japan) 44
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: 257b0378-01c9-4ded-836d-f94df60bd19c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 日本 (Japan) 45
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 日本 (Japan) 46
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: firefox
+- name: 日本 (Japan) 47
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: 7647b321-4bfe-43f3-b21f-926c5de8f9b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 日本 (Japan) 48
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: e0755aab-3f9c-4d27-a643-645a4d2753d3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 日本 (Japan) 49
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: e9e24ed8-b007-4e29-b54f-1ece641e60fb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: qq
+- name: 日本 (Japan) 50
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: f0eb9f67-ef76-40aa-a1e6-22a11d5a9379
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: ios
+- name: 日本 (Japan) 51
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: ios
+- name: 日本 (Japan) 52
+  type: vless
+  server: 162.159.254.3
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 日本 (Japan) 53
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 日本 (Japan) 54
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 日本 (Japan) 55
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 日本 (Japan) 56
+  type: ss
+  server: 149.22.87.240
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 日本 (Japan) 57
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: edge
+- name: 日本 (Japan) 58
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: e0755aab-3f9c-4d27-a643-645a4d2753d3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 日本 (Japan) 59
+  type: vless
+  server: 104.16.10.185
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 日本 (Japan) 60
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: 8da6f662-e36b-4eff-99f9-43a842911707
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 日本 (Japan) 61
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: 257b0378-01c9-4ded-836d-f94df60bd19c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 日本 (Japan) 62
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: bd0b6458-917b-4b84-9c21-66b8699f4795
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 日本 (Japan) 63
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: 257b0378-01c9-4ded-836d-f94df60bd19c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: edge
+- name: 日本 (Japan) 64
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: random
+- name: 日本 (Japan) 65
+  type: vless
+  server: 104.16.10.185
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 日本 (Japan) 66
+  type: vless
+  server: 207.148.112.220
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /discuss?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -315,6 +799,46 @@ proxy-groups:
   - 日本 (Japan) 24
   - 日本 (Japan) 25
   - 日本 (Japan) 26
+  - 日本 (Japan) 27
+  - 日本 (Japan) 28
+  - 日本 (Japan) 29
+  - 日本 (Japan) 30
+  - 日本 (Japan) 31
+  - 日本 (Japan) 32
+  - 日本 (Japan) 33
+  - 日本 (Japan) 34
+  - 日本 (Japan) 35
+  - 日本 (Japan) 36
+  - 日本 (Japan) 37
+  - 日本 (Japan) 38
+  - 日本 (Japan) 39
+  - 日本 (Japan) 40
+  - 日本 (Japan) 41
+  - 日本 (Japan) 42
+  - 日本 (Japan) 43
+  - 日本 (Japan) 44
+  - 日本 (Japan) 45
+  - 日本 (Japan) 46
+  - 日本 (Japan) 47
+  - 日本 (Japan) 48
+  - 日本 (Japan) 49
+  - 日本 (Japan) 50
+  - 日本 (Japan) 51
+  - 日本 (Japan) 52
+  - 日本 (Japan) 53
+  - 日本 (Japan) 54
+  - 日本 (Japan) 55
+  - 日本 (Japan) 56
+  - 日本 (Japan) 57
+  - 日本 (Japan) 58
+  - 日本 (Japan) 59
+  - 日本 (Japan) 60
+  - 日本 (Japan) 61
+  - 日本 (Japan) 62
+  - 日本 (Japan) 63
+  - 日本 (Japan) 64
+  - 日本 (Japan) 65
+  - 日本 (Japan) 66
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -346,5 +870,45 @@ proxy-groups:
   - 日本 (Japan) 24
   - 日本 (Japan) 25
   - 日本 (Japan) 26
+  - 日本 (Japan) 27
+  - 日本 (Japan) 28
+  - 日本 (Japan) 29
+  - 日本 (Japan) 30
+  - 日本 (Japan) 31
+  - 日本 (Japan) 32
+  - 日本 (Japan) 33
+  - 日本 (Japan) 34
+  - 日本 (Japan) 35
+  - 日本 (Japan) 36
+  - 日本 (Japan) 37
+  - 日本 (Japan) 38
+  - 日本 (Japan) 39
+  - 日本 (Japan) 40
+  - 日本 (Japan) 41
+  - 日本 (Japan) 42
+  - 日本 (Japan) 43
+  - 日本 (Japan) 44
+  - 日本 (Japan) 45
+  - 日本 (Japan) 46
+  - 日本 (Japan) 47
+  - 日本 (Japan) 48
+  - 日本 (Japan) 49
+  - 日本 (Japan) 50
+  - 日本 (Japan) 51
+  - 日本 (Japan) 52
+  - 日本 (Japan) 53
+  - 日本 (Japan) 54
+  - 日本 (Japan) 55
+  - 日本 (Japan) 56
+  - 日本 (Japan) 57
+  - 日本 (Japan) 58
+  - 日本 (Japan) 59
+  - 日本 (Japan) 60
+  - 日本 (Japan) 61
+  - 日本 (Japan) 62
+  - 日本 (Japan) 63
+  - 日本 (Japan) 64
+  - 日本 (Japan) 65
+  - 日本 (Japan) 66
 rules:
 - MATCH,PROXIES
