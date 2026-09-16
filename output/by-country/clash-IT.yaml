@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 俄罗斯 (Russia) 01
+- name: 意大利 (Italy) 01
   type: ss
-  server: 195.133.23.200
-  port: 7018
+  server: 185.164.175.81
+  port: 19999
   cipher: aes-256-gcm
-  password: 81a20429165df87e
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 俄罗斯 (Russia) 01
+  - 意大利 (Italy) 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 俄罗斯 (Russia) 01
+  - 意大利 (Italy) 01
 rules:
 - MATCH,PROXIES
