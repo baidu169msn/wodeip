@@ -4,29 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 中国香港 (Hong Kong) 01
+- name: BG 01
   type: vless
-  server: 47.238.210.5
-  port: 13779
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-  servername: tesla.com
-  client-fingerprint: edge
+  servername: neth9.lunariai.ru
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 中国香港 (Hong Kong) 01
+  - BG 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 中国香港 (Hong Kong) 01
+  - BG 01
 rules:
 - MATCH,PROXIES
