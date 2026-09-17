@@ -4,30 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: BG 01
+- name: NO 01
   type: vless
-  server: 192.145.31.5
-  port: 443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  server: 46.29.238.32
+  port: 40443
+  uuid: ed91e79c-f6bf-4fba-8cc0-6d45acaec22b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 192.145.31.5
+  reality-opts:
+    public-key: dvx6zPztKbgHpYaW6J4OZQC74Uy0JS6HUVdDfbjG5V4
+  servername: deepl.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - BG 01
+  - NO 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - BG 01
+  - NO 01
 rules:
 - MATCH,PROXIES
