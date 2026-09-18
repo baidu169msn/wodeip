@@ -6,16 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "韩国 (South Korea) 01",
-        "中国台湾 (Taiwan) 02"
+        "美国 (United States) 01",
+        "中国台湾 (Taiwan) 02",
+        "中国台湾 (Taiwan) 03",
+        "美国 (United States) 04"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "韩国 (South Korea) 01",
-        "中国台湾 (Taiwan) 02"
+        "美国 (United States) 01",
+        "中国台湾 (Taiwan) 02",
+        "中国台湾 (Taiwan) 03",
+        "美国 (United States) 04"
       ],
       "url": "https://www.google.com/generate_204"
     },
