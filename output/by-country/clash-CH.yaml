@@ -4,30 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: BG 01
-  type: vless
-  server: 192.145.31.5
-  port: 443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+- name: CH 01
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 192.145.31.5
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - BG 01
+  - CH 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - BG 01
+  - CH 01
 rules:
 - MATCH,PROXIES
