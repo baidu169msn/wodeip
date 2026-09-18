@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 意大利 (Italy) 01
+- name: DK 01
   type: ss
-  server: 185.164.175.81
-  port: 19999
+  server: 38.180.214.110
+  port: 5600
   cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  password: Y6R9pAtvxxzmGC
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 意大利 (Italy) 01
+  - DK 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 意大利 (Italy) 01
+  - DK 01
 rules:
 - MATCH,PROXIES

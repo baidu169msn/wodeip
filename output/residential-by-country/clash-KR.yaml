@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 中国台湾 (Taiwan) 01
+- name: 韩国 (South Korea) 01
   type: vless
-  server: 60.248.219.52
-  port: 443
-  uuid: f265b49a-70a3-407a-b17b-e45dfb9f255c
+  server: 172.67.190.141
+  port: 8880
+  uuid: 0787cfdb-9930-4abb-8419-c1b96c3ef628
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
   network: ws
   ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    path: /+
     headers:
-      Host: 60.248.219.52
+      Host: red-snowflake-c399.12-ee1.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 中国台湾 (Taiwan) 01
+  - 韩国 (South Korea) 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 中国台湾 (Taiwan) 01
+  - 韩国 (South Korea) 01
 rules:
 - MATCH,PROXIES

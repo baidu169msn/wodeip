@@ -4,31 +4,39 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 中国台湾 (Taiwan) 01
-  type: vless
-  server: 60.248.219.52
-  port: 443
-  uuid: f265b49a-70a3-407a-b17b-e45dfb9f255c
+- name: EE 01
+  type: ss
+  server: 212.87.190.124
+  port: 99
+  cipher: chacha20-ietf-poly1305
+  password: 6nQnSKAxCLJSZbg7KA94QA
   udp: true
-  tls: true
+- name: EE 02
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
   skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
   network: ws
   ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    path: /
     headers:
-      Host: 60.248.219.52
+      Host: 94.183.170.135
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 中国台湾 (Taiwan) 01
+  - EE 01
+  - EE 02
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 中国台湾 (Taiwan) 01
+  - EE 01
+  - EE 02
 rules:
 - MATCH,PROXIES
