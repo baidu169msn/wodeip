@@ -4,11 +4,11 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: EE 01
+- name: BG 01
   type: vless
-  server: 94.183.170.135
+  server: 192.145.31.5
   port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,18 +16,18 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 94.183.170.135
+      Host: 192.145.31.5
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - EE 01
+  - BG 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - EE 01
+  - BG 01
 rules:
 - MATCH,PROXIES
