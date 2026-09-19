@@ -6,14 +6,28 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "ZA 01"
+        "BE 01",
+        "BE 02",
+        "BE 03",
+        "BE 04",
+        "BE 05",
+        "BE 06",
+        "BE 07",
+        "BE 08"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "ZA 01"
+        "BE 01",
+        "BE 02",
+        "BE 03",
+        "BE 04",
+        "BE 05",
+        "BE 06",
+        "BE 07",
+        "BE 08"
       ],
       "url": "https://www.google.com/generate_204"
     },
