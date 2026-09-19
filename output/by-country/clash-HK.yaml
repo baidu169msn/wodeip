@@ -16,59 +16,17 @@ proxies:
     public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
   servername: tesla.com
   client-fingerprint: chrome
-- name: 中国香港 (Hong Kong) 02
-  type: vless
-  server: 35.220.207.209
-  port: 443
-  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 中国香港 (Hong Kong) 03
-  type: vless
-  server: 35.220.207.209
-  port: 443
-  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 中国香港 (Hong Kong) 04
-  type: vless
-  server: 34.92.19.135
-  port: 443
-  uuid: 75d38591-267e-4d89-98bc-164f25b50880
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 中国香港 (Hong Kong) 01
-  - 中国香港 (Hong Kong) 02
-  - 中国香港 (Hong Kong) 03
-  - 中国香港 (Hong Kong) 04
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 中国香港 (Hong Kong) 01
-  - 中国香港 (Hong Kong) 02
-  - 中国香港 (Hong Kong) 03
-  - 中国香港 (Hong Kong) 04
 rules:
 - MATCH,PROXIES
