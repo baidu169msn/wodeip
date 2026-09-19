@@ -6,70 +6,49 @@ log-level: info
 proxies:
 - name: 德国 (Germany) 01
   type: ss
-  server: 130.61.43.8
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: frq0kd4mc0blKfmdiWiCosE/ahalb3nREwOnDCHUsZo=
-  udp: true
-- name: 德国 (Germany) 02
-  type: ss
   server: 130.61.148.34
   port: 59924
   cipher: 2022-blake3-chacha20-poly1305
   password: NiPxf0H2Yidm6y+KQxFBL9h6N0fIGwFOiUQPGC+3l+w=
   udp: true
-- name: 德国 (Germany) 03
+- name: 德国 (Germany) 02
   type: ss
-  server: 130.61.176.44
+  server: 130.61.40.61
   port: 59924
   cipher: 2022-blake3-chacha20-poly1305
-  password: AQqPf1u0AmCFWLNBxK7ve1ODd1cTFFCg+q5qsF3hwoM=
+  password: rYYQVHYHRQ85q+A8qkzqg51BCs9HBK4Psg7VO/z6rMc=
   udp: true
+- name: 德国 (Germany) 03
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 德国 (Germany) 04
   type: vless
-  server: 64.225.65.116
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 163.8.195.241
+  port: 2087
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /bd/pictures?ed=2560fp=chrome
+    path: /29c8fed7ca22
     headers:
-      Host: cdn8848.776676.xyz
+      Host: 163.8.195.241
 - name: 德国 (Germany) 05
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 82.47.186.18
+  port: 55597
+  cipher: aes-128-gcm
+  password: o2rw2hICwu1blrr_gZAl2Q
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 德国 (Germany) 06
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 德国 (Germany) 07
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 德国 (Germany) 08
   type: vmess
   server: 82.198.246.250
   port: 180
@@ -79,73 +58,40 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 德国 (Germany) 07
+  type: ss
+  server: 130.61.112.180
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: ++mR5br/NAviA18jrILlV+DvdnZdmQqWhx54nclkxAI=
+  udp: true
+- name: 德国 (Germany) 08
+  type: ss
+  server: 130.61.147.64
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: JgVnjf+IujBeHuKJ9dhXtdyGYRYY8x9LPeqbgYYQE0Q=
+  udp: true
 - name: 德国 (Germany) 09
-  type: vmess
-  server: 51.89.41.22
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 130.61.114.48
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: FmxC4O0b9MskcU1X3oBo26HI+Kn5NDxSUAbvdF/tkV8=
+  udp: true
+- name: 德国 (Germany) 10
+  type: vless
+  server: 93.152.217.41
+  port: 40443
+  uuid: 969bcce0-de8a-4b02-8cf8-d00d2d2ca7a5
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
-- name: 德国 (Germany) 10
-  type: ss
-  server: 2.58.81.221
-  port: 443
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
+  reality-opts:
+    public-key: VG-FwQBMFzPcemJ_JqtkbO-2WKLmQp2h0CmAj-DfLkA
+  servername: deepl.com
+  client-fingerprint: qq
 - name: 德国 (Germany) 11
-  type: ss
-  server: 130.61.82.183
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: rsZGSjFXUyi6kX8P6glg15+TdK0zdtKVBjkHYeZdJ58=
-  udp: true
-- name: 德国 (Germany) 12
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 德国 (Germany) 13
-  type: ss
-  server: 130.61.130.160
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Agibj1Vmrbe4+wbHOjbYmeiae3Wi3nnIMa1mmgiKcu0=
-  udp: true
-- name: 德国 (Germany) 14
-  type: ss
-  server: 2.58.81.221
-  port: 80
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 德国 (Germany) 15
-  type: ss
-  server: 130.61.119.122
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: uuMbME5levfAj7yT6O3+6D+ufAlCTzK4KcgVq6AZAv8=
-  udp: true
-- name: 德国 (Germany) 16
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 德国 (Germany) 17
   type: vless
   server: 93.152.217.41
   port: 40443
@@ -173,12 +119,6 @@ proxy-groups:
   - 德国 (Germany) 09
   - 德国 (Germany) 10
   - 德国 (Germany) 11
-  - 德国 (Germany) 12
-  - 德国 (Germany) 13
-  - 德国 (Germany) 14
-  - 德国 (Germany) 15
-  - 德国 (Germany) 16
-  - 德国 (Germany) 17
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -195,11 +135,5 @@ proxy-groups:
   - 德国 (Germany) 09
   - 德国 (Germany) 10
   - 德国 (Germany) 11
-  - 德国 (Germany) 12
-  - 德国 (Germany) 13
-  - 德国 (Germany) 14
-  - 德国 (Germany) 15
-  - 德国 (Germany) 16
-  - 德国 (Germany) 17
 rules:
 - MATCH,PROXIES
