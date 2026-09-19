@@ -6,6 +6,57 @@ log-level: info
 proxies:
 - name: 中国香港 (Hong Kong) 01
   type: vless
+  server: 195.58.144.56
+  port: 11907
+  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 195.58.144.56
+- name: 中国香港 (Hong Kong) 02
+  type: vless
+  server: 195.58.144.56
+  port: 11907
+  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 195.58.144.56
+- name: 中国香港 (Hong Kong) 03
+  type: vless
+  server: 47.238.210.5
+  port: 13779
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+  servername: tesla.com
+  client-fingerprint: firefox
+- name: 中国香港 (Hong Kong) 04
+  type: vless
+  server: 47.238.210.5
+  port: 13779
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+  servername: tesla.com
+  client-fingerprint: random
+- name: 中国香港 (Hong Kong) 05
+  type: vless
+  server: 195.58.144.56
+  port: 11907
+  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 195.58.144.56
+- name: 中国香港 (Hong Kong) 06
+  type: vless
   server: 47.238.210.5
   port: 13779
   uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
@@ -22,11 +73,21 @@ proxy-groups:
   proxies:
   - AUTO
   - 中国香港 (Hong Kong) 01
+  - 中国香港 (Hong Kong) 02
+  - 中国香港 (Hong Kong) 03
+  - 中国香港 (Hong Kong) 04
+  - 中国香港 (Hong Kong) 05
+  - 中国香港 (Hong Kong) 06
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 中国香港 (Hong Kong) 01
+  - 中国香港 (Hong Kong) 02
+  - 中国香港 (Hong Kong) 03
+  - 中国香港 (Hong Kong) 04
+  - 中国香港 (Hong Kong) 05
+  - 中国香港 (Hong Kong) 06
 rules:
 - MATCH,PROXIES
