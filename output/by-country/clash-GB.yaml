@@ -6,12 +6,59 @@ log-level: info
 proxies:
 - name: 英国 (United Kingdom) 01
   type: ss
+  server: 51.38.71.51
+  port: 2083
+  cipher: 2022-blake3-aes-256-gcm
+  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
+  udp: true
+- name: 英国 (United Kingdom) 02
+  type: ss
   server: 134.65.63.122
   port: 61312
   cipher: 2022-blake3-chacha20-poly1305
   password: 9UzSnfj0gy1JNUBD2L3JgpLLlQieW6AfOJ9vptz0iks=
   udp: true
-- name: 英国 (United Kingdom) 02
+- name: 英国 (United Kingdom) 03
+  type: ss
+  server: 129.151.68.65
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 0N1dYtQFmHnwBeKv53o5MJDkRzbGYY1KkLXnaNkWo3o=
+  udp: true
+- name: 英国 (United Kingdom) 04
+  type: vless
+  server: 46.250.250.149
+  port: 2053
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 英国 (United Kingdom) 05
+  type: ss
+  server: 129.151.68.58
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 2bp39sVjFj+ZRrbOrGn5VarlG04eijX2Oja3wDSBqZM=
+  udp: true
+- name: 英国 (United Kingdom) 06
+  type: ss
+  server: 134.65.62.82
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: rqzhd6WZ9TbYEozhRmDCezccPKZBpFV5MrF1l6sxiIw=
+  udp: true
+- name: 英国 (United Kingdom) 07
+  type: ss
+  server: 129.151.72.10
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 1W4F0fI81d/vwGCxDLCle+KbE+/Bb6uE7BP8Xjq1wH4=
+  udp: true
+- name: 英国 (United Kingdom) 08
   type: vless
   server: 46.250.250.149
   port: 2053
@@ -23,12 +70,40 @@ proxies:
     public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
   servername: www.apple.com
   client-fingerprint: random
-- name: 英国 (United Kingdom) 03
+- name: 英国 (United Kingdom) 09
   type: ss
-  server: 129.151.68.65
+  server: 134.65.58.197
   port: 61312
   cipher: 2022-blake3-chacha20-poly1305
-  password: 0N1dYtQFmHnwBeKv53o5MJDkRzbGYY1KkLXnaNkWo3o=
+  password: aKfETv3FnRLG5JBPKBZLrjX42g1rwmCWW9kPwL4jskI=
+  udp: true
+- name: 英国 (United Kingdom) 10
+  type: ss
+  server: 129.151.66.224
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: em25pV7s2EUkWhgDNcKJDRPTc8KBbjReVwoUdeqeQoU=
+  udp: true
+- name: 英国 (United Kingdom) 11
+  type: ss
+  server: 129.151.77.36
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: JAIIG6N6KLuM33ZbMh0jk1fVcDM3qTVfUoXhQr6tiYM=
+  udp: true
+- name: 英国 (United Kingdom) 12
+  type: ss
+  server: 158.173.221.214
+  port: 11001
+  cipher: chacha20-ietf-poly1305
+  password: c58d16e593d44f42
+  udp: true
+- name: 英国 (United Kingdom) 13
+  type: ss
+  server: 144.24.226.127
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: J7cXNcIXneBAD5a5hk6nXD68z5BcJtIMepdH646KjtI=
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -38,6 +113,16 @@ proxy-groups:
   - 英国 (United Kingdom) 01
   - 英国 (United Kingdom) 02
   - 英国 (United Kingdom) 03
+  - 英国 (United Kingdom) 04
+  - 英国 (United Kingdom) 05
+  - 英国 (United Kingdom) 06
+  - 英国 (United Kingdom) 07
+  - 英国 (United Kingdom) 08
+  - 英国 (United Kingdom) 09
+  - 英国 (United Kingdom) 10
+  - 英国 (United Kingdom) 11
+  - 英国 (United Kingdom) 12
+  - 英国 (United Kingdom) 13
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +131,15 @@ proxy-groups:
   - 英国 (United Kingdom) 01
   - 英国 (United Kingdom) 02
   - 英国 (United Kingdom) 03
+  - 英国 (United Kingdom) 04
+  - 英国 (United Kingdom) 05
+  - 英国 (United Kingdom) 06
+  - 英国 (United Kingdom) 07
+  - 英国 (United Kingdom) 08
+  - 英国 (United Kingdom) 09
+  - 英国 (United Kingdom) 10
+  - 英国 (United Kingdom) 11
+  - 英国 (United Kingdom) 12
+  - 英国 (United Kingdom) 13
 rules:
 - MATCH,PROXIES
