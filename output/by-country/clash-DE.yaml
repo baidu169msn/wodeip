@@ -6,26 +6,56 @@ log-level: info
 proxies:
 - name: 德国 (Germany) 01
   type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
+  server: web.turbooserver.net.tr
+  port: 2087
+  cipher: 2022-blake3-aes-256-gcm
+  password: WAqeGA+dU+HZYSipCio+Jmt7SSVfHjwMH7j8xmsm7/s=:althddZ27iu261I+568pk7HZzBFDCyIx6pvG8H9oXow=
   udp: true
 - name: 德国 (Germany) 02
   type: ss
-  server: 193.233.126.36
-  port: 55597
-  cipher: aes-128-gcm
-  password: o2rw2hICwu1blrr_gZAl2Q
+  server: 130.61.151.93
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: jcGrOPLXBqRT+ZnVbhom8HavJ2p5MkyjZdyxfkOzgLY=
   udp: true
 - name: 德国 (Germany) 03
+  type: vless
+  server: 163.8.195.241
+  port: 2087
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /29c8fed7ca22
+    headers:
+      Host: 163.8.195.241
+- name: 德国 (Germany) 04
   type: ss
   server: 2.58.81.221
   port: 443
   cipher: aes-256-gcm
   password: kKEd0rBrd56Furjz
   udp: true
-- name: 德国 (Germany) 04
+- name: 德国 (Germany) 05
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 德国 (Germany) 06
+  type: ss
+  server: 213.202.208.199
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 德国 (Germany) 07
   type: vmess
   server: 82.198.246.97
   port: 180
@@ -35,23 +65,33 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 德国 (Germany) 05
+- name: 德国 (Germany) 08
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 德国 (Germany) 09
+  type: ss
+  server: 8.209.74.72
+  port: 20001
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+  udp: true
+- name: 德国 (Germany) 10
   type: ss
   server: 2.58.81.221
   port: 80
   cipher: aes-256-gcm
   password: kKEd0rBrd56Furjz
   udp: true
-- name: 德国 (Germany) 06
-  type: ss
-  server: 130.61.37.86
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: dynqHFTd+BvukKi9taotWYzRPZM/yitJoTufLzUA8W0=
-  udp: true
-- name: 德国 (Germany) 07
+- name: 德国 (Germany) 11
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -71,6 +111,10 @@ proxy-groups:
   - 德国 (Germany) 05
   - 德国 (Germany) 06
   - 德国 (Germany) 07
+  - 德国 (Germany) 08
+  - 德国 (Germany) 09
+  - 德国 (Germany) 10
+  - 德国 (Germany) 11
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -83,5 +127,9 @@ proxy-groups:
   - 德国 (Germany) 05
   - 德国 (Germany) 06
   - 德国 (Germany) 07
+  - 德国 (Germany) 08
+  - 德国 (Germany) 09
+  - 德国 (Germany) 10
+  - 德国 (Germany) 11
 rules:
 - MATCH,PROXIES
