@@ -6,16 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "PL 01",
-        "PL 02"
+        "EE 01",
+        "EE 02",
+        "EE 03",
+        "EE 04"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "PL 01",
-        "PL 02"
+        "EE 01",
+        "EE 02",
+        "EE 03",
+        "EE 04"
       ],
       "url": "https://www.google.com/generate_204"
     },

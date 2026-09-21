@@ -39,8 +39,29 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: ios
 - name: 澳大利亚 (Australia) 04
+  type: vless
+  server: 34.87.244.111
+  port: 443
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 澳大利亚 (Australia) 05
+  type: vless
+  server: 172.105.169.70
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 172.105.169.70
+- name: 澳大利亚 (Australia) 06
   type: vless
   server: 34.87.229.148
   port: 443
@@ -50,30 +71,6 @@ proxies:
   skip-cert-verify: true
   reality-opts:
     public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 澳大利亚 (Australia) 05
-  type: vless
-  server: 34.87.244.111
-  port: 443
-  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 澳大利亚 (Australia) 06
-  type: vless
-  server: 34.87.244.111
-  port: 443
-  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 澳大利亚 (Australia) 07
@@ -99,7 +96,7 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
 - name: 澳大利亚 (Australia) 09
   type: vless
   server: 34.87.244.111
@@ -111,7 +108,19 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: random
+- name: 澳大利亚 (Australia) 10
+  type: vless
+  server: 34.87.244.111
+  port: 443
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -126,6 +135,7 @@ proxy-groups:
   - 澳大利亚 (Australia) 07
   - 澳大利亚 (Australia) 08
   - 澳大利亚 (Australia) 09
+  - 澳大利亚 (Australia) 10
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -140,5 +150,6 @@ proxy-groups:
   - 澳大利亚 (Australia) 07
   - 澳大利亚 (Australia) 08
   - 澳大利亚 (Australia) 09
+  - 澳大利亚 (Australia) 10
 rules:
 - MATCH,PROXIES
