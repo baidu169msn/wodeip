@@ -6,16 +6,16 @@ log-level: info
 proxies:
 - name: 法国 (France) 01
   type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  server: 34.155.10.226
+  port: 443
+  uuid: d619964d-26d6-452d-9860-6f058f03ba8e
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: firefox
+    public-key: 6tH_NDFcxWn60B3s-MgrkBTU2yUUBY42ZG1av50Ywhk
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 法国 (France) 02
   type: vmess
   server: 162.19.204.71
@@ -28,27 +28,24 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 法国 (France) 03
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 34.155.10.226
+  port: 443
+  uuid: d619964d-26d6-452d-9860-6f058f03ba8e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  reality-opts:
+    public-key: 6tH_NDFcxWn60B3s-MgrkBTU2yUUBY42ZG1av50Ywhk
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 法国 (France) 04
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: jgzt1997.qivfelo.ir
+  port: 5050
+  cipher: chacha20-ietf-poly1305
+  password: DfokaAndibyl-wXjoVex_zDT78r-kwmX
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 - name: 法国 (France) 05
   type: vmess
   server: 141.95.65.9
@@ -62,14 +59,6 @@ proxies:
   servername: ''
 - name: 法国 (France) 06
   type: vless
-  server: 13.36.86.247
-  port: 22223
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 法国 (France) 07
-  type: vless
   server: 54.37.136.194
   port: 2053
   uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
@@ -80,7 +69,7 @@ proxies:
     public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 法国 (France) 08
+- name: 法国 (France) 07
   type: vmess
   server: 162.19.204.71
   port: 1234
@@ -91,52 +80,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 法国 (France) 09
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 法国 (France) 10
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 法国 (France) 11
-  type: vless
-  server: 54.37.136.194
-  port: 2053
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 法国 (France) 12
-  type: vless
-  server: 34.155.10.226
-  port: 443
-  uuid: d619964d-26d6-452d-9860-6f058f03ba8e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 6tH_NDFcxWn60B3s-MgrkBTU2yUUBY42ZG1av50Ywhk
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -149,11 +92,6 @@ proxy-groups:
   - 法国 (France) 05
   - 法国 (France) 06
   - 法国 (France) 07
-  - 法国 (France) 08
-  - 法国 (France) 09
-  - 法国 (France) 10
-  - 法国 (France) 11
-  - 法国 (France) 12
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -166,10 +104,5 @@ proxy-groups:
   - 法国 (France) 05
   - 法国 (France) 06
   - 法国 (France) 07
-  - 法国 (France) 08
-  - 法国 (France) 09
-  - 法国 (France) 10
-  - 法国 (France) 11
-  - 法国 (France) 12
 rules:
 - MATCH,PROXIES
