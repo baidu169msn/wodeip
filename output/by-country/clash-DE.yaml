@@ -6,38 +6,19 @@ log-level: info
 proxies:
 - name: 德国 (Germany) 01
   type: vless
-  server: 162.55.242.208
-  port: 2053
-  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  server: lucky-lab-ac6d.caveyi8071.workers.dev
+  port: 443
+  uuid: 8a36be1d-7c78-4885-8a1f-bedf5ba7db1c
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  servername: lucky-lab-ac6d.caveyi8071.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: lucky-lab-ac6d.caveyi8071.workers.dev
 - name: 德国 (Germany) 02
-  type: ss
-  server: 2.58.81.221
-  port: 443
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 德国 (Germany) 03
-  type: ss
-  server: 2.58.81.221
-  port: 80
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 德国 (Germany) 04
-  type: ss
-  server: 130.61.227.189
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: EPNhE9qvdzvZpDTA6OzRwv1CsK7SFcOahpqDmNOGM/w=
-  udp: true
-- name: 德国 (Germany) 05
   type: vless
   server: 162.55.242.208
   port: 2053
@@ -48,7 +29,43 @@ proxies:
   reality-opts:
     public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
+- name: 德国 (Germany) 03
+  type: vmess
+  server: 216.106.187.60
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 德国 (Germany) 04
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 德国 (Germany) 05
+  type: vmess
+  server: aidrivercat.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aidrivercat.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aidrivercat.org
 - name: 德国 (Germany) 06
   type: vless
   server: 162.55.242.208
@@ -60,7 +77,38 @@ proxies:
   reality-opts:
     public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
   servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 德国 (Germany) 07
+  type: vless
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
   client-fingerprint: firefox
+- name: 德国 (Germany) 08
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 德国 (Germany) 09
+  type: vless
+  server: 144.31.166.205
+  port: 10000
+  uuid: 135852be-3cfc-4551-b6bf-641911655174
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: UOa0v_JpSPRPMO6ABMM7tIir-GclotOVfnbI2WqJGVE
+  servername: zoom.us
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,6 +120,9 @@ proxy-groups:
   - 德国 (Germany) 04
   - 德国 (Germany) 05
   - 德国 (Germany) 06
+  - 德国 (Germany) 07
+  - 德国 (Germany) 08
+  - 德国 (Germany) 09
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -83,5 +134,8 @@ proxy-groups:
   - 德国 (Germany) 04
   - 德国 (Germany) 05
   - 德国 (Germany) 06
+  - 德国 (Germany) 07
+  - 德国 (Germany) 08
+  - 德国 (Germany) 09
 rules:
 - MATCH,PROXIES
