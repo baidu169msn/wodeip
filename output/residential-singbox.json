@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "美国 (United States) 01"
+        "中国台湾 (Taiwan) 01",
+        "加拿大 (Canada) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "美国 (United States) 01"
+        "中国台湾 (Taiwan) 01",
+        "加拿大 (Canada) 02"
       ],
       "url": "https://www.google.com/generate_204"
     },
