@@ -1,0 +1,30 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: FI 01
+  type: vmess
+  server: me6.movieseryalirani.ir
+  port: 57361
+  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - FI 01
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - FI 01
+rules:
+- MATCH,PROXIES
