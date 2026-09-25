@@ -4,24 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: ZA 01
-  type: ss
-  server: 102.37.156.224
+- name: TH 01
+  type: vless
+  server: 104.16.10.185
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - ZA 01
+  - TH 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - ZA 01
+  - TH 01
 rules:
 - MATCH,PROXIES
