@@ -15,8 +15,40 @@ proxies:
   reality-opts:
     public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 中国香港 (Hong Kong) 02
+  type: vmess
+  server: 89.223.95.77
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 中国香港 (Hong Kong) 03
+  type: vless
+  server: 34.92.145.185
+  port: 443
+  uuid: 75d38591-267e-4d89-98bc-164f25b50880
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 中国香港 (Hong Kong) 04
+  type: vmess
+  server: 89.223.95.77
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 中国香港 (Hong Kong) 05
   type: vless
   server: 34.92.145.185
   port: 443
@@ -28,6 +60,16 @@ proxies:
     public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 中国香港 (Hong Kong) 06
+  type: vmess
+  server: 89.223.95.77
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +77,10 @@ proxy-groups:
   - AUTO
   - 中国香港 (Hong Kong) 01
   - 中国香港 (Hong Kong) 02
+  - 中国香港 (Hong Kong) 03
+  - 中国香港 (Hong Kong) 04
+  - 中国香港 (Hong Kong) 05
+  - 中国香港 (Hong Kong) 06
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -42,5 +88,9 @@ proxy-groups:
   proxies:
   - 中国香港 (Hong Kong) 01
   - 中国香港 (Hong Kong) 02
+  - 中国香港 (Hong Kong) 03
+  - 中国香港 (Hong Kong) 04
+  - 中国香港 (Hong Kong) 05
+  - 中国香港 (Hong Kong) 06
 rules:
 - MATCH,PROXIES
