@@ -6,7 +6,23 @@ log-level: info
 proxies:
 - name: 德国 (Germany) 01
   type: vmess
-  server: 82.198.246.250
+  server: aidrivercat.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: ''
+- name: 德国 (Germany) 02
+  type: vmess
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -14,18 +30,11 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 德国 (Germany) 02
-  type: ss
-  server: 130.61.181.215
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: zdg10Oi20ZiVsS+PETsko/9UMy7SzqRngQX8tX/mInE=
-  udp: true
 - name: 德国 (Germany) 03
   type: vmess
-  server: 216.106.187.60
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   udp: true
@@ -42,18 +51,31 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 德国 (Germany) 05
-  type: ss
-  server: 8.209.74.72
-  port: 20001
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 德国 (Germany) 06
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 德国 (Germany) 07
   type: ss
-  server: 130.61.116.146
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: xuiXuLQI6kNNuiN7b2AIFUsbKNYm4tjsTIJgOkL96QE=
+  server: creativegermany.zanity.net
+  port: 5228
+  cipher: chacha20-ietf-poly1305
+  password: IdU1jzHh7ZszbUC5v2mA9W
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -66,6 +88,7 @@ proxy-groups:
   - 德国 (Germany) 04
   - 德国 (Germany) 05
   - 德国 (Germany) 06
+  - 德国 (Germany) 07
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,5 +100,6 @@ proxy-groups:
   - 德国 (Germany) 04
   - 德国 (Germany) 05
   - 德国 (Germany) 06
+  - 德国 (Germany) 07
 rules:
 - MATCH,PROXIES

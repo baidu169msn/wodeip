@@ -5,54 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 中国台湾 (Taiwan) 01
-  type: vmess
-  server: 24864168545164.oylfmxz.cn
+  type: vless
+  server: 59.125.69.24
   port: 443
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
+  uuid: 06e177f7-240d-4687-bd85-235505801a5e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: ty986gfazs.cainiaohub.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: ''
+      Host: 59.125.69.24
 - name: 中国台湾 (Taiwan) 02
-  type: vmess
-  server: 24864168545164.oylfmxz.cn
-  port: 443
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
-- name: 中国台湾 (Taiwan) 03
-  type: vmess
-  server: 24864168545164.oylfmxz.cn
-  port: 443
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 中国台湾 (Taiwan) 04
   type: vmess
   server: 165.154.195.38
   port: 35034
@@ -62,7 +28,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 中国台湾 (Taiwan) 05
+- name: 中国台湾 (Taiwan) 03
   type: vmess
   server: 165.154.195.38
   port: 35034
@@ -80,8 +46,6 @@ proxy-groups:
   - 中国台湾 (Taiwan) 01
   - 中国台湾 (Taiwan) 02
   - 中国台湾 (Taiwan) 03
-  - 中国台湾 (Taiwan) 04
-  - 中国台湾 (Taiwan) 05
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -90,7 +54,5 @@ proxy-groups:
   - 中国台湾 (Taiwan) 01
   - 中国台湾 (Taiwan) 02
   - 中国台湾 (Taiwan) 03
-  - 中国台湾 (Taiwan) 04
-  - 中国台湾 (Taiwan) 05
 rules:
 - MATCH,PROXIES
