@@ -19,6 +19,13 @@ proxies:
     headers:
       Host: 60.248.219.78
 - name: 中国台湾 (Taiwan) 02
+  type: ss
+  server: 125.224.202.118
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: a9a0d092-6f0e-4701-81ee-454643d6d506
+  udp: true
+- name: 中国台湾 (Taiwan) 03
   type: vless
   server: 118.167.230.191
   port: 24215
@@ -37,6 +44,7 @@ proxy-groups:
   - AUTO
   - 中国台湾 (Taiwan) 01
   - 中国台湾 (Taiwan) 02
+  - 中国台湾 (Taiwan) 03
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +52,6 @@ proxy-groups:
   proxies:
   - 中国台湾 (Taiwan) 01
   - 中国台湾 (Taiwan) 02
+  - 中国台湾 (Taiwan) 03
 rules:
 - MATCH,PROXIES
