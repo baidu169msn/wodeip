@@ -5,36 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 法国 (France) 01
-  type: vless
-  server: 15.224.68.85
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 法国 (France) 02
   type: ss
   server: 54.36.174.140
   port: 443
   cipher: chacha20-ietf-poly1305
   password: mrs2e9a
   udp: true
-- name: 法国 (France) 03
-  type: vless
-  server: 15.224.68.85
-  port: 22223
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 法国 (France) 02
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 法国 (France) 04
-  type: vless
-  server: 15.224.68.85
-  port: 22224
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  servername: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,8 +29,6 @@ proxy-groups:
   - AUTO
   - 法国 (France) 01
   - 法国 (France) 02
-  - 法国 (France) 03
-  - 法国 (France) 04
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -51,7 +36,5 @@ proxy-groups:
   proxies:
   - 法国 (France) 01
   - 法国 (France) 02
-  - 法国 (France) 03
-  - 法国 (France) 04
 rules:
 - MATCH,PROXIES
