@@ -6,6 +6,42 @@ log-level: info
 proxies:
 - name: 韩国 (South Korea) 01
   type: vless
+  server: 172.67.179.98
+  port: 8880
+  uuid: 8546bcef-8456-41a2-82bc-d2231b42b769
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: small-tree-9ec0.84-971.workers.dev
+- name: 韩国 (South Korea) 02
+  type: vless
+  server: 172.64.88.251
+  port: 8880
+  uuid: df26029b-bffe-4ce2-9246-25b52ed2b1c7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: polished-field-4448.186-705.workers.dev
+- name: 韩国 (South Korea) 03
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 韩国 (South Korea) 04
+  type: vless
   server: 151.245.106.49
   port: 2053
   uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
@@ -16,17 +52,52 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: firefox
+- name: 韩国 (South Korea) 05
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 韩国 (South Korea) 06
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 8d36dcef-c008-47f1-b8a0-4f63193697f8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: tiny-union-8d4d.32-c76.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 韩国 (South Korea) 01
+  - 韩国 (South Korea) 02
+  - 韩国 (South Korea) 03
+  - 韩国 (South Korea) 04
+  - 韩国 (South Korea) 05
+  - 韩国 (South Korea) 06
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 韩国 (South Korea) 01
+  - 韩国 (South Korea) 02
+  - 韩国 (South Korea) 03
+  - 韩国 (South Korea) 04
+  - 韩国 (South Korea) 05
+  - 韩国 (South Korea) 06
 rules:
 - MATCH,PROXIES
