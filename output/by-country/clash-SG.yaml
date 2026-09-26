@@ -6,16 +6,17 @@ log-level: info
 proxies:
 - name: 新加坡 (Singapore) 01
   type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  server: 104.18.47.113
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 新加坡 (Singapore) 02
   type: vless
   server: 217.217.254.126
@@ -27,8 +28,36 @@ proxies:
   reality-opts:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 新加坡 (Singapore) 03
+  type: vmess
+  server: magicvip.iddns.ir
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 新加坡 (Singapore) 04
+  type: vless
+  server: onhit.shalana.xyz
+  port: 443
+  uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: onhit.shalana.xyz
+- name: 新加坡 (Singapore) 05
+  type: vless
+  server: onhit.shalana.xyz
+  port: 443
+  uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: onhit.shalana.xyz
+- name: 新加坡 (Singapore) 06
   type: vmess
   server: ww11.levikogjgfdd.ir
   port: 18000
@@ -38,7 +67,17 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 新加坡 (Singapore) 04
+- name: 新加坡 (Singapore) 07
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 新加坡 (Singapore) 08
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -48,32 +87,16 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 新加坡 (Singapore) 05
+- name: 新加坡 (Singapore) 09
   type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  server: onhit.shalana.xyz
+  port: 443
+  uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 新加坡 (Singapore) 06
-  type: vless
-  server: support.zoom.us
-  port: 80
-  uuid: 31727d09-1958-42d5-b437-adc9cf0ddd34
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /shalana
-    headers:
-      Host: onhit.shalana.xyz
-- name: 新加坡 (Singapore) 07
+  servername: onhit.shalana.xyz
+- name: 新加坡 (Singapore) 10
   type: vless
   server: 129.150.51.127
   port: 49289
@@ -82,27 +105,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: www.microsoft.com
-- name: 新加坡 (Singapore) 08
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 新加坡 (Singapore) 09
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 新加坡 (Singapore) 10
+- name: 新加坡 (Singapore) 11
   type: vless
   server: 217.217.254.126
   port: 2053
@@ -113,17 +116,7 @@ proxies:
   reality-opts:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 新加坡 (Singapore) 11
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  client-fingerprint: firefox
 - name: 新加坡 (Singapore) 12
   type: vmess
   server: ww11.levikogjgfdd.ir
@@ -135,15 +128,17 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 新加坡 (Singapore) 13
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 新加坡 (Singapore) 14
   type: vless
   server: 217.217.254.126
@@ -155,10 +150,10 @@ proxies:
   reality-opts:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 新加坡 (Singapore) 15
   type: vmess
-  server: ww11.levikogjgfdd.ir
+  server: 149.88.23.202
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -168,9 +163,9 @@ proxies:
   skip-cert-verify: true
 - name: 新加坡 (Singapore) 16
   type: vmess
-  server: magicvip.iddns.ir
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   udp: true
@@ -187,35 +182,15 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 新加坡 (Singapore) 18
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 新加坡 (Singapore) 19
   type: vless
-  server: onhit.shalana.xyz
+  server: 172.236.142.114
   port: 443
   uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
   udp: true
   tls: true
   skip-cert-verify: true
   servername: onhit.shalana.xyz
-- name: 新加坡 (Singapore) 20
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 新加坡 (Singapore) 21
+- name: 新加坡 (Singapore) 19
   type: vless
   server: 217.217.254.126
   port: 2053
@@ -227,15 +202,59 @@ proxies:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 新加坡 (Singapore) 22
+- name: 新加坡 (Singapore) 20
   type: vless
-  server: onhit.shalana.xyz
+  server: 172.236.142.114
   port: 443
   uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
   udp: true
   tls: true
   skip-cert-verify: true
   servername: onhit.shalana.xyz
+- name: 新加坡 (Singapore) 21
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 新加坡 (Singapore) 22
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 新加坡 (Singapore) 23
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 新加坡 (Singapore) 24
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -263,6 +282,8 @@ proxy-groups:
   - 新加坡 (Singapore) 20
   - 新加坡 (Singapore) 21
   - 新加坡 (Singapore) 22
+  - 新加坡 (Singapore) 23
+  - 新加坡 (Singapore) 24
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -290,5 +311,7 @@ proxy-groups:
   - 新加坡 (Singapore) 20
   - 新加坡 (Singapore) 21
   - 新加坡 (Singapore) 22
+  - 新加坡 (Singapore) 23
+  - 新加坡 (Singapore) 24
 rules:
 - MATCH,PROXIES
