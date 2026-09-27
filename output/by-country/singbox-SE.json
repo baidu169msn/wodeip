@@ -6,22 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "FI 01",
-        "FI 02",
-        "FI 03",
-        "FI 04",
-        "FI 05"
+        "SE 01",
+        "SE 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "FI 01",
-        "FI 02",
-        "FI 03",
-        "FI 04",
-        "FI 05"
+        "SE 01",
+        "SE 02"
       ],
       "url": "https://www.google.com/generate_204"
     },

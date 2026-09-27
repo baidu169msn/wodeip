@@ -4,26 +4,35 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 澳大利亚 (Australia) 01
+- name: SE 01
   type: vless
-  server: 172.105.169.70
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  server: 51.170.176.145
+  port: 62145
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 172.105.169.70
+- name: SE 02
+  type: vless
+  server: 51.170.176.145
+  port: 62145
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 澳大利亚 (Australia) 01
+  - SE 01
+  - SE 02
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 澳大利亚 (Australia) 01
+  - SE 01
+  - SE 02
 rules:
 - MATCH,PROXIES

@@ -5,6 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 德国 (Germany) 01
+  type: ss
+  server: 2.58.81.221
+  port: 80
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
+- name: 德国 (Germany) 02
+  type: vless
+  server: 192.248.179.81
+  port: 80
+  uuid: 2787849c-1a49-4457-9db7-efcdb2578268
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 192.248.179.81
+- name: 德国 (Germany) 03
   type: vless
   server: 162.55.242.208
   port: 2053
@@ -16,41 +36,49 @@ proxies:
     public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 德国 (Germany) 02
+- name: 德国 (Germany) 04
   type: ss
   server: 8.209.74.72
   port: 20001
   cipher: chacha20-ietf-poly1305
   password: PWpjPo3tqhPN4yRZ
   udp: true
-- name: 德国 (Germany) 03
+- name: 德国 (Germany) 05
   type: ss
-  server: 2.58.81.221
-  port: 80
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 德国 (Germany) 04
-  type: ss
-  server: 130.61.83.88
+  server: 130.61.237.178
   port: 59924
   cipher: 2022-blake3-chacha20-poly1305
-  password: bvHY/DNOgIpmarNB4MP65BYeGyXcXlZ1yF1k+2PnCGQ=
+  password: +Md6uvx0q4r8xi+D4f0ohkfMPiaCVx5nHy7ScOhNlLM=
   udp: true
-- name: 德国 (Germany) 05
+- name: 德国 (Germany) 06
   type: ss
   server: 209.46.102.22
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: 1hhrqrokj3ag
   udp: true
-- name: 德国 (Germany) 06
+- name: 德国 (Germany) 07
   type: ss
-  server: 130.61.232.1
+  server: 130.61.227.119
   port: 59924
   cipher: 2022-blake3-chacha20-poly1305
-  password: UoUzY5YlcUBJpgXi/Z3PEaf58E+++FJ+3AKry5V7J9Y=
+  password: QQyhsWE4kraFnuIyxSx/tfdFnd1+IUu3YrQM92BGVrQ=
   udp: true
+- name: 德国 (Germany) 08
+  type: ss
+  server: 130.61.178.43
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: SgyJkGCcYNgfF87vVJTcRI9Vd9Xa/GISuFw17bdtB6c=
+  udp: true
+- name: 德国 (Germany) 09
+  type: vless
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,6 +90,9 @@ proxy-groups:
   - 德国 (Germany) 04
   - 德国 (Germany) 05
   - 德国 (Germany) 06
+  - 德国 (Germany) 07
+  - 德国 (Germany) 08
+  - 德国 (Germany) 09
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -73,5 +104,8 @@ proxy-groups:
   - 德国 (Germany) 04
   - 德国 (Germany) 05
   - 德国 (Germany) 06
+  - 德国 (Germany) 07
+  - 德国 (Germany) 08
+  - 德国 (Germany) 09
 rules:
 - MATCH,PROXIES
