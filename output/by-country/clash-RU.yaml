@@ -4,10 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 其他地区 (Other) 01
+- name: 俄罗斯 (Russia) 01
   type: vless
-  server: 162.159.43.187
-  port: 2095
+  server: 172.64.158.146
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls+
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 俄罗斯 (Russia) 02
+  type: vless
+  server: 162.159.48.32
+  port: 2052
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -17,9 +30,22 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 其他地区 (Other) 02
+- name: 俄罗斯 (Russia) 03
   type: vless
-  server: 162.159.24.131
+  server: 188.114.97.6
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 俄罗斯 (Russia) 04
+  type: vless
+  server: 172.64.229.2
   port: 8880
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
@@ -30,22 +56,9 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 其他地区 (Other) 03
+- name: 俄罗斯 (Russia) 05
   type: vless
-  server: 172.64.158.146
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 其他地区 (Other) 04
-  type: vless
-  server: 172.64.229.170
+  server: 172.64.42.85
   port: 8080
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
@@ -56,30 +69,17 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 其他地区 (Other) 05
+- name: 俄罗斯 (Russia) 06
   type: vless
-  server: 104.18.47.113
-  port: 8880
+  server: 172.64.229.170
+  port: 2095
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls+
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 其他地区 (Other) 06
-  type: vless
-  server: 104.18.47.113
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
+    path: ?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
@@ -87,22 +87,22 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 其他地区 (Other) 01
-  - 其他地区 (Other) 02
-  - 其他地区 (Other) 03
-  - 其他地区 (Other) 04
-  - 其他地区 (Other) 05
-  - 其他地区 (Other) 06
+  - 俄罗斯 (Russia) 01
+  - 俄罗斯 (Russia) 02
+  - 俄罗斯 (Russia) 03
+  - 俄罗斯 (Russia) 04
+  - 俄罗斯 (Russia) 05
+  - 俄罗斯 (Russia) 06
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 其他地区 (Other) 01
-  - 其他地区 (Other) 02
-  - 其他地区 (Other) 03
-  - 其他地区 (Other) 04
-  - 其他地区 (Other) 05
-  - 其他地区 (Other) 06
+  - 俄罗斯 (Russia) 01
+  - 俄罗斯 (Russia) 02
+  - 俄罗斯 (Russia) 03
+  - 俄罗斯 (Russia) 04
+  - 俄罗斯 (Russia) 05
+  - 俄罗斯 (Russia) 06
 rules:
 - MATCH,PROXIES

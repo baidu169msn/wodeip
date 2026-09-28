@@ -6,30 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "FI 01",
-        "FI 02",
-        "FI 03",
-        "FI 04",
-        "FI 05",
-        "FI 06",
-        "FI 07",
-        "FI 08",
-        "FI 09"
+        "俄罗斯 (Russia) 01",
+        "俄罗斯 (Russia) 02",
+        "俄罗斯 (Russia) 03",
+        "俄罗斯 (Russia) 04",
+        "俄罗斯 (Russia) 05",
+        "俄罗斯 (Russia) 06"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "FI 01",
-        "FI 02",
-        "FI 03",
-        "FI 04",
-        "FI 05",
-        "FI 06",
-        "FI 07",
-        "FI 08",
-        "FI 09"
+        "俄罗斯 (Russia) 01",
+        "俄罗斯 (Russia) 02",
+        "俄罗斯 (Russia) 03",
+        "俄罗斯 (Russia) 04",
+        "俄罗斯 (Russia) 05",
+        "俄罗斯 (Russia) 06"
       ],
       "url": "https://www.google.com/generate_204"
     },
