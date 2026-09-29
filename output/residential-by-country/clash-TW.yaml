@@ -4,29 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: MX 01
+- name: 中国台湾 (Taiwan) 01
   type: vless
-  server: 34.51.29.171
+  server: 59.125.69.24
   port: 443
-  uuid: 9ad81959-02c6-4679-a419-2af6a16ca07a
+  uuid: 06e177f7-240d-4687-bd85-235505801a5e
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 8vHditYTXXNZ37iNTraU4w129svOplF0QUhZwX2n3FA
-  servername: www.cloudflare.com
-  client-fingerprint: edge
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: 59.125.69.24
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - MX 01
+  - 中国台湾 (Taiwan) 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - MX 01
+  - 中国台湾 (Taiwan) 01
 rules:
 - MATCH,PROXIES

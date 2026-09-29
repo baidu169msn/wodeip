@@ -5,25 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 德国 (Germany) 01
-  type: ss
-  server: 130.61.113.67
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: blAJWikPmYuU27XuzkTPQc+WLKHKmK5PluU5rt1miwU=
-  udp: true
-- name: 德国 (Germany) 02
-  type: vless
-  server: 162.55.242.208
-  port: 2053
-  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 德国 (Germany) 03
   type: vmess
   server: 193.108.117.54
   port: 443
@@ -39,64 +20,76 @@ proxies:
     path: /linkvws
     headers:
       Host: ''
-- name: 德国 (Germany) 04
+- name: 德国 (Germany) 02
   type: vmess
-  server: 31.77.8.97
-  port: 110
-  uuid: d2d8601b-c14b-42c6-b8ea-33889bce152a
+  server: 193.108.117.54
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
   udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 德国 (Germany) 05
-  type: ss
-  server: 130.61.84.196
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: zwbOr/I/6+EK8ln8DB8N3/w+EGgtGtwGscxeRXRk53A=
-  udp: true
-- name: 德国 (Germany) 06
-  type: vless
-  server: 94.249.225.106
-  port: 443
-  uuid: ca5ffe64-81e0-42f0-a136-03cc4f662a4f
-  udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: oFuK9Xldbcr064LYxzvc-wGEQpdTs5J3ybFuOXlW0SQ
-  servername: thnet.krusofiya.fun
-  client-fingerprint: firefox
-- name: 德国 (Germany) 07
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: ''
+- name: 德国 (Germany) 03
+  type: ss
+  server: 130.61.113.67
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: blAJWikPmYuU27XuzkTPQc+WLKHKmK5PluU5rt1miwU=
+  udp: true
+- name: 德国 (Germany) 04
   type: ss
   server: 209.46.102.22
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: 1hhrqrokj3ag
   udp: true
-- name: 德国 (Germany) 08
-  type: ss
-  server: 130.61.84.200
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 9ISnjQzxrbopifGW/50s3KTVx19cK6T07QlyzeExBRw=
-  udp: true
-- name: 德国 (Germany) 09
+- name: 德国 (Germany) 05
   type: vless
-  server: smart.avenone.ir
-  port: 1085
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 德国 (Germany) 10
-  type: ss
-  server: 130.61.238.73
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Myitj2dzi6O4zVyl9FpAcvzBArkfvs7vcUgfLvT+hZQ=
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 德国 (Germany) 06
+  type: vmess
+  server: aidrivercat.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: ''
+- name: 德国 (Germany) 07
+  type: vless
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -109,9 +102,6 @@ proxy-groups:
   - 德国 (Germany) 05
   - 德国 (Germany) 06
   - 德国 (Germany) 07
-  - 德国 (Germany) 08
-  - 德国 (Germany) 09
-  - 德国 (Germany) 10
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -124,8 +114,5 @@ proxy-groups:
   - 德国 (Germany) 05
   - 德国 (Germany) 06
   - 德国 (Germany) 07
-  - 德国 (Germany) 08
-  - 德国 (Germany) 09
-  - 德国 (Germany) 10
 rules:
 - MATCH,PROXIES
