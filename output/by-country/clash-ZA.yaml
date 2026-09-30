@@ -4,24 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: NO 01
+- name: ZA 01
   type: ss
-  server: 185.213.23.63
-  port: 990
+  server: 102.37.156.224
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  password: aduB9HGxQHjA2SBMRjkHX6
+  udp: true
+- name: ZA 02
+  type: ss
+  server: 139.84.247.164
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: tfAcRikawhNoZAhu
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - NO 01
+  - ZA 01
+  - ZA 02
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - NO 01
+  - ZA 01
+  - ZA 02
 rules:
 - MATCH,PROXIES
