@@ -5,31 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 德国 (Germany) 01
+  type: ss
+  server: 31.76.11.83
+  port: 11950
+  cipher: chacha20-ietf-poly1305
+  password: iku/Gfrt9YeEUUleXr2Ptf3uvs0hszCR0JHPqGSjs+c=
+  udp: true
+- name: 德国 (Germany) 02
   type: vless
-  server: 82.24.203.20
-  port: 2087
-  uuid: 5fcdc9b7-e70f-4a5c-85c3-e018ad818326
+  server: 199.247.23.162
+  port: 80
+  uuid: 306dcb21-d02d-49dd-8ec7-0005b972b47a
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /fd5ba98a3970
+    path: /
     headers:
-      Host: 82.24.203.20
-- name: 德国 (Germany) 02
-  type: ss
-  server: 130.61.228.41
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: PAijPIjA3tTKiNb0oRJyZrveMENhEwhO8Dk8/gp/ztM=
-  udp: true
+      Host: 199.247.23.162
 - name: 德国 (Germany) 03
   type: ss
-  server: 8.209.74.72
-  port: 20001
+  server: 209.46.102.22
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
+  password: 1hhrqrokj3ag
   udp: true
 - name: 德国 (Germany) 04
   type: vmess
@@ -42,16 +42,20 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 德国 (Germany) 05
-  type: vmess
-  server: 31.76.11.83
-  port: 23226
-  uuid: 3dff544a-379e-41f9-95d9-4b95a8e4026e
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 130.61.228.41
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: PAijPIjA3tTKiNb0oRJyZrveMENhEwhO8Dk8/gp/ztM=
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 德国 (Germany) 06
+  type: ss
+  server: 8.209.74.72
+  port: 20001
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+  udp: true
+- name: 德国 (Germany) 07
   type: vmess
   server: 31.76.11.83
   port: 23226
@@ -61,7 +65,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 德国 (Germany) 07
+- name: 德国 (Germany) 08
   type: ss
   server: 185.226.172.8
   port: 8008
@@ -80,6 +84,7 @@ proxy-groups:
   - 德国 (Germany) 05
   - 德国 (Germany) 06
   - 德国 (Germany) 07
+  - 德国 (Germany) 08
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -92,5 +97,6 @@ proxy-groups:
   - 德国 (Germany) 05
   - 德国 (Germany) 06
   - 德国 (Germany) 07
+  - 德国 (Germany) 08
 rules:
 - MATCH,PROXIES

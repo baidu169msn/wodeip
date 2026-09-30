@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: IR 01
+- name: NO 01
   type: ss
-  server: 176.120.17.22
-  port: 1080
+  server: 185.213.23.63
+  port: 990
   cipher: chacha20-ietf-poly1305
-  password: vUtLhCy8T6zoZv9Y6EP2G9oyWXFFUv-d
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - IR 01
+  - NO 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - IR 01
+  - NO 01
 rules:
 - MATCH,PROXIES
