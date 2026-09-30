@@ -16,7 +16,7 @@ proxies:
   ws-opts:
     path: /platform128
     headers:
-      Host: platform128.golnamakcert.top
+      Host: platform128.halalkhor.info
 - name: MY 02
   type: vless
   server: platform128.golnamakcert.top
@@ -29,7 +29,33 @@ proxies:
   ws-opts:
     path: /platform128
     headers:
+      Host: platform128.golnamakcert.top
+- name: MY 03
+  type: vless
+  server: platform128.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform128
+    headers:
       Host: platform128.halalkhor.info
+- name: MY 04
+  type: vless
+  server: platform128.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform128
+    headers:
+      Host: platform128.golnamakcert.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +63,8 @@ proxy-groups:
   - AUTO
   - MY 01
   - MY 02
+  - MY 03
+  - MY 04
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +72,7 @@ proxy-groups:
   proxies:
   - MY 01
   - MY 02
+  - MY 03
+  - MY 04
 rules:
 - MATCH,PROXIES
