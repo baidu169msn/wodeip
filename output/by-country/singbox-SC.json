@@ -6,20 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "印度 (India) 01",
-        "印度 (India) 02",
-        "印度 (India) 03",
-        "印度 (India) 04"
+        "SC 01",
+        "SC 02",
+        "SC 03",
+        "SC 04"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "印度 (India) 01",
-        "印度 (India) 02",
-        "印度 (India) 03",
-        "印度 (India) 04"
+        "SC 01",
+        "SC 02",
+        "SC 03",
+        "SC 04"
       ],
       "url": "https://www.google.com/generate_204"
     },

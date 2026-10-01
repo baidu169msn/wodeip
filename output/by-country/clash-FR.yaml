@@ -5,17 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 法国 (France) 01
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: firefox
+  servername: ''
 - name: 法国 (France) 02
   type: vmess
   server: 141.95.65.9
@@ -27,18 +26,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 法国 (France) 03
-  type: vless
-  server: 34.155.146.201
-  port: 443
-  uuid: 069a2bbd-3fc9-470f-a251-c836a96ed04a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: SVT2WeXMIrumlh5VG1lbHN6YbqL7-u2iRkv1js8XEU4
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,7 +33,6 @@ proxy-groups:
   - AUTO
   - 法国 (France) 01
   - 法国 (France) 02
-  - 法国 (France) 03
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,6 +40,5 @@ proxy-groups:
   proxies:
   - 法国 (France) 01
   - 法国 (France) 02
-  - 法国 (France) 03
 rules:
 - MATCH,PROXIES
