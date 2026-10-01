@@ -5,14 +5,59 @@ mode: rule
 log-level: info
 proxies:
 - name: 德国 (Germany) 01
-  type: vless
-  server: 204.168.147.195
-  port: 1085
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  type: vmess
+  server: 216.106.187.60
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 德国 (Germany) 02
+  type: vmess
+  server: 185.177.229.129
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 德国 (Germany) 03
+  type: vless
+  server: 188.245.25.223
+  port: 8402
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 德国 (Germany) 04
+  type: ss
+  server: 2.58.81.221
+  port: 443
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
+- name: 德国 (Germany) 05
+  type: vmess
+  server: 31.76.11.83
+  port: 23326
+  uuid: 3dff544a-379e-41f9-95d9-4b95a8e4026e
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 德国 (Germany) 06
+  type: vless
+  server: 31.76.11.83
+  port: 26070
+  uuid: e676c6c8-44a8-4a1d-82cc-821a1f70f0c0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 德国 (Germany) 07
   type: vmess
   server: aidrivercat.org
   port: 443
@@ -22,21 +67,30 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aidrivercat.org
+  servername: ''
   network: ws
   ws-opts:
     path: /linkvws
     headers:
-      Host: aidrivercat.org
-- name: 德国 (Germany) 03
-  type: vless
-  server: 31.76.11.83
-  port: 26070
-  uuid: e676c6c8-44a8-4a1d-82cc-821a1f70f0c0
+      Host: ''
+- name: 德国 (Germany) 08
+  type: ss
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+  udp: true
+- name: 德国 (Germany) 09
+  type: vmess
+  server: 185.177.229.129
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 德国 (Germany) 04
+- name: 德国 (Germany) 10
   type: vmess
   server: 185.177.229.128
   port: 22324
@@ -46,38 +100,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 德国 (Germany) 05
-  type: vmess
-  server: 193.108.117.54
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aidrivercat.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aidrivercat.org
-- name: 德国 (Germany) 06
-  type: ss
-  server: 8.209.74.72
-  port: 20001
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
-  udp: true
-- name: 德国 (Germany) 07
-  type: vless
-  server: 188.245.25.223
-  port: 8402
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 德国 (Germany) 08
+- name: 德国 (Germany) 11
   type: vmess
   server: 31.76.11.83
   port: 23326
@@ -100,6 +123,9 @@ proxy-groups:
   - 德国 (Germany) 06
   - 德国 (Germany) 07
   - 德国 (Germany) 08
+  - 德国 (Germany) 09
+  - 德国 (Germany) 10
+  - 德国 (Germany) 11
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -113,5 +139,8 @@ proxy-groups:
   - 德国 (Germany) 06
   - 德国 (Germany) 07
   - 德国 (Germany) 08
+  - 德国 (Germany) 09
+  - 德国 (Germany) 10
+  - 德国 (Germany) 11
 rules:
 - MATCH,PROXIES

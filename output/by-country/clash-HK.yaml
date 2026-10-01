@@ -5,51 +5,43 @@ mode: rule
 log-level: info
 proxies:
 - name: 中国香港 (Hong Kong) 01
-  type: vless
-  server: 85.149.211.28
-  port: 8443
-  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
+  type: ss
+  server: 212.192.13.143
+  port: 20999
+  cipher: aes-256-gcm
+  password: 72553320ae6bcc8f
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hk.152568.xyz
-  network: ws
-  ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
-    headers:
-      Host: hk.152568.xyz
 - name: 中国香港 (Hong Kong) 02
   type: vmess
-  server: 194.99.79.26
+  server: yg1.ygkkk.dpdns.org
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: jmp1.907737.xyz
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
-      Host: ''
+      Host: jmp1.907737.xyz
 - name: 中国香港 (Hong Kong) 03
   type: vmess
-  server: 194.99.79.26
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
   alterId: 0
   cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ''
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /
     headers:
-      Host: ''
+      Host: 156.245.232.239
 - name: 中国香港 (Hong Kong) 04
   type: vmess
   server: 194.99.79.26
@@ -60,19 +52,12 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aksai.org
+  servername: ''
   network: ws
   ws-opts:
     path: /linkvws
     headers:
-      Host: aksai.org
-- name: 中国香港 (Hong Kong) 05
-  type: ss
-  server: 212.192.13.143
-  port: 20999
-  cipher: aes-256-gcm
-  password: 72553320ae6bcc8f
-  udp: true
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,7 +67,6 @@ proxy-groups:
   - 中国香港 (Hong Kong) 02
   - 中国香港 (Hong Kong) 03
   - 中国香港 (Hong Kong) 04
-  - 中国香港 (Hong Kong) 05
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -92,6 +76,5 @@ proxy-groups:
   - 中国香港 (Hong Kong) 02
   - 中国香港 (Hong Kong) 03
   - 中国香港 (Hong Kong) 04
-  - 中国香港 (Hong Kong) 05
 rules:
 - MATCH,PROXIES
