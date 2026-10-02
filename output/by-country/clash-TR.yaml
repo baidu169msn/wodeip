@@ -16,20 +16,29 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
+- name: 土耳其 (Turkey) 02
+  type: ss
+  server: bale.xv98.ir
+  port: 5051
+  cipher: chacha20-ietf-poly1305
+  password: 68mL2QkZEBlxWa3hcslGDw
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 土耳其 (Turkey) 01
+  - 土耳其 (Turkey) 02
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 土耳其 (Turkey) 01
+  - 土耳其 (Turkey) 02
 rules:
 - MATCH,PROXIES
