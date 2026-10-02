@@ -4,31 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 中国台湾 (Taiwan) 01
-  type: vless
-  server: 60.248.219.78
+- name: BR 01
+  type: vmess
+  server: aksai.org
   port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
+  servername: aksai.org
   network: ws
   ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    path: /linkvws
     headers:
-      Host: 60.248.219.78
+      Host: aksai.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 中国台湾 (Taiwan) 01
+  - BR 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 中国台湾 (Taiwan) 01
+  - BR 01
 rules:
 - MATCH,PROXIES
