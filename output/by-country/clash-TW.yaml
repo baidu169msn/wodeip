@@ -64,6 +64,26 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 中国台湾 (Taiwan) 07
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 中国台湾 (Taiwan) 08
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -75,6 +95,8 @@ proxy-groups:
   - 中国台湾 (Taiwan) 04
   - 中国台湾 (Taiwan) 05
   - 中国台湾 (Taiwan) 06
+  - 中国台湾 (Taiwan) 07
+  - 中国台湾 (Taiwan) 08
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -86,5 +108,7 @@ proxy-groups:
   - 中国台湾 (Taiwan) 04
   - 中国台湾 (Taiwan) 05
   - 中国台湾 (Taiwan) 06
+  - 中国台湾 (Taiwan) 07
+  - 中国台湾 (Taiwan) 08
 rules:
 - MATCH,PROXIES

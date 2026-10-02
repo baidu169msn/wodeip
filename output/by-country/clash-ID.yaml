@@ -4,33 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: BR 01
-  type: vmess
-  server: aksai.org
+- name: ID 01
+  type: vless
+  server: 34.128.84.173
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  uuid: e440fa81-fe9d-4ca1-b711-f7b72c3d79ed
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aksai.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aksai.org
+  reality-opts:
+    public-key: -9nhbWBjFTNIE5q0kg76hjyzCS2giPfZ-fbd8xvmRX0
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - BR 01
+  - ID 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - BR 01
+  - ID 01
 rules:
 - MATCH,PROXIES
