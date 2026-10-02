@@ -4,30 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: EE 01
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+- name: MY 01
+  type: ss
+  server: 130.94.69.15
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - EE 01
+  - MY 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - EE 01
+  - MY 01
 rules:
 - MATCH,PROXIES
