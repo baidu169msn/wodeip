@@ -4,23 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 西班牙 (Spain) 01
+- name: CH 01
   type: ss
-  server: 108.181.121.226
+  server: 132.243.175.144
   port: 8388
   cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-- name: 西班牙 (Spain) 02
+- name: CH 02
   type: vless
-  server: 212.227.235.66
+  server: 208.69.78.217
   port: 2053
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
   client-fingerprint: chrome
 proxy-groups:
@@ -28,14 +28,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 西班牙 (Spain) 01
-  - 西班牙 (Spain) 02
+  - CH 01
+  - CH 02
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 西班牙 (Spain) 01
-  - 西班牙 (Spain) 02
+  - CH 01
+  - CH 02
 rules:
 - MATCH,PROXIES
