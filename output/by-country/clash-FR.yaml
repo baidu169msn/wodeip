@@ -16,16 +16,17 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 法国 (France) 02
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 法国 (France) 03
   type: vmess
   server: 141.95.65.9
@@ -38,6 +39,28 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 法国 (France) 04
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 法国 (France) 05
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 法国 (France) 06
   type: vless
   server: 51.77.217.70
   port: 2053
@@ -48,7 +71,18 @@ proxies:
   reality-opts:
     public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+- name: 法国 (France) 07
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,6 +92,9 @@ proxy-groups:
   - 法国 (France) 02
   - 法国 (France) 03
   - 法国 (France) 04
+  - 法国 (France) 05
+  - 法国 (France) 06
+  - 法国 (France) 07
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -67,5 +104,8 @@ proxy-groups:
   - 法国 (France) 02
   - 法国 (France) 03
   - 法国 (France) 04
+  - 法国 (France) 05
+  - 法国 (France) 06
+  - 法国 (France) 07
 rules:
 - MATCH,PROXIES
