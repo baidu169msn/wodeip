@@ -6,22 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "KG 01",
-        "KG 02",
-        "KG 03",
-        "KG 04",
-        "KG 05"
+        "EE 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "KG 01",
-        "KG 02",
-        "KG 03",
-        "KG 04",
-        "KG 05"
+        "EE 01"
       ],
       "url": "https://www.google.com/generate_204"
     },
