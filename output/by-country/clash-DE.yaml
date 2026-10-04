@@ -6,24 +6,18 @@ log-level: info
 proxies:
 - name: 德国 (Germany) 01
   type: ss
-  server: 2.58.81.221
-  port: 443
+  server: 185.226.172.8
+  port: 8008
   cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
+  password: XKFKl2rULjIp74
   udp: true
 - name: 德国 (Germany) 02
-  type: vless
-  server: 139.162.149.105
-  port: 80
-  uuid: 5aae7d2d-c152-42cc-afb6-fe805fb94531
+  type: ss
+  server: 31.76.11.83
+  port: 11650
+  cipher: chacha20-ietf-poly1305
+  password: iku/Gfrt9YeEUUleXr2Ptf3uvs0hszCR0JHPqGSjs+c=
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 139.162.149.105
 - name: 德国 (Germany) 03
   type: ss
   server: 209.46.102.22
@@ -32,6 +26,65 @@ proxies:
   password: 1hhrqrokj3ag
   udp: true
 - name: 德国 (Germany) 04
+  type: ss
+  server: 2.58.81.221
+  port: 80
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
+- name: 德国 (Germany) 05
+  type: vmess
+  server: 185.177.229.129
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 德国 (Germany) 06
+  type: ss
+  server: 8.209.74.72
+  port: 20001
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+  udp: true
+- name: 德国 (Germany) 07
+  type: vmess
+  server: 185.177.229.129
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 德国 (Germany) 08
+  type: vmess
+  server: 185.177.229.128
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 德国 (Germany) 09
+  type: ss
+  server: 2.58.81.221
+  port: 443
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
+- name: 德国 (Germany) 10
+  type: vless
+  server: 31.76.11.83
+  port: 26150
+  uuid: e676c6c8-44a8-4a1d-82cc-821a1f70f0c0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 德国 (Germany) 11
   type: vmess
   server: 31.76.11.83
   port: 23325
@@ -41,11 +94,13 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 德国 (Germany) 05
-  type: vless
+- name: 德国 (Germany) 12
+  type: vmess
   server: 31.76.11.83
-  port: 26150
-  uuid: e676c6c8-44a8-4a1d-82cc-821a1f70f0c0
+  port: 23325
+  uuid: 3dff544a-379e-41f9-95d9-4b95a8e4026e
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
@@ -59,6 +114,13 @@ proxy-groups:
   - 德国 (Germany) 03
   - 德国 (Germany) 04
   - 德国 (Germany) 05
+  - 德国 (Germany) 06
+  - 德国 (Germany) 07
+  - 德国 (Germany) 08
+  - 德国 (Germany) 09
+  - 德国 (Germany) 10
+  - 德国 (Germany) 11
+  - 德国 (Germany) 12
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,5 +131,12 @@ proxy-groups:
   - 德国 (Germany) 03
   - 德国 (Germany) 04
   - 德国 (Germany) 05
+  - 德国 (Germany) 06
+  - 德国 (Germany) 07
+  - 德国 (Germany) 08
+  - 德国 (Germany) 09
+  - 德国 (Germany) 10
+  - 德国 (Germany) 11
+  - 德国 (Germany) 12
 rules:
 - MATCH,PROXIES
