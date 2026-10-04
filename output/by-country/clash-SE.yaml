@@ -4,11 +4,11 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 美国 (United States) 01
+- name: SE 01
   type: vless
-  server: 162.159.38.127
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: psf-2.weedly.top
+  port: 80
+  uuid: 33016f3d-8509-493c-bd8b-d26447d48135
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,18 +16,18 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: stigmata.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 美国 (United States) 01
+  - SE 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 美国 (United States) 01
+  - SE 01
 rules:
 - MATCH,PROXIES
