@@ -7,8 +7,9 @@
       "outbounds": [
         "auto",
         "中国台湾 (Taiwan) 01",
-        "中国香港 (Hong Kong) 02",
-        "中国台湾 (Taiwan) 03"
+        "美国 (United States) 02",
+        "中国台湾 (Taiwan) 03",
+        "中国香港 (Hong Kong) 04"
       ]
     },
     {
@@ -16,8 +17,9 @@
       "tag": "auto",
       "outbounds": [
         "中国台湾 (Taiwan) 01",
-        "中国香港 (Hong Kong) 02",
-        "中国台湾 (Taiwan) 03"
+        "美国 (United States) 02",
+        "中国台湾 (Taiwan) 03",
+        "中国香港 (Hong Kong) 04"
       ],
       "url": "https://www.google.com/generate_204"
     },
