@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 西班牙 (Spain) 01
+- name: 俄罗斯 (Russia) 01
   type: ss
-  server: 108.181.121.226
-  port: 8388
+  server: 130.49.189.158
+  port: 43558
   cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
+  password: mhXYDvaSfHzHZXBswC/zo/o8VqdU3XSBpwWx050Y6MU=
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 西班牙 (Spain) 01
+  - 俄罗斯 (Russia) 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 西班牙 (Spain) 01
+  - 俄罗斯 (Russia) 01
 rules:
 - MATCH,PROXIES

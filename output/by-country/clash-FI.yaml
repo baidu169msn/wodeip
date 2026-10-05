@@ -4,29 +4,38 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: CH 01
+- name: FI 01
   type: vless
-  server: 208.69.78.217
+  server: 95.216.27.15
   port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
   client-fingerprint: chrome
+- name: FI 02
+  type: ss
+  server: 185.103.110.68
+  port: 18283
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - CH 01
+  - FI 01
+  - FI 02
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - CH 01
+  - FI 01
+  - FI 02
 rules:
 - MATCH,PROXIES

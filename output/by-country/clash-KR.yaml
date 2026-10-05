@@ -38,36 +38,18 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: kr02.a0a.xyz
+      Host: ''
 - name: 韩国 (South Korea) 04
   type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 'null'
 - name: 韩国 (South Korea) 05
-  type: vless
-  server: 172.66.140.62
-  port: 8880
-  uuid: 2efeba50-78fe-4729-9821-1fb9819ed9e8
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: dark-dew-c3ed.48-97c.workers.dev
-- name: 韩国 (South Korea) 06
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -79,18 +61,6 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 韩国 (South Korea) 07
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -101,8 +71,6 @@ proxy-groups:
   - 韩国 (South Korea) 03
   - 韩国 (South Korea) 04
   - 韩国 (South Korea) 05
-  - 韩国 (South Korea) 06
-  - 韩国 (South Korea) 07
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -113,7 +81,5 @@ proxy-groups:
   - 韩国 (South Korea) 03
   - 韩国 (South Korea) 04
   - 韩国 (South Korea) 05
-  - 韩国 (South Korea) 06
-  - 韩国 (South Korea) 07
 rules:
 - MATCH,PROXIES
