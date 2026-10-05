@@ -4,30 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: SE 01
-  type: vless
-  server: psf-2.weedly.top
-  port: 80
-  uuid: 33016f3d-8509-493c-bd8b-d26447d48135
+- name: MX 01
+  type: ss
+  server: 147.78.1.234
+  port: 16673
+  cipher: aes-128-gcm
+  password: 67c57ae584eecd70396fcd7ca7521130
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: stigmata.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - SE 01
+  - MX 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - SE 01
+  - MX 01
 rules:
 - MATCH,PROXIES
