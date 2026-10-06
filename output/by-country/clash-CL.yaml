@@ -16,33 +16,18 @@ proxies:
   ws-opts:
     path: /platform117
     headers:
-      Host: platform117.halalkhor.info
-- name: CL 02
-  type: vless
-  server: 64.176.21.217
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: platform115.halalkhor.info
+      Host: 64.176.7.121
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - CL 01
-  - CL 02
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - CL 01
-  - CL 02
 rules:
 - MATCH,PROXIES
