@@ -5,15 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 德国 (Germany) 01
-  type: vmess
-  server: 185.177.229.129
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 51.195.126.38
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2YdE4lFOid5a
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 德国 (Germany) 02
   type: vmess
   server: 185.177.229.129
@@ -25,15 +22,12 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 德国 (Germany) 03
-  type: vmess
-  server: 185.177.229.129
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 德国 (Germany) 04
   type: ss
   server: 8.209.74.72
@@ -52,12 +46,39 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 德国 (Germany) 06
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
+  type: vmess
+  server: 185.177.229.129
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 德国 (Germany) 07
+  type: ss
+  server: 213.202.208.199
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 德国 (Germany) 08
+  type: ss
+  server: 2.58.81.221
+  port: 443
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
+- name: 德国 (Germany) 09
+  type: vmess
+  server: 185.177.229.129
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,6 +90,9 @@ proxy-groups:
   - 德国 (Germany) 04
   - 德国 (Germany) 05
   - 德国 (Germany) 06
+  - 德国 (Germany) 07
+  - 德国 (Germany) 08
+  - 德国 (Germany) 09
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -80,5 +104,8 @@ proxy-groups:
   - 德国 (Germany) 04
   - 德国 (Germany) 05
   - 德国 (Germany) 06
+  - 德国 (Germany) 07
+  - 德国 (Germany) 08
+  - 德国 (Germany) 09
 rules:
 - MATCH,PROXIES
