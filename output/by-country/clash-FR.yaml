@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 法国 (France) 01
   type: vmess
-  server: 141.95.65.9
+  server: 162.19.204.71
   port: 1234
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -16,74 +16,15 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 法国 (France) 02
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 法国 (France) 03
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 法国 (France) 04
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 法国 (France) 05
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 法国 (France) 06
   type: ss
   server: 155.117.5.167
   port: 40973
   cipher: 2022-blake3-aes-256-gcm
   password: hZycIr9ffe++4mxk+rkZHPgFXY1nmfb23fIeZNS3HeI=:HNUZ1NG1sNLqEe6v7XAY39JLPBTA2vAB9PGvS9VZGEA=
   udp: true
-- name: 法国 (France) 07
-  type: vless
-  server: 152.228.162.19
-  port: 80
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-france1.09vpn.com
-- name: 法国 (France) 08
+- name: 法国 (France) 03
   type: vmess
-  server: 162.19.204.71
+  server: 141.95.65.9
   port: 1234
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -100,11 +41,6 @@ proxy-groups:
   - 法国 (France) 01
   - 法国 (France) 02
   - 法国 (France) 03
-  - 法国 (France) 04
-  - 法国 (France) 05
-  - 法国 (France) 06
-  - 法国 (France) 07
-  - 法国 (France) 08
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -113,10 +49,5 @@ proxy-groups:
   - 法国 (France) 01
   - 法国 (France) 02
   - 法国 (France) 03
-  - 法国 (France) 04
-  - 法国 (France) 05
-  - 法国 (France) 06
-  - 法国 (France) 07
-  - 法国 (France) 08
 rules:
 - MATCH,PROXIES
