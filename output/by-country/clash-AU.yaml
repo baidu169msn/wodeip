@@ -4,30 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: PL 01
-  type: vless
-  server: 70.34.255.101
-  port: 80
-  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
+- name: 澳大利亚 (Australia) 01
+  type: vmess
+  server: 82.117.225.80
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: aksai.org
   network: ws
   ws-opts:
-    path: /
+    path: /linkvws
     headers:
-      Host: 70.34.255.101
+      Host: aksai.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - PL 01
+  - 澳大利亚 (Australia) 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - PL 01
+  - 澳大利亚 (Australia) 01
 rules:
 - MATCH,PROXIES
