@@ -17,17 +17,149 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 阿联酋 (UAE) 02
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 阿联酋 (UAE) 03
+  type: vless
+  server: 94.183.193.212
+  port: 443
+  uuid: e8b7abeb-98d4-44b6-ba91-3adae6086108
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
+  servername: eu86.vaultberry.cloud
+  client-fingerprint: firefox
+- name: 阿联酋 (UAE) 04
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 阿联酋 (UAE) 05
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 阿联酋 (UAE) 06
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 阿联酋 (UAE) 07
+  type: vless
+  server: 94.183.193.4
+  port: 443
+  uuid: e8b7abeb-98d4-44b6-ba91-3adae6086108
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
+  servername: eu86.vaultberry.cloud
+  client-fingerprint: firefox
+- name: 阿联酋 (UAE) 08
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 阿联酋 (UAE) 09
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 阿联酋 (UAE) 10
+  type: vless
+  server: 94.183.193.24
+  port: 443
+  uuid: e8b7abeb-98d4-44b6-ba91-3adae6086108
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
+  servername: eu86.vaultberry.cloud
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 阿联酋 (UAE) 01
+  - 阿联酋 (UAE) 02
+  - 阿联酋 (UAE) 03
+  - 阿联酋 (UAE) 04
+  - 阿联酋 (UAE) 05
+  - 阿联酋 (UAE) 06
+  - 阿联酋 (UAE) 07
+  - 阿联酋 (UAE) 08
+  - 阿联酋 (UAE) 09
+  - 阿联酋 (UAE) 10
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 阿联酋 (UAE) 01
+  - 阿联酋 (UAE) 02
+  - 阿联酋 (UAE) 03
+  - 阿联酋 (UAE) 04
+  - 阿联酋 (UAE) 05
+  - 阿联酋 (UAE) 06
+  - 阿联酋 (UAE) 07
+  - 阿联酋 (UAE) 08
+  - 阿联酋 (UAE) 09
+  - 阿联酋 (UAE) 10
 rules:
 - MATCH,PROXIES

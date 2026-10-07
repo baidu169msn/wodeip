@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 其他地区 (Other) 01
   type: vless
-  server: 188.114.97.6
+  server: 104.17.50.227
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -18,33 +18,17 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 其他地区 (Other) 02
-  type: vless
-  server: jeffsubs.com
-  port: 443
-  uuid: 3d841cdf-f91e-4f3b-a315-c18edcbd2606
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jeffsubs.com
-  network: ws
-  ws-opts:
-    path: /nnuyws
-    headers:
-      Host: jeffsubs.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 其他地区 (Other) 01
-  - 其他地区 (Other) 02
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 其他地区 (Other) 01
-  - 其他地区 (Other) 02
 rules:
 - MATCH,PROXIES
