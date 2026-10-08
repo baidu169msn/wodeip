@@ -7,65 +7,44 @@ proxies:
 - name: 德国 (Germany) 01
   type: ss
   server: 2.58.81.221
-  port: 80
+  port: 443
   cipher: aes-256-gcm
   password: kKEd0rBrd56Furjz
   udp: true
 - name: 德国 (Germany) 02
-  type: vless
-  server: psf-2.weedly.top
+  type: ss
+  server: 2.58.81.221
   port: 80
-  uuid: e4ed5619-5e91-442a-92f1-755a7f6331b8
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
+- name: 德国 (Germany) 03
+  type: vless
+  server: 168.222.43.200
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: beat.ir
-- name: 德国 (Germany) 03
-  type: vless
-  server: 141.98.7.193
-  port: 443
-  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 141.98.7.193
 - name: 德国 (Germany) 04
-  type: vless
-  server: 141.98.7.193
-  port: 2083
-  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  type: ss
+  server: 213.202.208.199
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 141.98.7.193
 - name: 德国 (Germany) 05
-  type: vless
-  server: 141.98.7.193
-  port: 2083
-  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 141.98.7.193
 - name: 德国 (Germany) 06
   type: vless
   server: 31.76.11.83
   port: 22849
   uuid: 2e511783-125c-466b-925d-a9cd1c98e30e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 德国 (Germany) 07
-  type: vmess
-  server: 31.76.11.83
-  port: 55969
-  uuid: 049a57b9-4913-4f9f-9cda-a861989ee59d
-  alterId: 0
-  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
@@ -80,7 +59,6 @@ proxy-groups:
   - 德国 (Germany) 04
   - 德国 (Germany) 05
   - 德国 (Germany) 06
-  - 德国 (Germany) 07
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -92,6 +70,5 @@ proxy-groups:
   - 德国 (Germany) 04
   - 德国 (Germany) 05
   - 德国 (Germany) 06
-  - 德国 (Germany) 07
 rules:
 - MATCH,PROXIES
