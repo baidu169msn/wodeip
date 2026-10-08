@@ -12,13 +12,54 @@ proxies:
   password: kKEd0rBrd56Furjz
   udp: true
 - name: 德国 (Germany) 02
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
+  type: vless
+  server: psf-2.weedly.top
+  port: 80
+  uuid: e4ed5619-5e91-442a-92f1-755a7f6331b8
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: beat.ir
 - name: 德国 (Germany) 03
+  type: vless
+  server: 141.98.7.193
+  port: 443
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
+- name: 德国 (Germany) 04
+  type: vless
+  server: 141.98.7.193
+  port: 2083
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
+- name: 德国 (Germany) 05
+  type: vless
+  server: 141.98.7.193
+  port: 2083
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
+- name: 德国 (Germany) 06
+  type: vless
+  server: 31.76.11.83
+  port: 22849
+  uuid: 2e511783-125c-466b-925d-a9cd1c98e30e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 德国 (Germany) 07
   type: vmess
   server: 31.76.11.83
   port: 55969
@@ -36,6 +77,10 @@ proxy-groups:
   - 德国 (Germany) 01
   - 德国 (Germany) 02
   - 德国 (Germany) 03
+  - 德国 (Germany) 04
+  - 德国 (Germany) 05
+  - 德国 (Germany) 06
+  - 德国 (Germany) 07
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +89,9 @@ proxy-groups:
   - 德国 (Germany) 01
   - 德国 (Germany) 02
   - 德国 (Germany) 03
+  - 德国 (Germany) 04
+  - 德国 (Germany) 05
+  - 德国 (Germany) 06
+  - 德国 (Germany) 07
 rules:
 - MATCH,PROXIES
