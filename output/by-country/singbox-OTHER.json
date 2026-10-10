@@ -7,7 +7,9 @@
       "outbounds": [
         "auto",
         "其他地区 (Other) 01",
-        "其他地区 (Other) 02"
+        "其他地区 (Other) 02",
+        "其他地区 (Other) 03",
+        "其他地区 (Other) 04"
       ]
     },
     {
@@ -15,7 +17,9 @@
       "tag": "auto",
       "outbounds": [
         "其他地区 (Other) 01",
-        "其他地区 (Other) 02"
+        "其他地区 (Other) 02",
+        "其他地区 (Other) 03",
+        "其他地区 (Other) 04"
       ],
       "url": "https://www.google.com/generate_204"
     },
