@@ -18,65 +18,18 @@ proxies:
   client-fingerprint: chrome
 - name: 韩国 (South Korea) 02
   type: vless
-  server: 34.22.111.30
-  port: 443
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  server: 172.66.132.196
+  port: 8880
+  uuid: 2efeba50-78fe-4729-9821-1fb9819ed9e8
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: dark-dew-c3ed.48-97c.workers.dev
 - name: 韩国 (South Korea) 03
-  type: vless
-  server: 34.22.111.30
-  port: 443
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 韩国 (South Korea) 04
-  type: vless
-  server: 34.22.111.30
-  port: 443
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
-  servername: www.cloudflare.com
-  client-fingerprint: edge
-- name: 韩国 (South Korea) 05
-  type: vless
-  server: 34.22.111.30
-  port: 443
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 韩国 (South Korea) 06
-  type: vless
-  server: 34.22.111.30
-  port: 443
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 韩国 (South Korea) 07
   type: vmess
   server: 140.238.2.250
   port: 443
@@ -86,19 +39,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 韩国 (South Korea) 08
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 韩国 (South Korea) 09
+- name: 韩国 (South Korea) 04
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -110,13 +51,80 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 韩国 (South Korea) 10
-  type: ss
-  server: 43.155.223.71
-  port: 8388
-  cipher: aes-256-gcm
-  password: UsIv5aKJabiqnYtY8IfWd6FfgjzrJlfZ
+- name: 韩国 (South Korea) 05
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 韩国 (South Korea) 06
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 8546bcef-8456-41a2-82bc-d2231b42b769
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: small-tree-9ec0.84-971.workers.dev
+- name: 韩国 (South Korea) 07
+  type: vless
+  server: 34.22.111.30
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 韩国 (South Korea) 08
+  type: vless
+  server: 34.22.111.30
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 韩国 (South Korea) 09
+  type: vless
+  server: 104.16.107.139
+  port: 8880
+  uuid: ff7390de-ce93-4d7d-b08b-bef8f71a85cf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: tiny-lake-c7f3.16-1af.workers.dev
+- name: 韩国 (South Korea) 10
+  type: vless
+  server: 34.22.111.30
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: ios
 - name: 韩国 (South Korea) 11
   type: vless
   server: 34.22.111.30
@@ -140,7 +148,7 @@ proxies:
   reality-opts:
     public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
 - name: 韩国 (South Korea) 13
   type: vless
   server: 34.22.111.30
@@ -154,6 +162,51 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 韩国 (South Korea) 14
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 韩国 (South Korea) 15
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 韩国 (South Korea) 16
+  type: vless
+  server: 34.22.111.30
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 韩国 (South Korea) 17
+  type: vless
+  server: 104.21.55.229
+  port: 8880
+  uuid: 2efeba50-78fe-4729-9821-1fb9819ed9e8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: dark-dew-c3ed.48-97c.workers.dev
+- name: 韩国 (South Korea) 18
   type: vless
   server: 34.22.111.30
   port: 443
@@ -165,7 +218,7 @@ proxies:
     public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
   client-fingerprint: edge
-- name: 韩国 (South Korea) 15
+- name: 韩国 (South Korea) 19
   type: vless
   server: 34.22.111.30
   port: 443
@@ -177,7 +230,41 @@ proxies:
     public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 韩国 (South Korea) 16
+- name: 韩国 (South Korea) 20
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 韩国 (South Korea) 21
+  type: vless
+  server: 34.22.111.30
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: edge
+- name: 韩国 (South Korea) 22
+  type: vless
+  server: 34.22.111.30
+  port: 443
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: edge
+- name: 韩国 (South Korea) 23
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -188,7 +275,7 @@ proxies:
   reality-opts:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -210,6 +297,13 @@ proxy-groups:
   - 韩国 (South Korea) 14
   - 韩国 (South Korea) 15
   - 韩国 (South Korea) 16
+  - 韩国 (South Korea) 17
+  - 韩国 (South Korea) 18
+  - 韩国 (South Korea) 19
+  - 韩国 (South Korea) 20
+  - 韩国 (South Korea) 21
+  - 韩国 (South Korea) 22
+  - 韩国 (South Korea) 23
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -231,5 +325,12 @@ proxy-groups:
   - 韩国 (South Korea) 14
   - 韩国 (South Korea) 15
   - 韩国 (South Korea) 16
+  - 韩国 (South Korea) 17
+  - 韩国 (South Korea) 18
+  - 韩国 (South Korea) 19
+  - 韩国 (South Korea) 20
+  - 韩国 (South Korea) 21
+  - 韩国 (South Korea) 22
+  - 韩国 (South Korea) 23
 rules:
 - MATCH,PROXIES
