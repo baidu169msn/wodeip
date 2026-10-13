@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 德国 (Germany) 01
+  type: ss
+  server: 8.209.74.72
+  port: 20001
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+  udp: true
+- name: 德国 (Germany) 02
+  type: ss
+  server: 51.195.126.38
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2YdE4lFOid5a
+  udp: true
+- name: 德国 (Germany) 03
   type: vmess
   server: 31.76.11.83
   port: 22266
@@ -14,19 +28,33 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 德国 (Germany) 02
-  type: ss
-  server: 213.202.208.199
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 德国 (Germany) 03
+- name: 德国 (Germany) 04
   type: ss
   server: 2.58.81.221
   port: 80
   cipher: aes-256-gcm
   password: kKEd0rBrd56Furjz
+  udp: true
+- name: 德国 (Germany) 05
+  type: ss
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+  udp: true
+- name: 德国 (Germany) 06
+  type: ss
+  server: 2.58.81.221
+  port: 443
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
+- name: 德国 (Germany) 07
+  type: ss
+  server: 213.202.208.199
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -36,6 +64,10 @@ proxy-groups:
   - 德国 (Germany) 01
   - 德国 (Germany) 02
   - 德国 (Germany) 03
+  - 德国 (Germany) 04
+  - 德国 (Germany) 05
+  - 德国 (Germany) 06
+  - 德国 (Germany) 07
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +76,9 @@ proxy-groups:
   - 德国 (Germany) 01
   - 德国 (Germany) 02
   - 德国 (Germany) 03
+  - 德国 (Germany) 04
+  - 德国 (Germany) 05
+  - 德国 (Germany) 06
+  - 德国 (Germany) 07
 rules:
 - MATCH,PROXIES
