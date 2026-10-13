@@ -15,20 +15,8 @@ proxies:
   reality-opts:
     public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 英国 (United Kingdom) 02
-  type: vless
-  server: 46.250.250.149
-  port: 2053
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 英国 (United Kingdom) 03
   type: vless
   server: 46.250.240.80
   port: 2053
@@ -39,7 +27,14 @@ proxies:
   reality-opts:
     public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
+- name: 英国 (United Kingdom) 03
+  type: ss
+  server: 149.102.149.207
+  port: 443
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+  udp: true
 - name: 英国 (United Kingdom) 04
   type: vless
   server: 46.250.250.149
@@ -51,20 +46,25 @@ proxies:
   reality-opts:
     public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 英国 (United Kingdom) 05
-  type: ss
-  server: 141.98.101.181
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  type: vless
+  server: 46.250.250.149
+  port: 2053
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 英国 (United Kingdom) 06
   type: ss
-  server: 149.102.149.207
+  server: 149.102.132.184
   port: 443
   cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
+  password: g5h5jleTRSyO3Rk4
   udp: true
 - name: 英国 (United Kingdom) 07
   type: vless
@@ -77,14 +77,40 @@ proxies:
   reality-opts:
     public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 英国 (United Kingdom) 08
   type: ss
-  server: 149.102.132.184
-  port: 80
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
+  server: 141.98.101.181
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
+- name: 英国 (United Kingdom) 09
+  type: vless
+  server: cf.130519.xyz
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: lucasjow.us.ci
+- name: 英国 (United Kingdom) 10
+  type: vless
+  server: 46.250.250.149
+  port: 2053
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -98,6 +124,8 @@ proxy-groups:
   - 英国 (United Kingdom) 06
   - 英国 (United Kingdom) 07
   - 英国 (United Kingdom) 08
+  - 英国 (United Kingdom) 09
+  - 英国 (United Kingdom) 10
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -111,5 +139,7 @@ proxy-groups:
   - 英国 (United Kingdom) 06
   - 英国 (United Kingdom) 07
   - 英国 (United Kingdom) 08
+  - 英国 (United Kingdom) 09
+  - 英国 (United Kingdom) 10
 rules:
 - MATCH,PROXIES
