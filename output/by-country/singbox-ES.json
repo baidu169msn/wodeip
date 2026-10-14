@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "CH 01",
-        "CH 02"
+        "西班牙 (Spain) 01",
+        "西班牙 (Spain) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "CH 01",
-        "CH 02"
+        "西班牙 (Spain) 01",
+        "西班牙 (Spain) 02"
       ],
       "url": "https://www.google.com/generate_204"
     },
