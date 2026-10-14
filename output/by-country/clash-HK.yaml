@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 中国香港 (Hong Kong) 01
   type: vless
+  server: 45.38.60.153
+  port: 2053
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: lucasjow.us.ci
+- name: 中国香港 (Hong Kong) 02
+  type: vless
   server: 34.92.19.135
   port: 443
   uuid: 90153538-ef08-4942-b8e1-41e7c523e659
@@ -16,7 +30,19 @@ proxies:
     public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
   servername: www.cloudflare.com
   client-fingerprint: edge
-- name: 中国香港 (Hong Kong) 02
+- name: 中国香港 (Hong Kong) 03
+  type: vless
+  server: 34.92.19.135
+  port: 443
+  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 中国香港 (Hong Kong) 04
   type: vmess
   server: yg1.ygkkk.dpdns.org
   port: 443
@@ -32,42 +58,22 @@ proxies:
     path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
       Host: jmp1.907737.xyz
-- name: 中国香港 (Hong Kong) 03
-  type: vless
-  server: 34.92.19.135
-  port: 443
-  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 中国香港 (Hong Kong) 04
-  type: vless
-  server: 34.92.19.135
-  port: 443
-  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
-  servername: www.cloudflare.com
-  client-fingerprint: qq
 - name: 中国香港 (Hong Kong) 05
-  type: vless
-  server: 34.92.19.135
+  type: vmess
+  server: yg1.ygkkk.dpdns.org
   port: 443
-  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
+  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
-  servername: www.cloudflare.com
-  client-fingerprint: ios
+  servername: jmp1.907737.xyz
+  network: ws
+  ws-opts:
+    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
+    headers:
+      Host: jmp1.907737.xyz
 - name: 中国香港 (Hong Kong) 06
   type: vless
   server: 34.92.19.135
@@ -91,7 +97,7 @@ proxies:
   reality-opts:
     public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 中国香港 (Hong Kong) 08
   type: vless
   server: 34.92.19.135
@@ -103,8 +109,46 @@ proxies:
   reality-opts:
     public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 中国香港 (Hong Kong) 09
+  type: vless
+  server: 34.92.19.135
+  port: 443
+  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
+  servername: www.cloudflare.com
+  client-fingerprint: ios
+- name: 中国香港 (Hong Kong) 10
+  type: vless
+  server: 45.38.60.153
+  port: 2053
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: lucasjow.us.ci
+- name: 中国香港 (Hong Kong) 11
+  type: vless
+  server: 34.92.19.135
+  port: 443
+  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 中国香港 (Hong Kong) 12
   type: vless
   server: 34.92.19.135
   port: 443
@@ -130,6 +174,9 @@ proxy-groups:
   - 中国香港 (Hong Kong) 07
   - 中国香港 (Hong Kong) 08
   - 中国香港 (Hong Kong) 09
+  - 中国香港 (Hong Kong) 10
+  - 中国香港 (Hong Kong) 11
+  - 中国香港 (Hong Kong) 12
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -144,5 +191,8 @@ proxy-groups:
   - 中国香港 (Hong Kong) 07
   - 中国香港 (Hong Kong) 08
   - 中国香港 (Hong Kong) 09
+  - 中国香港 (Hong Kong) 10
+  - 中国香港 (Hong Kong) 11
+  - 中国香港 (Hong Kong) 12
 rules:
 - MATCH,PROXIES

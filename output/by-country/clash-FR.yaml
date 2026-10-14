@@ -5,13 +5,53 @@ mode: rule
 log-level: info
 proxies:
 - name: 法国 (France) 01
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: '3'
+    headers:
+      Host: lucasjow.us.ci
+- name: 法国 (France) 02
   type: ss
-  server: 54.36.174.134
+  server: pl140.vpnbook.com
   port: 443
   cipher: chacha20-ietf-poly1305
   password: e5c65ph
   udp: true
-- name: 法国 (France) 02
+- name: 法国 (France) 03
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: lucasjow.us.ci
+- name: 法国 (France) 04
+  type: vless
+  server: 54.37.136.194
+  port: 2053
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 法国 (France) 05
   type: vmess
   server: 141.95.65.9
   port: 1234
@@ -22,13 +62,28 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 法国 (France) 03
-  type: ss
-  server: pl140.vpnbook.com
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: e5c65ph
+- name: 法国 (France) 06
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 法国 (France) 07
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +92,10 @@ proxy-groups:
   - 法国 (France) 01
   - 法国 (France) 02
   - 法国 (France) 03
+  - 法国 (France) 04
+  - 法国 (France) 05
+  - 法国 (France) 06
+  - 法国 (France) 07
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -45,5 +104,9 @@ proxy-groups:
   - 法国 (France) 01
   - 法国 (France) 02
   - 法国 (France) 03
+  - 法国 (France) 04
+  - 法国 (France) 05
+  - 法国 (France) 06
+  - 法国 (France) 07
 rules:
 - MATCH,PROXIES
