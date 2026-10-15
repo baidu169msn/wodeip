@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: CH 01
   type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  server: 86.106.84.194
+  port: 13261
+  cipher: aes-128-gcm
+  password: 2bf536a4bd6008511734a505d248de2c
   udp: true
 - name: CH 02
   type: vless
@@ -47,6 +47,13 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
   client-fingerprint: chrome
+- name: CH 05
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -56,6 +63,7 @@ proxy-groups:
   - CH 02
   - CH 03
   - CH 04
+  - CH 05
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -65,5 +73,6 @@ proxy-groups:
   - CH 02
   - CH 03
   - CH 04
+  - CH 05
 rules:
 - MATCH,PROXIES
