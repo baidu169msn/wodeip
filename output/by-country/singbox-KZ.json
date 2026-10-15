@@ -6,14 +6,32 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "中国香港 (Hong Kong) 01"
+        "KZ 01",
+        "KZ 02",
+        "KZ 03",
+        "KZ 04",
+        "KZ 05",
+        "KZ 06",
+        "KZ 07",
+        "KZ 08",
+        "KZ 09",
+        "KZ 10"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "中国香港 (Hong Kong) 01"
+        "KZ 01",
+        "KZ 02",
+        "KZ 03",
+        "KZ 04",
+        "KZ 05",
+        "KZ 06",
+        "KZ 07",
+        "KZ 08",
+        "KZ 09",
+        "KZ 10"
       ],
       "url": "https://www.google.com/generate_204"
     },
