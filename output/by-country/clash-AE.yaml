@@ -6,6 +6,18 @@ log-level: info
 proxies:
 - name: 阿联酋 (UAE) 01
   type: vless
+  server: zordbx861.233874.xyz
+  port: 8888
+  uuid: 46509b23-fe97-45b3-9c89-bd1b2a93bd4e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: vBSBoPYKiB5RZ9_jNPEdLnroJ2M7MKw0c1Rvh6-QmV4
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 阿联酋 (UAE) 02
+  type: vless
   server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -17,18 +29,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 阿联酋 (UAE) 02
-  type: vless
-  server: 45.59.120.217
-  port: 443
-  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
-  servername: strm.yandex.net
-  client-fingerprint: chrome
 - name: 阿联酋 (UAE) 03
   type: vless
   server: uae.unixzone.us
@@ -44,19 +44,6 @@ proxies:
       Host: uae.unixzone.us
 - name: 阿联酋 (UAE) 04
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 阿联酋 (UAE) 05
-  type: vless
   server: 45.59.120.217
   port: 443
   uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
@@ -67,20 +54,7 @@ proxies:
     public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
   servername: strm.yandex.net
   client-fingerprint: chrome
-- name: 阿联酋 (UAE) 06
-  type: vless
-  server: 185.253.116.33
-  port: 14430
-  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 185.253.116.33
-- name: 阿联酋 (UAE) 07
+- name: 阿联酋 (UAE) 05
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -93,7 +67,20 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 阿联酋 (UAE) 08
+- name: 阿联酋 (UAE) 06
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 阿联酋 (UAE) 07
   type: vless
   server: 84.235.244.108
   port: 22573
@@ -106,6 +93,82 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 阿联酋 (UAE) 08
+  type: vless
+  server: 45.59.120.217
+  port: 443
+  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
+  servername: strm.yandex.net
+  client-fingerprint: chrome
+- name: 阿联酋 (UAE) 09
+  type: vless
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 阿联酋 (UAE) 10
+  type: vless
+  server: 139.185.44.26
+  port: 8888
+  uuid: 46509b23-fe97-45b3-9c89-bd1b2a93bd4e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: vBSBoPYKiB5RZ9_jNPEdLnroJ2M7MKw0c1Rvh6-QmV4
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 阿联酋 (UAE) 11
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 阿联酋 (UAE) 12
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 阿联酋 (UAE) 13
+  type: vless
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
 proxy-groups:
 - name: PROXIES
   type: select
@@ -119,6 +182,11 @@ proxy-groups:
   - 阿联酋 (UAE) 06
   - 阿联酋 (UAE) 07
   - 阿联酋 (UAE) 08
+  - 阿联酋 (UAE) 09
+  - 阿联酋 (UAE) 10
+  - 阿联酋 (UAE) 11
+  - 阿联酋 (UAE) 12
+  - 阿联酋 (UAE) 13
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -132,5 +200,10 @@ proxy-groups:
   - 阿联酋 (UAE) 06
   - 阿联酋 (UAE) 07
   - 阿联酋 (UAE) 08
+  - 阿联酋 (UAE) 09
+  - 阿联酋 (UAE) 10
+  - 阿联酋 (UAE) 11
+  - 阿联酋 (UAE) 12
+  - 阿联酋 (UAE) 13
 rules:
 - MATCH,PROXIES
