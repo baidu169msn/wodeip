@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 德国 (Germany) 01
+- name: CY 01
   type: vless
-  server: 209.38.238.229
-  port: 20202
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  server: 5.253.29.254
+  port: 14430
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: wzs.echo.net.eu.org
   network: ws
   ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
+    path: /vless
     headers:
-      Host: wzs.echo.net.eu.org
+      Host: 5.253.29.254
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 德国 (Germany) 01
+  - CY 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 德国 (Germany) 01
+  - CY 01
 rules:
 - MATCH,PROXIES
