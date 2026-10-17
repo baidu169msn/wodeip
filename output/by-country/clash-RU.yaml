@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: 俄罗斯 (Russia) 01
   type: ss
-  server: 194.58.102.227
-  port: 52586
-  cipher: aes-256-gcm
-  password: doqqp95nknt0pny7
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: j3PKOCj7wHl5Pk6thI9HyXtCa6JU180IlBpWANgFjkY=
   udp: true
 proxy-groups:
 - name: PROXIES
