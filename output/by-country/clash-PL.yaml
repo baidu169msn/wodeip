@@ -15,19 +15,15 @@ proxies:
   reality-opts:
     public-key: -s2SHiKfXMJRYizNuu8URrx6MgyoQtBJ0QAj33qMog0
   servername: www.samsung.com
-  client-fingerprint: ios
+  client-fingerprint: firefox
 - name: PL 02
   type: vless
-  server: 38.244.186.167
-  port: 8445
-  uuid: f3b8d5f8-cbe9-4aca-ab34-005c51262d5e
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: -s2SHiKfXMJRYizNuu8URrx6MgyoQtBJ0QAj33qMog0
-  servername: www.samsung.com
-  client-fingerprint: firefox
 - name: PL 03
   type: vless
   server: 38.244.186.167

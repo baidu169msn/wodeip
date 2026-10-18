@@ -6,18 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "CH 01",
-        "CH 02",
-        "CH 03"
+        "PH 01",
+        "PH 02",
+        "PH 03",
+        "PH 04"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "CH 01",
-        "CH 02",
-        "CH 03"
+        "PH 01",
+        "PH 02",
+        "PH 03",
+        "PH 04"
       ],
       "url": "https://www.google.com/generate_204"
     },

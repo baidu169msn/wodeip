@@ -8,8 +8,7 @@
         "auto",
         "LT 01",
         "LT 02",
-        "LT 03",
-        "LT 04"
+        "LT 03"
       ]
     },
     {
@@ -18,8 +17,7 @@
       "outbounds": [
         "LT 01",
         "LT 02",
-        "LT 03",
-        "LT 04"
+        "LT 03"
       ],
       "url": "https://www.google.com/generate_204"
     },
