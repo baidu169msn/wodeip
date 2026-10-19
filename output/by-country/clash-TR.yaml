@@ -17,17 +17,19 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 土耳其 (Turkey) 02
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  type: ss
+  server: 185.223.77.118
+  port: 5566
+  cipher: 2022-blake3-aes-128-gcm
+  password: 8NwabdWBXK1q1QaBhF69rw==:yPBUkgz9Y6Ad20RTktufkQ==
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: chrome
+- name: 土耳其 (Turkey) 03
+  type: ss
+  server: tutua.azad0namah.ir
+  port: 5566
+  cipher: 2022-blake3-aes-128-gcm
+  password: 8NwabdWBXK1q1QaBhF69rw==:yPBUkgz9Y6Ad20RTktufkQ==
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +37,7 @@ proxy-groups:
   - AUTO
   - 土耳其 (Turkey) 01
   - 土耳其 (Turkey) 02
+  - 土耳其 (Turkey) 03
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -42,5 +45,6 @@ proxy-groups:
   proxies:
   - 土耳其 (Turkey) 01
   - 土耳其 (Turkey) 02
+  - 土耳其 (Turkey) 03
 rules:
 - MATCH,PROXIES
