@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "SE 01",
-        "SE 02"
+        "中国台湾 (Taiwan) 01",
+        "中国台湾 (Taiwan) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "SE 01",
-        "SE 02"
+        "中国台湾 (Taiwan) 01",
+        "中国台湾 (Taiwan) 02"
       ],
       "url": "https://www.google.com/generate_204"
     },

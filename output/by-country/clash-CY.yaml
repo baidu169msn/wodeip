@@ -4,11 +4,19 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: SE 01
+- name: CY 01
   type: vless
-  server: 5.178.109.174
+  server: 5.253.29.254
+  port: 10443
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: CY 02
+  type: vless
+  server: 5.253.29.254
   port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,27 +24,20 @@ proxies:
   ws-opts:
     path: /vless
     headers:
-      Host: 5.178.109.174
-- name: SE 02
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
+      Host: 5.253.29.254
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - SE 01
-  - SE 02
+  - CY 01
+  - CY 02
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - SE 01
-  - SE 02
+  - CY 01
+  - CY 02
 rules:
 - MATCH,PROXIES
