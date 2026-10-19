@@ -6,21 +6,7 @@ log-level: info
 proxies:
 - name: 其他地区 (Other) 01
   type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--i10VPN?ed
-    headers:
-      Host: lucasjow.us.ci
-- name: 其他地区 (Other) 02
-  type: vless
-  server: 104.18.0.181
+  server: 104.18.35.86
   port: 8080
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
@@ -28,10 +14,10 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /sg-melbi
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: 其他地区 (Other) 03
+- name: 其他地区 (Other) 02
   type: vless
   server: 104.16.10.9
   port: 443
@@ -45,7 +31,91 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
+- name: 其他地区 (Other) 03
+  type: vless
+  server: cf.130519.xyz
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132+
+    headers:
+      Host: lucasjow.us.ci
 - name: 其他地区 (Other) 04
+  type: vless
+  server: 104.16.10.48
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 其他地区 (Other) 05
+  type: vless
+  server: 104.16.10.56
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 其他地区 (Other) 06
+  type: vless
+  server: b2n.ir
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#
+    headers:
+      Host: lucasjow.us.ci
+- name: 其他地区 (Other) 07
+  type: vless
+  server: 104.16.111.195
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 其他地区 (Other) 08
+  type: vless
+  server: 104.16.10.48
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 其他地区 (Other) 09
   type: vless
   server: 188.114.97.6
   port: 443
@@ -56,9 +126,37 @@ proxies:
   servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#fp=chrome
     headers:
       Host: lucasjow.us.ci
+- name: 其他地区 (Other) 10
+  type: vless
+  server: 162.159.254.3
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 其他地区 (Other) 11
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,6 +166,13 @@ proxy-groups:
   - 其他地区 (Other) 02
   - 其他地区 (Other) 03
   - 其他地区 (Other) 04
+  - 其他地区 (Other) 05
+  - 其他地区 (Other) 06
+  - 其他地区 (Other) 07
+  - 其他地区 (Other) 08
+  - 其他地区 (Other) 09
+  - 其他地区 (Other) 10
+  - 其他地区 (Other) 11
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,5 +182,12 @@ proxy-groups:
   - 其他地区 (Other) 02
   - 其他地区 (Other) 03
   - 其他地区 (Other) 04
+  - 其他地区 (Other) 05
+  - 其他地区 (Other) 06
+  - 其他地区 (Other) 07
+  - 其他地区 (Other) 08
+  - 其他地区 (Other) 09
+  - 其他地区 (Other) 10
+  - 其他地区 (Other) 11
 rules:
 - MATCH,PROXIES
