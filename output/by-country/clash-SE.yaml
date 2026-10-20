@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: VN 01
+- name: SE 01
   type: vless
-  server: 172.67.168.158
-  port: 2087
-  uuid: 1d0e8e53-6999-4752-ac21-c0c54ff5bc09
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: vn11vina.210z.dev
   network: ws
   ws-opts:
-    path: /vlessvina
+    path: /vless
     headers:
-      Host: vn11vina.210z.dev
+      Host: 5.178.109.174
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - VN 01
+  - SE 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - VN 01
+  - SE 01
 rules:
 - MATCH,PROXIES

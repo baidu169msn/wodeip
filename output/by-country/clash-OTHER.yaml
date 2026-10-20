@@ -6,142 +6,29 @@ log-level: info
 proxies:
 - name: 其他地区 (Other) 01
   type: vless
-  server: 162.159.254.3
+  server: cf-socks.caoyuwu.eu.org
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 9cdcbaf0-d244-4f37-b227-90166e43f5b5
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: cf-socks.caoyuwu.eu.org
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /?ed=2048
     headers:
-      Host: jp3.yohototo.top
-- name: 其他地区 (Other) 02
-  type: vless
-  server: 104.21.70.228
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 其他地区 (Other) 03
-  type: vless
-  server: 104.16.10.63
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 其他地区 (Other) 04
-  type: vless
-  server: 104.21.33.59
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 其他地区 (Other) 05
-  type: vmess
-  server: 104.17.147.222
-  port: 80
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: 其他地区 (Other) 06
-  type: vless
-  server: 104.16.10.9
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 其他地区 (Other) 07
-  type: vless
-  server: 104.16.111.195
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 其他地区 (Other) 08
-  type: vless
-  server: 104.16.10.22
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
+      Host: cf-socks.caoyuwu.eu.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 其他地区 (Other) 01
-  - 其他地区 (Other) 02
-  - 其他地区 (Other) 03
-  - 其他地区 (Other) 04
-  - 其他地区 (Other) 05
-  - 其他地区 (Other) 06
-  - 其他地区 (Other) 07
-  - 其他地区 (Other) 08
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 其他地区 (Other) 01
-  - 其他地区 (Other) 02
-  - 其他地区 (Other) 03
-  - 其他地区 (Other) 04
-  - 其他地区 (Other) 05
-  - 其他地区 (Other) 06
-  - 其他地区 (Other) 07
-  - 其他地区 (Other) 08
 rules:
 - MATCH,PROXIES
