@@ -5,23 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 英国 (United Kingdom) 01
-  type: vless
-  server: 46.250.250.149
-  port: 2053
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  type: ss
+  server: 149.102.132.184
+  port: 80
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-  servername: www.apple.com
-  client-fingerprint: firefox
 - name: 英国 (United Kingdom) 02
   type: ss
-  server: 185.176.206.9
-  port: 19999
+  server: 149.102.132.184
+  port: 443
   cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  password: g5h5jleTRSyO3Rk4
   udp: true
 - name: 英国 (United Kingdom) 03
   type: vless
@@ -36,12 +31,17 @@ proxies:
   servername: www.apple.com
   client-fingerprint: random
 - name: 英国 (United Kingdom) 04
-  type: ss
-  server: 149.102.132.184
-  port: 443
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
+  type: vless
+  server: 46.250.250.149
+  port: 2053
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+  servername: www.apple.com
+  client-fingerprint: firefox
 - name: 英国 (United Kingdom) 05
   type: ss
   server: 141.98.101.181
@@ -61,6 +61,44 @@ proxies:
     public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 英国 (United Kingdom) 07
+  type: ss
+  server: 185.176.206.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 英国 (United Kingdom) 08
+  type: vless
+  server: 46.250.240.80
+  port: 2053
+  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 英国 (United Kingdom) 09
+  type: vless
+  server: 46.250.240.80
+  port: 2053
+  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 英国 (United Kingdom) 10
+  type: ss
+  server: 94.156.250.148
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,6 +110,10 @@ proxy-groups:
   - 英国 (United Kingdom) 04
   - 英国 (United Kingdom) 05
   - 英国 (United Kingdom) 06
+  - 英国 (United Kingdom) 07
+  - 英国 (United Kingdom) 08
+  - 英国 (United Kingdom) 09
+  - 英国 (United Kingdom) 10
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -83,5 +125,9 @@ proxy-groups:
   - 英国 (United Kingdom) 04
   - 英国 (United Kingdom) 05
   - 英国 (United Kingdom) 06
+  - 英国 (United Kingdom) 07
+  - 英国 (United Kingdom) 08
+  - 英国 (United Kingdom) 09
+  - 英国 (United Kingdom) 10
 rules:
 - MATCH,PROXIES
