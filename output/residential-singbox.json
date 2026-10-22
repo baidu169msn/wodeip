@@ -8,9 +8,7 @@
         "auto",
         "中国台湾 (Taiwan) 01",
         "中国台湾 (Taiwan) 02",
-        "中国台湾 (Taiwan) 03",
-        "中国香港 (Hong Kong) 04",
-        "中国香港 (Hong Kong) 05"
+        "韩国 (South Korea) 03"
       ]
     },
     {
@@ -19,9 +17,7 @@
       "outbounds": [
         "中国台湾 (Taiwan) 01",
         "中国台湾 (Taiwan) 02",
-        "中国台湾 (Taiwan) 03",
-        "中国香港 (Hong Kong) 04",
-        "中国香港 (Hong Kong) 05"
+        "韩国 (South Korea) 03"
       ],
       "url": "https://www.google.com/generate_204"
     },
