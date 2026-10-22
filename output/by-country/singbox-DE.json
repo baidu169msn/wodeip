@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "德国 (Germany) 01"
+        "德国 (Germany) 01",
+        "德国 (Germany) 02",
+        "德国 (Germany) 03",
+        "德国 (Germany) 04"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "德国 (Germany) 01"
+        "德国 (Germany) 01",
+        "德国 (Germany) 02",
+        "德国 (Germany) 03",
+        "德国 (Germany) 04"
       ],
       "url": "https://www.google.com/generate_204"
     },
