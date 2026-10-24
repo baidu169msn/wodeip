@@ -6,25 +6,52 @@ log-level: info
 proxies:
 - name: 德国 (Germany) 01
   type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 德国 (Germany) 02
+  type: ss
   server: 185.226.172.8
   port: 8008
   cipher: aes-256-gcm
   password: XKFKl2rULjIp74
   udp: true
-- name: 德国 (Germany) 02
-  type: vless
-  server: 217.19.122.156
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+- name: 德国 (Germany) 03
+  type: vmess
+  server: 31.76.11.83
+  port: 22366
+  uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  network: ws
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
+- name: 德国 (Germany) 04
+  type: vless
+  server: test.wecantos.site
+  port: 20000
+  uuid: ca59a503-db23-44af-9879-49747d8da98f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 德国 (Germany) 05
+  type: vless
+  server: connect.wecantos.site
+  port: 10000
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 德国 (Germany) 06
+  type: vless
+  server: connect.wecantos.site
+  port: 10000
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +59,10 @@ proxy-groups:
   - AUTO
   - 德国 (Germany) 01
   - 德国 (Germany) 02
+  - 德国 (Germany) 03
+  - 德国 (Germany) 04
+  - 德国 (Germany) 05
+  - 德国 (Germany) 06
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +70,9 @@ proxy-groups:
   proxies:
   - 德国 (Germany) 01
   - 德国 (Germany) 02
+  - 德国 (Germany) 03
+  - 德国 (Germany) 04
+  - 德国 (Germany) 05
+  - 德国 (Germany) 06
 rules:
 - MATCH,PROXIES
