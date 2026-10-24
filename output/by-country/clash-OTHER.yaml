@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 其他地区 (Other) 01
   type: vless
-  server: 104.16.10.56
+  server: 104.21.6.186
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 其他地区 (Other) 02
   type: vless
-  server: 104.16.10.56
+  server: 104.16.111.102
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -34,7 +34,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 其他地区 (Other) 03
   type: vless
-  server: 104.17.50.53
+  server: 104.16.10.234
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -48,7 +48,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 其他地区 (Other) 04
   type: vless
-  server: 104.18.153.10
+  server: 104.16.10.56
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -61,52 +61,8 @@ proxies:
     headers:
       Host: jp3.yohototo.top
 - name: 其他地区 (Other) 05
-  type: vmess
-  server: 104.21.57.84
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray1.dozapp.xyz
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: 其他地区 (Other) 06
   type: vless
   server: 104.21.0.87
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 其他地区 (Other) 07
-  type: vless
-  server: 104.19.164.155
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 其他地区 (Other) 08
-  type: vless
-  server: 104.21.6.186
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -128,9 +84,6 @@ proxy-groups:
   - 其他地区 (Other) 03
   - 其他地区 (Other) 04
   - 其他地区 (Other) 05
-  - 其他地区 (Other) 06
-  - 其他地区 (Other) 07
-  - 其他地区 (Other) 08
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -141,8 +94,5 @@ proxy-groups:
   - 其他地区 (Other) 03
   - 其他地区 (Other) 04
   - 其他地区 (Other) 05
-  - 其他地区 (Other) 06
-  - 其他地区 (Other) 07
-  - 其他地区 (Other) 08
 rules:
 - MATCH,PROXIES
