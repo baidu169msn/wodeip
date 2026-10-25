@@ -22,7 +22,7 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: CH 03
   type: vless
   server: 208.69.78.217
@@ -35,6 +35,18 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
   client-fingerprint: firefox
+- name: CH 04
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,6 +55,7 @@ proxy-groups:
   - CH 01
   - CH 02
   - CH 03
+  - CH 04
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -51,5 +64,6 @@ proxy-groups:
   - CH 01
   - CH 02
   - CH 03
+  - CH 04
 rules:
 - MATCH,PROXIES
