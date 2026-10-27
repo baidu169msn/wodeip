@@ -5,25 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: FI 01
-  type: ss
-  server: 91.184.243.155
-  port: 191
-  cipher: chacha20-ietf-poly1305
-  password: 7fBrTgScegyeG6E-GfJeJOF_RQVLtIBv
-  udp: true
-- name: FI 02
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: FI 03
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -42,15 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - FI 01
-  - FI 02
-  - FI 03
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - FI 01
-  - FI 02
-  - FI 03
 rules:
 - MATCH,PROXIES

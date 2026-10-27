@@ -18,34 +18,17 @@ proxies:
     path: /trial-gs-relay
     headers:
       Host: usyun.cc
-- name: 中国香港 (Hong Kong) 02
-  type: vmess
-  server: 47.244.120.197
-  port: 36703
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: google.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 中国香港 (Hong Kong) 01
-  - 中国香港 (Hong Kong) 02
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 中国香港 (Hong Kong) 01
-  - 中国香港 (Hong Kong) 02
 rules:
 - MATCH,PROXIES
