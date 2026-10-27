@@ -16,51 +16,45 @@ proxies:
   skip-cert-verify: true
 - name: 德国 (Germany) 02
   type: ss
-  server: 213.202.208.199
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 德国 (Germany) 03
-  type: vmess
-  server: 91.107.128.44
-  port: 36812
-  uuid: 6cdfc27b-a0cc-4ea1-802a-e98552be430d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 德国 (Germany) 04
-  type: ss
   server: 91.107.128.44
   port: 53185
   cipher: 2022-blake3-aes-256-gcm
   password: U/jVh1z5NQ0cFCiCeLLxNAFBjmLBo/ECQ0dICfRFLbQ=:cZkXr9v4dFpHUetNse9xo72JumvR4N2GLz3bxiEh6Rk=
   udp: true
+- name: 德国 (Germany) 03
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 德国 (Germany) 04
+  type: vless
+  server: 5.175.205.190
+  port: 27774
+  uuid: 653137c6-474e-4a3d-9a20-5a5afb3d4a4f
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 德国 (Germany) 05
-  type: vmess
+  type: vless
   server: 91.107.128.44
-  port: 24701
+  port: 46928
   uuid: 6cdfc27b-a0cc-4ea1-802a-e98552be430d
-  alterId: 0
-  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 德国 (Germany) 06
-  type: vmess
-  server: 91.107.128.44
-  port: 36812
-  uuid: 6cdfc27b-a0cc-4ea1-802a-e98552be430d
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: connect.wecantos.site
+  port: 10000
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 德国 (Germany) 07
   type: vless
-  server: 168.222.43.53
+  server: 178.83.45.226
   port: 10000
   uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
   udp: true
@@ -76,37 +70,23 @@ proxies:
   skip-cert-verify: true
 - name: 德国 (Germany) 09
   type: vless
-  server: connect.wecantos.site
+  server: 168.222.43.53
   port: 10000
   uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 德国 (Germany) 10
-  type: ss
-  server: 185.176.204.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 德国 (Germany) 11
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 德国 (Germany) 12
   type: vless
-  server: 5.175.205.190
-  port: 27774
-  uuid: 653137c6-474e-4a3d-9a20-5a5afb3d4a4f
+  server: connect.wecantos.site
+  port: 10000
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 德国 (Germany) 13
+- name: 德国 (Germany) 11
   type: vless
-  server: 155.117.5.208
+  server: 168.222.43.53
   port: 10000
   uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
   udp: true
@@ -128,8 +108,6 @@ proxy-groups:
   - 德国 (Germany) 09
   - 德国 (Germany) 10
   - 德国 (Germany) 11
-  - 德国 (Germany) 12
-  - 德国 (Germany) 13
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -146,7 +124,5 @@ proxy-groups:
   - 德国 (Germany) 09
   - 德国 (Germany) 10
   - 德国 (Germany) 11
-  - 德国 (Germany) 12
-  - 德国 (Germany) 13
 rules:
 - MATCH,PROXIES
