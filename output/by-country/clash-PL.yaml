@@ -14,7 +14,7 @@ proxies:
   skip-cert-verify: true
 - name: PL 02
   type: vless
-  server: 155.117.5.208
+  server: site.teslamotor.site
   port: 20001
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
@@ -30,7 +30,7 @@ proxies:
   skip-cert-verify: true
 - name: PL 04
   type: vless
-  server: site.teslamotor.site
+  server: 155.117.5.208
   port: 20001
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
@@ -52,6 +52,14 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: PL 07
+  type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,6 +71,7 @@ proxy-groups:
   - PL 04
   - PL 05
   - PL 06
+  - PL 07
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,5 +83,6 @@ proxy-groups:
   - PL 04
   - PL 05
   - PL 06
+  - PL 07
 rules:
 - MATCH,PROXIES
