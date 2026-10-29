@@ -14,13 +14,52 @@ proxies:
   skip-cert-verify: true
 - name: PL 02
   type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: PL 03
+  type: vless
+  server: 168.222.43.53
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: PL 04
+  type: vless
   server: site.teslamotor.site
   port: 20001
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
   tls: false
   skip-cert-verify: true
-- name: PL 03
+- name: PL 05
+  type: ss
+  server: pol.rvpn.app
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 8z2OB_gvFvpKgjFi8s9Cvw
+  udp: true
+- name: PL 06
+  type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: PL 07
+  type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: PL 08
   type: vless
   server: 155.117.5.208
   port: 20001
@@ -28,39 +67,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: PL 04
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: PL 05
-  type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: PL 06
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: PL 07
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: PL 08
+- name: PL 09
   type: vless
   server: site.teslamotor.site
   port: 20001
@@ -81,6 +88,7 @@ proxy-groups:
   - PL 06
   - PL 07
   - PL 08
+  - PL 09
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,5 +102,6 @@ proxy-groups:
   - PL 06
   - PL 07
   - PL 08
+  - PL 09
 rules:
 - MATCH,PROXIES
