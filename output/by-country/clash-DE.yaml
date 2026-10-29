@@ -28,7 +28,7 @@ proxies:
   skip-cert-verify: true
 - name: 德国 (Germany) 04
   type: vless
-  server: 168.222.43.53
+  server: 178.83.45.226
   port: 10000
   uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
   udp: true
@@ -44,7 +44,7 @@ proxies:
   skip-cert-verify: true
 - name: 德国 (Germany) 06
   type: vless
-  server: connect.wecantos.site
+  server: 155.117.5.208
   port: 10000
   uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
   udp: true
@@ -52,7 +52,7 @@ proxies:
   skip-cert-verify: true
 - name: 德国 (Germany) 07
   type: vless
-  server: 155.117.5.208
+  server: 168.222.43.53
   port: 10000
   uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
   udp: true
@@ -60,7 +60,37 @@ proxies:
   skip-cert-verify: true
 - name: 德国 (Germany) 08
   type: vless
+  server: 172.66.47.45
+  port: 443
+  uuid: e56059f1-5a1a-4d0a-a2d0-58ecb4eb2f3f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ezaccess-project-f62c30.pages.dev
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiZWlPODVjTnhnaSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: ezaccess-project-f62c30.pages.dev
+- name: 德国 (Germany) 09
+  type: vless
+  server: connect.wecantos.site
+  port: 10000
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 德国 (Germany) 10
+  type: vless
   server: 168.222.43.53
+  port: 10000
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 德国 (Germany) 11
+  type: vless
+  server: connect.wecantos.site
   port: 10000
   uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
   udp: true
@@ -79,6 +109,9 @@ proxy-groups:
   - 德国 (Germany) 06
   - 德国 (Germany) 07
   - 德国 (Germany) 08
+  - 德国 (Germany) 09
+  - 德国 (Germany) 10
+  - 德国 (Germany) 11
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -92,5 +125,8 @@ proxy-groups:
   - 德国 (Germany) 06
   - 德国 (Germany) 07
   - 德国 (Germany) 08
+  - 德国 (Germany) 09
+  - 德国 (Germany) 10
+  - 德国 (Germany) 11
 rules:
 - MATCH,PROXIES
