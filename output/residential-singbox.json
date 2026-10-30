@@ -6,18 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "印度 (India) 01",
+        "中国香港 (Hong Kong) 01",
         "中国台湾 (Taiwan) 02",
-        "中国香港 (Hong Kong) 03"
+        "印度 (India) 03"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "印度 (India) 01",
+        "中国香港 (Hong Kong) 01",
         "中国台湾 (Taiwan) 02",
-        "中国香港 (Hong Kong) 03"
+        "印度 (India) 03"
       ],
       "url": "https://www.google.com/generate_204"
     },

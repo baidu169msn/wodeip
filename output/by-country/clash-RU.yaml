@@ -4,33 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: GR 01
+- name: 俄罗斯 (Russia) 01
   type: ss
-  server: ams1.rvpn.app
+  server: 159.194.251.76
   port: 8388
   cipher: chacha20-ietf-poly1305
-  password: x2A6AsyZ-rAllz0wbKHzWA
-  udp: true
-- name: GR 02
-  type: ss
-  server: 178.253.16.185
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: x2A6AsyZ-rAllz0wbKHzWA
+  password: MODziWLa9qMuW-4yPa0rfw
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - GR 01
-  - GR 02
+  - 俄罗斯 (Russia) 01
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - GR 01
-  - GR 02
+  - 俄罗斯 (Russia) 01
 rules:
 - MATCH,PROXIES
