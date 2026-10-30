@@ -12,15 +12,16 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 德国 (Germany) 02
-  type: ss
-  server: 8.211.196.252
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Cg2Dw4OhdBZhqbeO9ZTA3g/Gk/AvsrYZGhAJeGnQIx4=
+  type: vless
+  server: 168.222.43.53
+  port: 10000
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 德国 (Germany) 03
   type: vless
-  server: connect.wecantos.site
+  server: 155.117.5.208
   port: 10000
   uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
   udp: true
@@ -44,7 +45,7 @@ proxies:
   skip-cert-verify: true
 - name: 德国 (Germany) 06
   type: vless
-  server: 155.117.5.208
+  server: 178.83.45.226
   port: 10000
   uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
   udp: true
@@ -52,7 +53,7 @@ proxies:
   skip-cert-verify: true
 - name: 德国 (Germany) 07
   type: vless
-  server: 178.83.45.226
+  server: 168.222.43.53
   port: 10000
   uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
   udp: true
@@ -60,7 +61,7 @@ proxies:
   skip-cert-verify: true
 - name: 德国 (Germany) 08
   type: vless
-  server: 168.222.43.53
+  server: connect.wecantos.site
   port: 10000
   uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
   udp: true
@@ -83,13 +84,12 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 德国 (Germany) 11
-  type: vless
-  server: 168.222.43.53
-  port: 10000
-  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
+  type: ss
+  server: 8.211.196.252
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Cg2Dw4OhdBZhqbeO9ZTA3g/Gk/AvsrYZGhAJeGnQIx4=
   udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
