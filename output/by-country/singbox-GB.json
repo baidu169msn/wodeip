@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "英国 (United Kingdom) 01"
+        "英国 (United Kingdom) 01",
+        "英国 (United Kingdom) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "英国 (United Kingdom) 01"
+        "英国 (United Kingdom) 01",
+        "英国 (United Kingdom) 02"
       ],
       "url": "https://www.google.com/generate_204"
     },
