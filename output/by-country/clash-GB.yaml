@@ -11,17 +11,26 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 英国 (United Kingdom) 02
+  type: ss
+  server: 141.98.101.181
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 英国 (United Kingdom) 01
+  - 英国 (United Kingdom) 02
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 英国 (United Kingdom) 01
+  - 英国 (United Kingdom) 02
 rules:
 - MATCH,PROXIES
