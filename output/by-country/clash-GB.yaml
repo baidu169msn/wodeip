@@ -18,6 +18,27 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 英国 (United Kingdom) 03
+  type: ss
+  server: 82.38.31.190
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 英国 (United Kingdom) 04
+  type: ss
+  server: 82.38.31.202
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 英国 (United Kingdom) 05
+  type: ss
+  server: 82.38.31.66
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -25,6 +46,9 @@ proxy-groups:
   - AUTO
   - 英国 (United Kingdom) 01
   - 英国 (United Kingdom) 02
+  - 英国 (United Kingdom) 03
+  - 英国 (United Kingdom) 04
+  - 英国 (United Kingdom) 05
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -32,5 +56,8 @@ proxy-groups:
   proxies:
   - 英国 (United Kingdom) 01
   - 英国 (United Kingdom) 02
+  - 英国 (United Kingdom) 03
+  - 英国 (United Kingdom) 04
+  - 英国 (United Kingdom) 05
 rules:
 - MATCH,PROXIES
