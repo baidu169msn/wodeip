@@ -17,7 +17,7 @@ proxies:
   servername: ''
 - name: 法国 (France) 02
   type: vmess
-  server: 162.19.204.71
+  server: 141.95.65.9
   port: 1234
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -28,7 +28,7 @@ proxies:
   servername: ''
 - name: 法国 (France) 03
   type: vmess
-  server: 141.95.65.9
+  server: 162.19.204.71
   port: 1234
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -49,6 +49,17 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 法国 (France) 05
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 法国 (France) 06
   type: vless
   server: 138.124.70.41
   port: 14430
@@ -61,17 +72,6 @@ proxies:
     path: /vless
     headers:
       Host: 138.124.70.41
-- name: 法国 (France) 06
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 proxy-groups:
 - name: PROXIES
   type: select
